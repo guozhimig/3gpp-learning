@@ -25,17 +25,14 @@
             "id": "2019b00a1723bcca",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "QCAT log/总体结构.canvas",
-                "viewState": {
-                  "x": -640,
-                  "y": -190,
-                  "zoom": 0
-                }
+                "file": "QCAT log/LTE RRC OTA Packet.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "总体结构"
+              "icon": "lucide-file",
+              "title": "LTE RRC OTA Packet"
             }
           },
           {
@@ -248,8 +245,8 @@
   },
   "active": "2019b00a1723bcca",
   "lastOpenFiles": [
-    "QCAT log/LTE RRC OTA Packet.md",
     "QCAT log/总体结构.canvas",
+    "QCAT log/LTE RRC OTA Packet.md",
     "Stencils/Headers.canvas",
     "Stencils/Gradients.canvas",
     "Stencils/Footers.canvas",
