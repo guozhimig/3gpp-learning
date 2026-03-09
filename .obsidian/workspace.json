@@ -27,12 +27,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "QCAT log/QTrace Event.md",
+                "file": "QCAT log/RRC 状态.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "QTrace Event"
+              "title": "RRC 状态"
+            }
+          },
+          {
+            "id": "f2426e0e973932df",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "QCAT log/Event.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Event"
             }
           },
           {
@@ -50,7 +64,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -183,13 +197,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "QCAT log/QTrace Event.md",
+                "file": "QCAT log/Event.md",
                 "followCursor": false,
                 "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "QTrace Event 的大纲"
+              "title": "Event 的大纲"
             }
           },
           {
@@ -242,14 +256,14 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "2019b00a1723bcca",
+  "active": "f2426e0e973932df",
   "lastOpenFiles": [
     "QCAT log/RRC 状态.md",
     "QCAT log/QTrace Event.md",
-    "QCAT log/Event.md",
-    "QCAT log/目前无法显示的trace.md",
-    "QCAT log/总体结构.canvas",
     "QCAT log/测量相关的trace.md",
+    "QCAT log/目前无法显示的trace.md",
+    "QCAT log/Event.md",
+    "QCAT log/总体结构.canvas",
     "obsidian 使用技巧.md",
     "QCAT log/LTE/ML1.md",
     "QCAT log/LTE/assets/ML1/file-20260309110829587.png",
