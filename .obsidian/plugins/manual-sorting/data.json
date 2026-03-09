@@ -92,7 +92,9 @@
     "QCAT log": {
       "children": [
         "QCAT log/总体结构.canvas",
-        "QCAT log/LTE RRC OTA Packet.md"
+        "QCAT log/LTE RRC OTA Packet.md",
+        "QCAT log/Event.md",
+        "QCAT log/QTrace Event.md"
       ],
       "sortOrder": "custom"
     },
