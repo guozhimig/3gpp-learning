@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "QCAT log/Event.md",
+                "file": "QCAT log/RRC 状态.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Event"
+              "title": "RRC 状态"
             }
           },
           {
@@ -183,13 +183,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "QCAT log/Event.md",
+                "file": "QCAT log/RRC 状态.md",
                 "followCursor": false,
                 "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Event 的大纲"
+              "title": "RRC 状态 的大纲"
             }
           },
           {
@@ -245,6 +245,8 @@
   "active": "2019b00a1723bcca",
   "lastOpenFiles": [
     "QCAT log/QTrace Event.md",
+    "QCAT log/RRC 状态.md",
+    "QCAT log/Event.md",
     "QCAT log/目前无法显示的trace.md",
     "QCAT log/总体结构.canvas",
     "QCAT log/测量相关的trace.md",
@@ -256,7 +258,6 @@
     "QCAT log/LTE/assets/ML1",
     "QCAT log/LTE/assets",
     "QCAT log/LTE/ML1",
-    "QCAT log/Event.md",
     "QCAT log/LTE RRC OTA Packet.md",
     "QCAT log/LTE",
     "Stencils/Headers.canvas",

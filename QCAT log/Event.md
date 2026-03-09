@@ -10,6 +10,9 @@ Misc ID         = 0
 ```
 
 # EVENT_NAS_MO_DETACH
-```
 
+```
+2026 Jun 26  14:06:33.211  [9A]  0x1FFB  Event  --  EVENT_NAS_MO_DETACH
+        14:06:31.045 Event  0 : EVENT_NAS_MO_DETACH (ID=2558)  Payload = 0x02 01 02 02 FF
+                Payload String = RAT = SYS_RAT_LTE_RADIO_ACCESS, status = End, end reason = Accept, procedure_type = (empty), cause = (empty)
 ```
