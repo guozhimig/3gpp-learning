@@ -1,7 +1,61 @@
 # LTE ML1 Serving Cell Meas Response
 
 服务小区测量
-![](assets/ML1/file-20260309110657330.png)
+```
+2026 Jun 26  14:06:32.415  [00]  0xB193  LTE ML1 Serving Cell Meas Response
+Subscription ID = 1
+Version = 1
+Number of SubPackets = 1
+SubPacket ID = 25
+Serving Cell Measurement Result
+   Version = 56
+   SubPacket Size = 176 bytes
+   E-ARFCN = 1506
+   Num of Cell = 1
+   Cells[0]
+      Valid Rx = RX0_RX1
+      Logical To Physical Rx Map = { 1, 0, NA, NA }
+      Physical Cell ID = 367
+      Serving Cell Index = PCell
+      FW Serving Cell Index = 0
+      Is Serving Cell = 1
+      Current SFN = 802
+      Current Subframe Number = 7
+      Is Restricted = false
+      Cell Timing[0] = 5728
+      Cell Timing[1] = 5728
+      Cell Timing SFN[0] = 802
+      Cell Timing SFN[1] = 802
+      Inst RSRP Rx[0] = -84.19 dBm
+      Inst RSRP Rx[1] = -76.88 dBm
+      Inst RSRP Rx[2] = NA
+      Pathloss RSRP Rx[2] = NA
+      Pathloss RSRP Rx[3] = NA
+      Inst RSRP Rx[3] = NA
+      Inst Measured RSRP = -76.88 dBm
+      Filtered RSRP = -77.81 dBm
+      Inst RSRQ Rx[0] = -16.88 dB
+      Inst RSRQ Rx[1] = -16.19 dB
+      Inst RSRQ Rx[2] = NA
+      Inst RSRQ Rx[3] = NA
+      Inst RSRQ = -16.19 dB
+      Filtered RSRQ = -13.00 dB
+      Inst RSSI Rx[0] = -50.31 dBm
+      Inst RSSI Rx[1] = -43.69 dBm
+      Inst RSSI Rx[2] = NA
+      Inst RSSI Rx[3] = NA
+      Inst RSSI = -43.69 dBm
+      FTL SNR Rx[0] = 2.60 dB
+      FTL SNR Rx[1] = 5.30 dB
+      FTL SNR Rx[2] = NA
+      FTL SNR Rx[3] = NA
+      Projected Sir = 0 dB
+      Post Ic Rsrq = -2e+001 dB
+      CINR RX 0 = 448
+      CINR RX 1 = 1223
+      CINR RX 2 = NA
+      CINR RX 3 = NA
+```
 
 # LTE ML1 Cell Measurement Results
 
