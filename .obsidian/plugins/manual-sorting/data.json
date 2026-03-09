@@ -9,7 +9,8 @@
         "3GPP_无线通信协议_参考手册.mdc",
         "38331-h50.asn",
         "README.md",
-        "通信助手.md"
+        "通信助手.md",
+        "QCAT log"
       ],
       "sortOrder": "custom"
     },
@@ -182,6 +183,10 @@
         "Stencils/media/Stickers/wifi-cc-image.svg",
         "Stencils/media/Stickers/youtube-cc-image.svg"
       ],
+      "sortOrder": "custom"
+    },
+    "QCAT log": {
+      "children": [],
       "sortOrder": "custom"
     }
   },

@@ -25,14 +25,17 @@
             "id": "2019b00a1723bcca",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "DOCs/LTE 学习笔记：一次搞懂 RSRP、RSRQ、RSSI.md",
-                "mode": "source",
-                "source": false
+                "file": "QCAT log/未命名.canvas",
+                "viewState": {
+                  "x": 0,
+                  "y": 0,
+                  "zoom": 0
+                }
               },
-              "icon": "lucide-file",
-              "title": "LTE 学习笔记：一次搞懂 RSRP、RSRQ、RSSI"
+              "icon": "lucide-layout-dashboard",
+              "title": "未命名"
             }
           },
           {
@@ -245,10 +248,12 @@
   },
   "active": "2019b00a1723bcca",
   "lastOpenFiles": [
+    "DOCs/LTE 学习笔记：一次搞懂 RSRP、RSRQ、RSSI.md",
+    "QCAT log/未命名.canvas",
+    "QCAT log",
     "DOCs/重心.md",
     "DOCs/assets/重心/file-20260609165231680.jpg",
     "DOCs/assets/重心",
-    "DOCs/LTE 学习笔记：一次搞懂 RSRP、RSRQ、RSSI.md",
     "DOCs/assets/LTE 学习笔记：一次搞懂 RSRP、RSRQ、RSSI/file-20260517191959068.png",
     "DOCs/assets/LTE 学习笔记：一次搞懂 RSRP、RSRQ、RSSI/file-20260517100733864.png",
     "DOCs/assets/LTE 学习笔记：一次搞懂 RSRP、RSRQ、RSSI/file-20260516230141225.png",
@@ -287,9 +292,7 @@
     "Stencils/Flowcharts - Circles.canvas",
     "Stencils/media/Stickers",
     "Stencils/media/diamonds",
-    "Stencils/Stickers.canvas",
     "Stencils/media",
-    "Stencils",
     "经验总结.md",
     "2026-02-24.md",
     "2026-02-27.md",
