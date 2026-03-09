@@ -89,6 +89,13 @@
       ],
       "sortOrder": "custom"
     },
+    "QCAT log": {
+      "children": [
+        "QCAT log/总体结构.canvas",
+        "QCAT log/LTE RRC OTA Packet.md"
+      ],
+      "sortOrder": "custom"
+    },
     "Stencils": {
       "children": [
         "Stencils/media",
@@ -182,12 +189,6 @@
         "Stencils/media/Stickers/upload-cc-image.svg",
         "Stencils/media/Stickers/wifi-cc-image.svg",
         "Stencils/media/Stickers/youtube-cc-image.svg"
-      ],
-      "sortOrder": "custom"
-    },
-    "QCAT log": {
-      "children": [
-        "QCAT log/总体结构.canvas"
       ],
       "sortOrder": "custom"
     }

@@ -29,8 +29,8 @@
               "state": {
                 "file": "QCAT log/总体结构.canvas",
                 "viewState": {
-                  "x": -400,
-                  "y": -130,
+                  "x": -640,
+                  "y": -190,
                   "zoom": 0
                 }
               },
@@ -248,8 +248,9 @@
   },
   "active": "2019b00a1723bcca",
   "lastOpenFiles": [
-    "Stencils/Headers.canvas",
+    "QCAT log/LTE RRC OTA Packet.md",
     "QCAT log/总体结构.canvas",
+    "Stencils/Headers.canvas",
     "Stencils/Gradients.canvas",
     "Stencils/Footers.canvas",
     "Stencils/Flowcharts - Squares.canvas",
@@ -259,7 +260,6 @@
     "Stencils/Flowcharts - Circles.canvas",
     "Stencils/Borders Stencil.canvas",
     "obsidian 使用技巧.md",
-    "Stencils/Stickers.canvas",
     "DOCs/LTE 学习笔记：一次搞懂 RSRP、RSRQ、RSSI.md",
     "QCAT log",
     "DOCs/重心.md",
