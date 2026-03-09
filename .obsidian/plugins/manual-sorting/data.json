@@ -102,7 +102,20 @@
     },
     "QCAT log/LTE": {
       "children": [
-        "QCAT log/LTE/ML1"
+        "QCAT log/LTE/assets",
+        "QCAT log/LTE/ML1.md"
+      ],
+      "sortOrder": "custom"
+    },
+    "QCAT log/LTE/assets": {
+      "children": [
+        "QCAT log/LTE/assets/ML1"
+      ],
+      "sortOrder": "custom"
+    },
+    "QCAT log/LTE/assets/ML1": {
+      "children": [
+        "QCAT log/LTE/assets/ML1/file-20260309110657330.png"
       ],
       "sortOrder": "custom"
     },
@@ -200,10 +213,6 @@
         "Stencils/media/Stickers/wifi-cc-image.svg",
         "Stencils/media/Stickers/youtube-cc-image.svg"
       ],
-      "sortOrder": "custom"
-    },
-    "QCAT log/LTE/ML1": {
-      "children": [],
       "sortOrder": "custom"
     }
   },
