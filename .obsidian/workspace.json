@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "QCAT log/RRC 状态.md",
+                "file": "QCAT log/QTrace Event.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "RRC 状态"
+              "title": "QTrace Event"
             }
           },
           {
@@ -183,13 +183,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "QCAT log/RRC 状态.md",
+                "file": "QCAT log/QTrace Event.md",
                 "followCursor": false,
                 "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "RRC 状态 的大纲"
+              "title": "QTrace Event 的大纲"
             }
           },
           {
@@ -244,8 +244,8 @@
   },
   "active": "2019b00a1723bcca",
   "lastOpenFiles": [
-    "QCAT log/QTrace Event.md",
     "QCAT log/RRC 状态.md",
+    "QCAT log/QTrace Event.md",
     "QCAT log/Event.md",
     "QCAT log/目前无法显示的trace.md",
     "QCAT log/总体结构.canvas",
