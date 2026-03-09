@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "QCAT log/LTE/ML1.md",
+                "file": "QCAT log/测量相关的trace.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ML1"
+              "title": "测量相关的trace"
             }
           },
           {
@@ -245,11 +245,13 @@
   },
   "active": "2019b00a1723bcca",
   "lastOpenFiles": [
+    "QCAT log/LTE/ML1.md",
+    "QCAT log/LTE/assets/ML1/file-20260309110829587.png",
+    "QCAT log/LTE/assets/ML1/file-20260309110745193.png",
     "QCAT log/LTE/assets/ML1/file-20260309110657330.png",
     "QCAT log/LTE/assets/ML1",
     "QCAT log/LTE/assets",
     "QCAT log/测量相关的trace.md",
-    "QCAT log/LTE/ML1.md",
     "QCAT log/LTE/ML1",
     "QCAT log/总体结构.canvas",
     "QCAT log/Event.md",
@@ -291,9 +293,6 @@
     "DOCs/README.md",
     "DOCs/78-rsrp-and-rsrq-measurement-in-lte_核查与翻译.md",
     "DOCs/images/CableFree-LTE-SINR-Limit.png",
-    "DOCs/images/CableFree-LTE-SNR-to-RSRP.png",
-    "DOCs/images/CableFree-LTE-RSRQ-reporting-range.png",
-    "DOCs/images/CableFree-LTE-RSRP-Table.png",
     "DOCs/cablefree_page.html",
     "DOCs/arimas_page.html",
     "经验总结.md",
