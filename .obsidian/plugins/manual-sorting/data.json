@@ -97,6 +97,7 @@
         "QCAT log/RRC 状态.md",
         "QCAT log/LTE",
         "QCAT log/LTE RRC OTA Packet.md",
+        "QCAT log/LRRC_QSH_EVENT_CONN_REL.md",
         "QCAT log/QTrace Event.md",
         "QCAT log/Event.md"
       ],
