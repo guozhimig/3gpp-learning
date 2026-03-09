@@ -1,6 +1,6 @@
 {
 	"nodes":[
-		{"type":"text","text":">[!cc-header] 总览\n\n**Callout:**\n```\n>[!cc-header]\n```","id":"60a5f9d2ee51eda2","x":-280,"y":-240,"width":360,"height":260,"color":"4"}
+		{"type":"text","text":">[!cc-header] 总览\n\n**Callout:**\n```\n>[!cc-header]\n```","id":"60a5f9d2ee51eda2","x":-580,"y":-260,"width":360,"height":260,"color":"4"}
 	],
 	"edges":[],
 	"metadata":{

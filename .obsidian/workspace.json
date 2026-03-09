@@ -29,8 +29,8 @@
               "state": {
                 "file": "QCAT log/总体结构.canvas",
                 "viewState": {
-                  "x": 0,
-                  "y": 0,
+                  "x": -400,
+                  "y": -130,
                   "zoom": 0
                 }
               },
@@ -248,17 +248,18 @@
   },
   "active": "2019b00a1723bcca",
   "lastOpenFiles": [
-    "Stencils/Headers.canvas",
-    "Stencils/Headers Footers Combined.canvas",
-    "Stencils/Labels.canvas",
-    "QCAT log/总体结构.canvas",
-    "Stencils/Stickers.canvas",
     "Stencils/Gradients.canvas",
     "Stencils/Footers.canvas",
     "Stencils/Flowcharts - Squares.canvas",
     "Stencils/Flowcharts - Parallelogram.canvas",
     "Stencils/Flowcharts - Ovals.canvas",
     "Stencils/Flowcharts - Diamonds.canvas",
+    "Stencils/Flowcharts - Circles.canvas",
+    "Stencils/Borders Stencil.canvas",
+    "obsidian 使用技巧.md",
+    "Stencils/Stickers.canvas",
+    "Stencils/Labels.canvas",
+    "Stencils/Headers Footers Combined.canvas",
     "DOCs/LTE 学习笔记：一次搞懂 RSRP、RSRQ、RSSI.md",
     "QCAT log",
     "DOCs/重心.md",
@@ -281,7 +282,6 @@
     "DOCs/assets/LTE 学习笔记：一次搞懂 RSRP、RSRQ、RSSI",
     "DOCs/assets",
     "README.md",
-    "obsidian 使用技巧.md",
     "DOCs/README.md",
     "DOCs/78-rsrp-and-rsrq-measurement-in-lte_核查与翻译.md",
     "DOCs/images/CableFree-LTE-SINR-Limit.png",
