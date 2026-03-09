@@ -2,4 +2,4 @@
 
 ![LRRC_QSH_EVENT_CONN_REL](QTrace%20Event.md#LRRC_QSH_EVENT_CONN_REL)
 
-
+>![Detach request Msg](LRRC_QSH_EVENT_CONN_REL.md#Detach%20request%20Msg)
