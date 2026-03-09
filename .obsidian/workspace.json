@@ -25,14 +25,17 @@
             "id": "2019b00a1723bcca",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "obsidian 使用技巧.md",
-                "mode": "source",
-                "source": false
+                "file": "QCAT log/总体结构.canvas",
+                "viewState": {
+                  "x": -690,
+                  "y": -370,
+                  "zoom": 0
+                }
               },
-              "icon": "lucide-file",
-              "title": "obsidian 使用技巧"
+              "icon": "lucide-layout-dashboard",
+              "title": "总体结构"
             }
           },
           {
@@ -183,13 +186,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "obsidian 使用技巧.md",
+                "file": "QCAT log/总体结构.canvas",
                 "followCursor": false,
                 "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "obsidian 使用技巧 的大纲"
+              "title": "总体结构 的大纲"
             }
           },
           {
@@ -245,9 +248,9 @@
   "active": "2019b00a1723bcca",
   "lastOpenFiles": [
     "QCAT log/测量相关的trace.md",
+    "obsidian 使用技巧.md",
     "QCAT log/总体结构.canvas",
     "QCAT log/LTE/ML1.md",
-    "obsidian 使用技巧.md",
     "QCAT log/LTE/assets/ML1/file-20260309110829587.png",
     "QCAT log/LTE/assets/ML1/file-20260309110745193.png",
     "QCAT log/LTE/assets/ML1/file-20260309110657330.png",
