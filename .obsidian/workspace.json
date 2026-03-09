@@ -25,17 +25,14 @@
             "id": "2019b00a1723bcca",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "QCAT log/总体结构.canvas",
-                "viewState": {
-                  "x": -690,
-                  "y": -370,
-                  "zoom": 0
-                }
+                "file": "QCAT log/未命名.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "总体结构"
+              "icon": "lucide-file",
+              "title": "未命名"
             }
           },
           {
@@ -186,13 +183,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "QCAT log/总体结构.canvas",
+                "file": "QCAT log/未命名.md",
                 "followCursor": false,
                 "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "总体结构 的大纲"
+              "title": "未命名 的大纲"
             }
           },
           {
@@ -247,9 +244,10 @@
   },
   "active": "2019b00a1723bcca",
   "lastOpenFiles": [
+    "QCAT log/总体结构.canvas",
+    "QCAT log/未命名.md",
     "QCAT log/测量相关的trace.md",
     "obsidian 使用技巧.md",
-    "QCAT log/总体结构.canvas",
     "QCAT log/LTE/ML1.md",
     "QCAT log/LTE/assets/ML1/file-20260309110829587.png",
     "QCAT log/LTE/assets/ML1/file-20260309110745193.png",
@@ -300,7 +298,6 @@
     "经验总结.md",
     "2026-02-24.md",
     "2026-02-27.md",
-    "2026-02-14.md",
-    "asdf.md"
+    "2026-02-14.md"
   ]
 }
