@@ -92,7 +92,7 @@
     "QCAT log": {
       "children": [
         "QCAT log/总体结构.canvas",
-        "QCAT log/未命名.md",
+        "QCAT log/目前无法显示的trace.md",
         "QCAT log/测量相关的trace.md",
         "QCAT log/LTE",
         "QCAT log/LTE RRC OTA Packet.md",
