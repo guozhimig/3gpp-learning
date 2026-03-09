@@ -25,14 +25,17 @@
             "id": "2019b00a1723bcca",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "QCAT log/QTrace Event.md",
-                "mode": "source",
-                "source": false
+                "file": "QCAT log/总体结构.canvas",
+                "viewState": {
+                  "x": -810,
+                  "y": -161.000006047162,
+                  "zoom": 0
+                }
               },
-              "icon": "lucide-file",
-              "title": "QTrace Event"
+              "icon": "lucide-layout-dashboard",
+              "title": "总体结构"
             }
           },
           {
@@ -245,9 +248,9 @@
   },
   "active": "2019b00a1723bcca",
   "lastOpenFiles": [
+    "QCAT log/QTrace Event.md",
     "QCAT log/Event.md",
     "QCAT log/LTE RRC OTA Packet.md",
-    "QCAT log/QTrace Event.md",
     "QCAT log/总体结构.canvas",
     "Stencils/Headers.canvas",
     "Stencils/Gradients.canvas",
