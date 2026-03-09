@@ -22,5 +22,9 @@
 		{"id":"28e386d2168c954a","type":"text","text":"---\ncssclasses:\n  - cc-card-center\n  - cc-border-none\n---\n\nSquare","x":262,"y":-540,"width":185,"height":160,"color":"4"},
 		{"id":"da336eaf090f1c9e","type":"text","text":"![[02 Stencil Index]]\n\n","x":-483,"y":320,"width":340,"height":500}
 	],
-	"edges":[]
+	"edges":[],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
 }

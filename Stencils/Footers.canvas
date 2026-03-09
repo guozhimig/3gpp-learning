@@ -12,5 +12,9 @@
 		{"type":"text","text":"---\ncssclasses:\n  - cc-border-none\n  - cc-border-dropshadow\n---\n\n>[!cc-header] header\n\n**Calloout:**\n```\n>[!cc-header] header\n>[!cc-footer-noborder] footer\n```\n**cssclasses**\n- cc-border-none\n- cc-border-dropshadow\n\n>[!cc-footer-noborder] footer","id":"3fd2cb6b80513f85","x":60,"y":-242,"width":380,"height":401},
 		{"type":"text","text":"---\ncssclasses:\n  - cc-border-none\n  - cc-card-nocolor\n  - cc-border-dropshadow\n---\n\n**Callout:**\n```\n>[!cc-footer]\n```\n\n**cssclasses**\n- cc-card-nocolor\n- cc-border-none\n\n>[!cc-footer] footer","id":"0c9cbe6529365e74","x":60,"y":182,"width":380,"height":378,"color":"5"}
 	],
-	"edges":[]
+	"edges":[],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
 }

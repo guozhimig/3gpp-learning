@@ -50,5 +50,9 @@
 		{"id":"b50de3ade3f1a344","type":"file","file":"Stencils/media/Stickers/fire-cc-image.svg","x":900,"y":680,"width":138,"height":185},
 		{"id":"d527d7e6df9ffc87","type":"file","file":"Stencils/media/Stickers/rocket-cc-image.svg","x":1081,"y":716,"width":154,"height":147}
 	],
-	"edges":[]
+	"edges":[],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
 }

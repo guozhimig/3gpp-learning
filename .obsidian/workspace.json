@@ -27,7 +27,7 @@
             "state": {
               "type": "canvas",
               "state": {
-                "file": "QCAT log/未命名.canvas",
+                "file": "QCAT log/总体结构.canvas",
                 "viewState": {
                   "x": 0,
                   "y": 0,
@@ -35,7 +35,7 @@
                 }
               },
               "icon": "lucide-layout-dashboard",
-              "title": "未命名"
+              "title": "总体结构"
             }
           },
           {
@@ -248,8 +248,18 @@
   },
   "active": "2019b00a1723bcca",
   "lastOpenFiles": [
+    "Stencils/Headers.canvas",
+    "Stencils/Headers Footers Combined.canvas",
+    "Stencils/Labels.canvas",
+    "QCAT log/总体结构.canvas",
+    "Stencils/Stickers.canvas",
+    "Stencils/Gradients.canvas",
+    "Stencils/Footers.canvas",
+    "Stencils/Flowcharts - Squares.canvas",
+    "Stencils/Flowcharts - Parallelogram.canvas",
+    "Stencils/Flowcharts - Ovals.canvas",
+    "Stencils/Flowcharts - Diamonds.canvas",
     "DOCs/LTE 学习笔记：一次搞懂 RSRP、RSRQ、RSSI.md",
-    "QCAT log/未命名.canvas",
     "QCAT log",
     "DOCs/重心.md",
     "DOCs/assets/重心/file-20260609165231680.jpg",
@@ -281,15 +291,6 @@
     "DOCs/cablefree_page.html",
     "DOCs/arimas_page.html",
     "DOCs/images",
-    "Features/Cards.canvas",
-    "Features/Borders.canvas",
-    "Features/Headers and Labels.canvas",
-    "Stencils/Flowcharts - Parallelogram.canvas",
-    "Stencils/Flowcharts - Diamonds.canvas",
-    "Stencils/Borders Stencil.canvas",
-    "Features/Stickers.canvas",
-    "Stencils/Gradients.canvas",
-    "Stencils/Flowcharts - Circles.canvas",
     "Stencils/media/Stickers",
     "Stencils/media/diamonds",
     "Stencils/media",

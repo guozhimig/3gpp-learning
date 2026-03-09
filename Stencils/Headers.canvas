@@ -10,5 +10,9 @@
 		{"type":"text","text":">[!cc-header] header \n>- with additional content\n\n**Callouts:**\n```\n>[!cc-header]\n```","id":"c0d2791b0899a1ad","x":-340,"y":-240,"width":360,"height":260,"color":"4"},
 		{"id":"636dadaecf5c2742","type":"text","text":"![[02 Stencil Index]]\n\n","x":-720,"y":80,"width":340,"height":500}
 	],
-	"edges":[]
+	"edges":[],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
 }
