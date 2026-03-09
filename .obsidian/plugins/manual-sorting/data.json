@@ -92,10 +92,17 @@
     "QCAT log": {
       "children": [
         "QCAT log/总体结构.canvas",
+        "QCAT log/测量相关的trace.md",
+        "QCAT log/LTE",
         "QCAT log/LTE RRC OTA Packet.md",
-        "QCAT log/Event.md",
         "QCAT log/QTrace Event.md",
-        "QCAT log/测量相关的trace.md"
+        "QCAT log/Event.md"
+      ],
+      "sortOrder": "custom"
+    },
+    "QCAT log/LTE": {
+      "children": [
+        "QCAT log/LTE/ML1"
       ],
       "sortOrder": "custom"
     },
@@ -193,6 +200,10 @@
         "Stencils/media/Stickers/wifi-cc-image.svg",
         "Stencils/media/Stickers/youtube-cc-image.svg"
       ],
+      "sortOrder": "custom"
+    },
+    "QCAT log/LTE/ML1": {
+      "children": [],
       "sortOrder": "custom"
     }
   },
