@@ -60,7 +60,24 @@ Serving Cell Measurement Result
 # LTE ML1 Cell Measurement Results
 
 服务小区和同频邻区测量
-![](assets/ML1/file-20260309110745193.png)
+
+```
+2026 Jun 26  14:06:32.493  [CD]  0xB196  LTE ML1 Cell Measurement Results
+Subscription ID = 1
+Version = 41
+Num Cells = 3
+Is 1Rx Mode = 0
+Cell Measurement List
+   ------------------------------------------------------------------------------
+   |   |       |        |       |Inst   |Inst   |Inst   |Inst   |Inst   |Inst   |
+   |   |       |        |       |RSRP   |RSRP   |RSRQ   |RSRQ   |RSSI   |RSSI   |
+   |   |       |Physical|Valid  |Rx[0]  |Rx[1]  |Rx[0]  |Rx[1]  |Rx[0]  |Rx[1]  |
+   |#  |E-ARFCN|Cell ID |Rx     |(dBm)  |(dBm)  |(dBm)  |(dBm)  |(dBm)  |(dBm)  |
+   ------------------------------------------------------------------------------
+   |  0|   1506|     367|RX0_RX1| -84.13| -76.88| -14.75| -13.63| -52.31| -46.25|
+   |  1|   1506|     335|RX0_RX1| -86.25| -89.75| -22.50| -17.88| -54.69| -62.81|
+   |  2|   1506|     229|RX0_RX1| -88.06| -93.75| -22.56| -23.00| -56.44| -61.75|
+```
 
 # LTE ML1 Connected Mode LTE Intra-Freq Meas Results
 
