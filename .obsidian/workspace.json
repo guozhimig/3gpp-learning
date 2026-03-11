@@ -156,12 +156,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "obsidian 使用技巧.md",
+                "file": "QCAT log/测量相关的trace.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "obsidian 使用技巧"
+              "title": "测量相关的trace"
             }
           }
         ],
@@ -298,13 +298,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "obsidian 使用技巧.md",
+                "file": "QCAT log/测量相关的trace.md",
                 "followCursor": false,
                 "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "obsidian 使用技巧 的大纲"
+              "title": "测量相关的trace 的大纲"
             }
           },
           {
@@ -360,10 +360,10 @@
   "active": "291ea706a06b9da1",
   "lastOpenFiles": [
     "QCAT log/总体结构.canvas",
-    "QCAT log/测量相关的trace.md",
     "QCAT log/RRC 状态.md",
-    "QCAT log/目前无法显示的trace.md",
     "obsidian 使用技巧.md",
+    "QCAT log/测量相关的trace.md",
+    "QCAT log/目前无法显示的trace.md",
     "QCAT log/LTE/ML1.md",
     "QCAT log/LTE/assets/ML1/file-20260309110745193.png",
     "QCAT log/LRRC_QSH_EVENT_CONN_REL.md",
