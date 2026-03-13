@@ -123,7 +123,8 @@
     },
     "QCAT log/NR": {
       "children": [
-        "QCAT log/NR/NR5G RRC OTA Packet.md"
+        "QCAT log/NR/NR5G RRC OTA Packet.md",
+        "QCAT log/NR/NR5G LL1.md"
       ],
       "sortOrder": "custom"
     },
