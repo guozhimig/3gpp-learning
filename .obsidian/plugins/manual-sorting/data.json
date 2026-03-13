@@ -121,6 +121,12 @@
       "children": [],
       "sortOrder": "custom"
     },
+    "QCAT log/NR": {
+      "children": [
+        "QCAT log/NR/NR5G RRC OTA Packet.md"
+      ],
+      "sortOrder": "custom"
+    },
     "Stencils": {
       "children": [
         "Stencils/media",
@@ -215,10 +221,6 @@
         "Stencils/media/Stickers/wifi-cc-image.svg",
         "Stencils/media/Stickers/youtube-cc-image.svg"
       ],
-      "sortOrder": "custom"
-    },
-    "QCAT log/NR": {
-      "children": [],
       "sortOrder": "custom"
     }
   },
