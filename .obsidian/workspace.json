@@ -154,14 +154,17 @@
             "id": "291ea706a06b9da1",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "QCAT log/LTE/ML1.md",
-                "mode": "source",
-                "source": false
+                "file": "QCAT log/总体结构.canvas",
+                "viewState": {
+                  "x": -690,
+                  "y": -390,
+                  "zoom": 0
+                }
               },
-              "icon": "lucide-file",
-              "title": "ML1"
+              "icon": "lucide-layout-dashboard",
+              "title": "总体结构"
             }
           }
         ],
@@ -298,13 +301,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "QCAT log/LTE/ML1.md",
+                "file": "QCAT log/总体结构.canvas",
                 "followCursor": false,
                 "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "ML1 的大纲"
+              "title": "总体结构 的大纲"
             }
           },
           {
@@ -359,9 +362,10 @@
   },
   "active": "291ea706a06b9da1",
   "lastOpenFiles": [
+    "QCAT log/目前无法显示的trace.md",
+    "QCAT log/LTE/ML1.md",
     "QCAT log/测量相关的trace.md",
     "QCAT log/LTE/LTE RRC OTA Packet.md",
-    "QCAT log/LTE/ML1.md",
     "QCAT log/总体结构.canvas",
     "QCAT log/RRC 状态.md",
     "QCAT log/NR/NR5G RRC OTA Packet.md",
@@ -372,7 +376,6 @@
     "QCAT log/LTE/QTrace Event.md",
     "QCAT log/LTE/LRRC_QSH_EVENT_CONN_REL.md",
     "obsidian 使用技巧.md",
-    "QCAT log/目前无法显示的trace.md",
     "QCAT log/LTE/assets/ML1/file-20260309110745193.png",
     "QCAT log/LTE/assets/ML1/file-20260309110829587.png",
     "QCAT log/LTE/assets/ML1/file-20260309142008962.png",
