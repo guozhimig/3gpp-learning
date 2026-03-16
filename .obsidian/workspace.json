@@ -154,14 +154,17 @@
             "id": "291ea706a06b9da1",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "QCAT log/LTE/LTE RRC OTA Packet.md",
-                "mode": "source",
-                "source": false
+                "file": "QCAT log/总体结构.canvas",
+                "viewState": {
+                  "x": -690,
+                  "y": -390,
+                  "zoom": 0
+                }
               },
-              "icon": "lucide-file",
-              "title": "LTE RRC OTA Packet"
+              "icon": "lucide-layout-dashboard",
+              "title": "总体结构"
             }
           }
         ],
@@ -298,13 +301,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "QCAT log/LTE/LTE RRC OTA Packet.md",
+                "file": "QCAT log/总体结构.canvas",
                 "followCursor": false,
                 "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "LTE RRC OTA Packet 的大纲"
+              "title": "总体结构 的大纲"
             }
           },
           {
@@ -359,13 +362,13 @@
   },
   "active": "291ea706a06b9da1",
   "lastOpenFiles": [
-    "QCAT log/测量相关的trace.md",
+    "QCAT log/NR/NR5G RRC OTA Packet.md",
     "QCAT log/LTE/LTE RRC OTA Packet.md",
+    "QCAT log/测量相关的trace.md",
     "QCAT log/总体结构.canvas",
     "QCAT log/目前无法显示的trace.md",
     "QCAT log/LTE/ML1.md",
     "QCAT log/RRC 状态.md",
-    "QCAT log/NR/NR5G RRC OTA Packet.md",
     "QCAT log/NR/NR5G ML1.md",
     "QCAT log/NR/NR5G LL1.md",
     "QCAT log/NR",
