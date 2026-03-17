@@ -360,10 +360,11 @@
   "active": "291ea706a06b9da1",
   "lastOpenFiles": [
     "QCAT log/RRC 状态.md",
+    "QCAT log/总体结构.canvas",
+    "NR5G.md",
     "QCAT log/测量相关的trace.md",
     "QCAT log/LTE/LTE RRC OTA Packet.md",
     "QCAT log/LTE/LRRC_QSH_EVENT_CONN_REL.md",
-    "QCAT log/总体结构.canvas",
     "QCAT log/LTE/Event.md",
     "DOCs/LTE 学习笔记：一次搞懂 RSRP、RSRQ、RSSI.md",
     "QCAT log/NR/NR5G LL1.md",
@@ -412,7 +413,6 @@
     "DOCs/assets/LTE 学习笔记：一次搞懂 RSRP、RSRQ、RSSI",
     "DOCs/assets",
     "README.md",
-    "DOCs/README.md",
     "DOCs/cablefree_page.html"
   ]
 }
