@@ -1,6 +1,6 @@
 # Searcher Measurement Database Update Ext
 同频邻区测量值
-到5G后，高通的log机制和4G发生了很大的变化，我们拿到的很多都是展示位Internal 或者加密的，==测量这种就需要从 RRC 消息中查看了== ^3vbyq4
+到5G后，高通的log机制和4G发生了很大的变化，我们拿到的很多都是展示位Internal 或者加密的，==测量这种就需要从 RRC 消息中查看了== 
 ```
 2026 Jul 12  14:55:25.629  [67]  0xB97F  NR5G ML1 Searcher Measurement Database Update Ext
 Subscription ID = 1
