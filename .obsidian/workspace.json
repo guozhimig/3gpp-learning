@@ -156,12 +156,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "QCAT log/测量相关的trace.md",
+                "file": "DOCs/FIR滤波器从零开始学习.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "测量相关的trace"
+              "title": "FIR滤波器从零开始学习"
             }
           }
         ],
@@ -298,13 +298,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "QCAT log/测量相关的trace.md",
+                "file": "DOCs/FIR滤波器从零开始学习.md",
                 "followCursor": false,
                 "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "测量相关的trace 的大纲"
+              "title": "FIR滤波器从零开始学习 的大纲"
             }
           },
           {
@@ -359,9 +359,9 @@
   },
   "active": "291ea706a06b9da1",
   "lastOpenFiles": [
+    "QCAT log/测量相关的trace.md",
     "QCAT log/NR/NR5G ML1.md",
     "QCAT log/NR/NR5G RRC OTA Packet.md",
-    "QCAT log/测量相关的trace.md",
     "QCAT log/RRC 状态.md",
     "QCAT log/NR/NR5G LL1.md",
     "QCAT log/总体结构.canvas",
