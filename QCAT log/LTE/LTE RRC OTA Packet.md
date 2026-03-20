@@ -2,6 +2,146 @@
 
 ```
 
+2026 Jul  9  15:19:52.955  [00]  0xB0C0  LTE RRC OTA Packet  --  BCCH_DL_SCH / SystemInformationBlockType1
+Subscription ID = 1
+Pkt Version = 27
+RRC Release Number.Major.minor = 16.1.0
+NR RRC Release Number.Major.minor = 17.4.0
+Radio Bearer ID = 0, Physical Cell ID = 96
+Freq = 1750
+SysFrameNum = 0, SubFrameNum = 5
+PDU Number = BCCH_DL_SCH Message,    Msg Length = 32
+SIB Mask in SI =  0x02
+
+Interpreted PDU:
+
+value BCCH-DL-SCH-Message ::= 
+{
+  message c1 : systemInformationBlockType1 : 
+      {
+        cellAccessRelatedInfo 
+        {
+          plmn-IdentityList 
+          {
+            {
+              plmn-Identity 
+              {
+                mcc 
+                {
+                  4,
+                  6,
+                  0
+                },
+                mnc 
+                {
+                  1,
+                  1
+                }
+              },
+              cellReservedForOperatorUse notReserved
+            },
+            {
+              plmn-Identity 
+              {
+                mcc 
+                {
+                  4,
+                  6,
+                  0
+                },
+                mnc 
+                {
+                  0,
+                  1
+                }
+              },
+              cellReservedForOperatorUse notReserved
+            }
+          },
+          trackingAreaCode '01011101 00011100'B,
+          cellIdentity '10110001 11111011 10010011 0001'B,
+          cellBarred notBarred,
+          intraFreqReselection allowed,
+          csg-Indication FALSE
+        },
+        cellSelectionInfo 
+        {
+          q-RxLevMin -64
+        },
+        p-Max 23,
+        freqBandIndicator 3,
+        schedulingInfoList 
+        {
+          {
+            si-Periodicity rf8,
+            sib-MappingInfo 
+            {
+            }
+          },
+          {
+            si-Periodicity rf16,
+            sib-MappingInfo 
+            {
+              sibType3,
+              sibType5
+            }
+          },
+          {
+            si-Periodicity rf32,
+            sib-MappingInfo 
+            {
+              sibType6,
+              sibType7,
+              sibType8
+            }
+          }
+        },
+        si-WindowLength ms20,
+        systemInfoValueTag 30,
+        nonCriticalExtension 
+        {
+          lateNonCriticalExtension 
+            CONTAINING
+            {
+              nonCriticalExtension 
+              {
+                nonCriticalExtension 
+                {
+                  nonCriticalExtension 
+                  {
+                    nonCriticalExtension 
+                    {
+                      nonCriticalExtension 
+                      {
+                        schedulingInfoList-v12j0 
+                        {
+                          {
+                          },
+                          {
+                          },
+                          {
+                            sib-MappingInfo-v12j0 
+                            {
+                              sibType24-v1530
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+        }
+      }
+}
+
+```
+
+# PCCH / Paging
+
+```
+
 
 ```
 # UL_CCCH / RRCConnectionRequest
