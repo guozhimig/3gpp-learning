@@ -401,3 +401,220 @@ lte_emm_msg
     replayed_ue_add_security_cap_incl = 0 (0x0)
 ```
 
+## Activate default EPS bearer context request Msg
+
+```
+
+2026 Jul  9  15:19:53.517  [34]  0xB0E2  LTE NAS ESM Plain OTA Incoming Message  --  Activate default EPS bearer context request Msg
+pkt_version = 1 (0x1)
+rel_number = 9 (0x9)
+rel_version_major = 5 (0x5)
+rel_version_minor = 0 (0x0)
+eps_bearer_id_or_skip_id = 6 (0x6)
+prot_disc = 2 (0x2) (EPS session management messages)
+trans_id = 18 (0x12)
+msg_type = 193 (0xc1) (Activate default EPS bearer context request)
+lte_esm_msg
+  act_def_eps_bearer_context_req
+    eps_qos
+      qci = 5 (0x5) (QC5)
+      oct4_incl = 0 (0x0)
+      oct5_incl = 0 (0x0)
+      oct6_incl = 0 (0x0)
+      oct7_incl = 0 (0x0)
+      oct8_incl = 0 (0x0)
+      oct9_incl = 0 (0x0)
+      oct10_incl = 0 (0x0)
+      oct11_incl = 0 (0x0)
+      oct12_incl = 0 (0x0)
+      oct13_incl = 0 (0x0)
+      oct14_incl = 0 (0x0)
+      oct15_incl = 0 (0x0)
+    access_point
+      num_acc_pt_val = 23 (0x17)
+      acc_pt_name_val[0] = 3 (0x3) (length)
+      acc_pt_name_val[1] = 105 (0x69) (i)
+      acc_pt_name_val[2] = 109 (0x6d) (m)
+      acc_pt_name_val[3] = 115 (0x73) (s)
+      acc_pt_name_val[4] = 6 (0x6) (length)
+      acc_pt_name_val[5] = 77 (0x4d) (M)
+      acc_pt_name_val[6] = 78 (0x4e) (N)
+      acc_pt_name_val[7] = 67 (0x43) (C)
+      acc_pt_name_val[8] = 48 (0x30) (0)
+      acc_pt_name_val[9] = 48 (0x30) (0)
+      acc_pt_name_val[10] = 49 (0x31) (1)
+      acc_pt_name_val[11] = 6 (0x6) (length)
+      acc_pt_name_val[12] = 77 (0x4d) (M)
+      acc_pt_name_val[13] = 67 (0x43) (C)
+      acc_pt_name_val[14] = 67 (0x43) (C)
+      acc_pt_name_val[15] = 52 (0x34) (4)
+      acc_pt_name_val[16] = 54 (0x36) (6)
+      acc_pt_name_val[17] = 48 (0x30) (0)
+      acc_pt_name_val[18] = 4 (0x4) (length)
+      acc_pt_name_val[19] = 71 (0x47) (G)
+      acc_pt_name_val[20] = 80 (0x50) (P)
+      acc_pt_name_val[21] = 82 (0x52) (R)
+      acc_pt_name_val[22] = 83 (0x53) (S)
+    pdn_addr
+      pdn_addr_len = 9 (0x9)
+      pdn_type = 2 (0x2) (IPv6)
+      ipv6_interface_id = 0x18c08e01f4414683 (18c0:8e01:f441:4683)
+    trans_id_incl = 0 (0x0)
+    qos_incl = 0 (0x0)
+    llc_sapi_incl = 0 (0x0)
+    radio_priority_incl = 0 (0x0)
+    pkt_flow_id_incl = 0 (0x0)
+    apn_ambr_incl = 1 (0x1)
+    apn_ambr
+      apn_ambr_dl = 254 (0xfe) (8640 kbps)
+      apn_ambr_ul = 254 (0xfe) (8640 kbps)
+      oct5_incl = 1 (0x1)
+      apn_ambr_dl_ext = 88 (0x58) (30 Mbps)
+      oct6_incl = 1 (0x1)
+      apn_ambr_ul_ext = 88 (0x58) (30 Mbps)
+      oct7_incl = 0 (0x0)
+      oct8_incl = 0 (0x0)
+    esm_cause_incl = 1 (0x1)
+    esm_cause
+      esm_cause = 51 (0x33) (PDN type IPv6 only allowed)
+    prot_config_incl = 1 (0x1)
+    prot_config
+      ext = 1 (0x1)
+      conf_prot = 0 (0x0)
+      num_recs = 8 (0x8)
+      prot_or_container[0]
+        id = 3 (0x3) (DNS Server IPv6 Address)
+        prot_or_container
+          prot_len = 16 (0x10)
+          address
+            addr = 0x24088888000088880000000000000008 (2408:8888:0:8888:0:0:0:8)
+      prot_or_container[1]
+        id = 3 (0x3) (DNS Server IPv6 Address)
+        prot_or_container
+          prot_len = 16 (0x10)
+          address
+            addr = 0x24088899000088990000000000000008 (2408:8899:0:8899:0:0:0:8)
+      prot_or_container[2]
+        id = 1 (0x1) (P-CSCF IPV6 Address)
+        prot_or_container
+          prot_len = 16 (0x10)
+          container
+            container_contents[0] = 36 (0x24)
+            container_contents[1] = 8 (0x8)
+            container_contents[2] = 129 (0x81)
+            container_contents[3] = 64 (0x40)
+            container_contents[4] = 64 (0x40)
+            container_contents[5] = 1 (0x1)
+            container_contents[6] = 97 (0x61)
+            container_contents[7] = 0 (0x0)
+            container_contents[8] = 0 (0x0)
+            container_contents[9] = 0 (0x0)
+            container_contents[10] = 0 (0x0)
+            container_contents[11] = 0 (0x0)
+            container_contents[12] = 0 (0x0)
+            container_contents[13] = 0 (0x0)
+            container_contents[14] = 0 (0x0)
+            container_contents[15] = 16 (0x10)
+      prot_or_container[3]
+        id = 1 (0x1) (P-CSCF IPV6 Address)
+        prot_or_container
+          prot_len = 16 (0x10)
+          container
+            container_contents[0] = 36 (0x24)
+            container_contents[1] = 8 (0x8)
+            container_contents[2] = 129 (0x81)
+            container_contents[3] = 64 (0x40)
+            container_contents[4] = 64 (0x40)
+            container_contents[5] = 1 (0x1)
+            container_contents[6] = 97 (0x61)
+            container_contents[7] = 0 (0x0)
+            container_contents[8] = 0 (0x0)
+            container_contents[9] = 0 (0x0)
+            container_contents[10] = 0 (0x0)
+            container_contents[11] = 0 (0x0)
+            container_contents[12] = 0 (0x0)
+            container_contents[13] = 0 (0x0)
+            container_contents[14] = 0 (0x0)
+            container_contents[15] = 2 (0x2)
+      prot_or_container[4]
+        id = 27 (0x1b) (S-NSSAI)
+        prot_or_container
+          prot_len = 7 (0x7)
+          s_nssai
+            sst = 1 (0x1)
+            sd = 0 (0x0)
+            plmn
+              mcc_1 = 4 (0x4)
+              mcc_2 = 6 (0x6)
+              mcc_3 = 0 (0x0)
+              mnc_3 = 15 (0xf)
+              mnc_1 = 0 (0x0)
+              mnc_2 = 1 (0x1)
+      prot_or_container[5]
+        id = 28 (0x1c) (QoS rules)
+        prot_or_container
+          prot_len = 9 (0x9)
+          qos_rules
+            num_recs = 1 (0x1)
+            Qos_rule[0]
+              qos_rule_id = 1 (0x1)
+              rule_opcode = 1 (0x1) (Create new QoS rule)
+              DQR = 1 (0x1)
+              num_pkt_filter = 1 (0x1)
+              pkt_filters[0]
+                change_rule
+                  pkt_filter_dir = 2 (0x2) (uplink only)
+                  pkt_filter_id = 0 (0x0)
+                  num_comps = 1 (0x1)
+                  pkt_filters_comp_list[0]
+                    comp_type_id = 1 (0x1) (Match-all)
+                    pkt_filters_comp
+                      match_all_type
+              rule_precedene_present = 1 (0x1)
+              qos_rule_precedence = 255 (0xff)
+              qfi_present = 1 (0x1)
+              segregation = 0 (0x0)
+              qfi = 1 (0x1)
+      prot_or_container[6]
+        id = 31 (0x1f) (QoS flow description)
+        prot_or_container
+          prot_len = 9 (0x9)
+          qos_flow_description
+            num_qos_flow_desc = 1 (0x1)
+            qos_flow_description[0]
+              qfi = 1 (0x1)
+              opcode = 1 (0x1) (Create new QoS flow description)
+              e_bit = 1 (0x1)
+              num_parameters = 2 (0x2)
+              params[0]
+                params_id = 7 (0x7)
+                length = 1 (0x1)
+                qos_flow_desc_params
+                  eps_bearer_id
+                    id = 6 (0x6)
+              params[1]
+                params_id = 1 (0x1)
+                length = 1 (0x1)
+                qos_flow_desc_params
+                  _5qi
+                    _5qi_value = 5 (0x5)
+      prot_or_container[7]
+        id = 29 (0x1d) (Session-AMBR)
+        prot_or_container
+          prot_len = 6 (0x6)
+          session_ambr
+            session_ambr_dl_unit = 1 (0x1) (inc in multiple of 1 Kbps)
+            session_ambr_dl = 30000 (0x7530)
+            session_ambr_ul_unit = 1 (0x1) (inc in multiple of 1 Kbps)
+            session_ambr_ul = 30000 (0x7530)
+    connectivity_type_incl = 0 (0x0)
+    wlan_offload_acceptability_incl = 0 (0x0)
+    nbifom_incl = 0 (0x0)
+    header_compression_config_inclu = 0 (0x0)
+    ctrl_plane_only_ind_incl = 0 (0x0)
+    ext_prot_config_incl = 0 (0x0)
+    serv_plmn_rate_ctrl_incl = 0 (0x0)
+    ext_apn_ambr_incl = 0 (0x0)
+    ext_eps_qos_incl = 0 (0x0)
+
+```
