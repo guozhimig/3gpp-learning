@@ -104,6 +104,7 @@
       "children": [
         "QCAT log/LTE/assets",
         "QCAT log/LTE/LTE RRC OTA Packet.md",
+        "QCAT log/LTE/LTE NAS.md",
         "QCAT log/LTE/ML1.md",
         "QCAT log/LTE/LRRC_QSH_EVENT_CONN_REL.md",
         "QCAT log/LTE/QTrace Event.md",

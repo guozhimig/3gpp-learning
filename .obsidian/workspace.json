@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "QCAT log/LTE/LTE RRC OTA Packet.md",
+                "file": "QCAT log/LTE/LTE NAS.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "LTE RRC OTA Packet"
+              "title": "LTE NAS"
             }
           }
         ]
@@ -154,13 +154,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "QCAT log/LTE/LTE RRC OTA Packet.md",
+                "file": "QCAT log/LTE/LTE NAS.md",
                 "followCursor": false,
                 "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "LTE RRC OTA Packet 的大纲"
+              "title": "LTE NAS 的大纲"
             }
           },
           {
@@ -215,8 +215,8 @@
   },
   "active": "291ea706a06b9da1",
   "lastOpenFiles": [
-    "QCAT log/LTE/未命名.md",
     "QCAT log/LTE/LTE RRC OTA Packet.md",
+    "QCAT log/LTE/LTE NAS.md",
     "QCAT log/NR/MAC.md",
     "QCAT log/NR/NR5G ML1.md",
     "NR5G.md",
