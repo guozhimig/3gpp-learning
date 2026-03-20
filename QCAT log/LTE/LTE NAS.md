@@ -336,3 +336,49 @@ lte_emm_msg
       autn[14] = 134 (0x86)
       autn[15] = 229 (0xe5)
 ```
+
+## Security mode command Msg
+
+```
+
+2026 Jul  9  15:19:53.060  [00]  0xB0EC  LTE NAS EMM Plain OTA Incoming Message  --  Security mode command Msg
+pkt_version = 1 (0x1)
+rel_number = 9 (0x9)
+rel_version_major = 5 (0x5)
+rel_version_minor = 0 (0x0)
+security_header_or_skip_ind = 0 (0x0)
+prot_disc = 7 (0x7) (EPS mobility management messages)
+msg_type = 93 (0x5d) (Security mode command)
+lte_emm_msg
+  emm_sec_mode_cmd
+    nas_sec_algorithms
+      cipher_algorithm = 2 (0x2) (128-EEA2)
+      inte_prot_algorithm = 2 (0x2) (128-EIA2)
+    tsc_asme = 0 (0x0) (cached sec context)
+    nas_key_set_id_asme = 1 (0x1)
+    replayed_ue_sec_capabilities
+      EEA0 = 1 (0x1)
+      EEA1_128 = 1 (0x1)
+      EEA2_128 = 1 (0x1)
+      EEA3_128 = 1 (0x1)
+      EEA4 = 0 (0x0)
+      EEA5 = 0 (0x0)
+      EEA6 = 0 (0x0)
+      EEA7 = 0 (0x0)
+      EIA0 = 0 (0x0)
+      EIA1_128 = 1 (0x1)
+      EIA2_128 = 1 (0x1)
+      EIA3_128 = 1 (0x1)
+      EIA4 = 0 (0x0)
+      EIA5 = 0 (0x0)
+      EIA6 = 0 (0x0)
+      EIA7 = 0 (0x0)
+      oct5_incl = 0 (0x0)
+      oct6_incl = 0 (0x0)
+      oct7_incl = 0 (0x0)
+    imesv_incl = 0 (0x0)
+    replaynounce_incl = 0 (0x0)
+    nounce_incl = 0 (0x0)
+    hash_mime_incl = 0 (0x0)
+    replayed_ue_add_security_cap_incl = 0 (0x0)
+```
