@@ -186,3 +186,33 @@ Connected Neighbor Meas Response
       |  0|     335|          0| -85.69| -86.25|  -85.69| -23.25| -17.19| -17.19| -53.44| -60.00| -53.44|
       |  1|     229|          0| -88.94| -92.31|  -88.94| -26.50| -23.25| -23.25| -53.44| -60.00| -53.44|
 ```
+
+# LTE Random Access Request (MSG1) Report
+
+```
+
+2026 Jul  9  15:19:52.857  [34]  0xB167  LTE Random Access Request (MSG1) Report
+Subscription ID = 1
+Version = 40
+Cell Index = 0
+PRACH Config Index = 3
+Preamble Sequence = 32
+Physical Root Index = 681
+Cyclic Shift = 644
+PRACH Tx Power = -3 dBm
+Beta PRACH = 1731
+PRACH Frequency Offset = 90
+Preamble Format = 0
+Duplex Mode = FDD
+Density Per 10 ms = 0.5
+PRACH Timing SFN = 1015
+PRACH Timing Sub-fn = 1
+PRACH Window Start SFN = 1015
+RACH Window Start Sub-fn = 4
+PRACH Window End SFN = 1016
+PRACH Window End Sub-fn = 4
+RA RNTI = 2
+PRACH Actual Tx Power = -3
+PRACH RX Freq Error = 3326
+```
+
