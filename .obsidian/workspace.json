@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "QCAT log/LTE/LL1.md",
+                "file": "QCAT log/LTE/未命名.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "LL1"
+              "title": "未命名"
             }
           }
         ],
@@ -169,13 +169,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "QCAT log/LTE/LL1.md",
+                "file": "QCAT log/LTE/未命名.md",
                 "followCursor": false,
                 "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "LL1 的大纲"
+              "title": "未命名 的大纲"
             }
           },
           {
@@ -228,15 +228,16 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "067b91a2d0690c77",
+  "active": "069313eba475e1f1",
   "lastOpenFiles": [
+    "QCAT log/LTE/LL1.md",
+    "QCAT log/LTE/未命名.md",
     "QCAT log/LTE/Event.md",
     "QCAT log/LTE/LTE RRC OTA Packet.md",
     "QCAT log/LTE/LTE MAC.md",
     "QCAT log/LTE/ML1.md",
     "QCAT log/测量相关的trace.md",
     "QCAT log/总体结构.canvas",
-    "QCAT log/LTE/LL1.md",
     "QCAT log/LTE/LTE NAS.md",
     "QCAT log/NR/MAC.md",
     "QCAT log/NR/NR5G ML1.md",
