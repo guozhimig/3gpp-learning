@@ -97,3 +97,43 @@ Meta Log
 
 ```
 
+# LTE RLC UL Config Log packet
+
+```
+
+2026 Jul  9  15:19:52.887  [34]  0xB091  LTE RLC UL Config Log packet
+Subscription ID = 1
+Version = 59
+Reason = RRC RECFG
+Num Rb Logged = 1
+LTE Security Config
+   SRB Cipher Algo = 0
+   SRB Cipher Key Index = 0
+   SRB Integrity Algo = 0
+   SRB Integ Key Index = 0
+   DRB Cipher Algo = 0
+   DRB Cipher Key Index = 0
+   SRB Ciphering Keys =  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+   SRB Integrity Keys =  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+   DRB Ciphering Keys =  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+NR Security Config
+   SRB Cipher Algo = 0
+   SRB Cipher Key Index = 0
+   SRB Integrity Algo = 0
+   SRB Integ Key Index = 0
+   DRB Cipher Algo = 0
+   DRB Cipher Key Index = 0
+   SRB Ciphering Keys =  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+   SRB Integrity Keys =  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+   DRB Ciphering Keys =  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+Active RB Info
+   ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+   |   |  |  |   |      |    |    |      |               |               |      |        |        |             |        |T   |         |    |       |            |          |           |       |Primary|       |           |               |            |         |
+   |   |  |  |   |RB    |    |    |PDCP  |               |               |      |        |T PDCP  |             |        |Poll|         |RoHC|RoHC   |            |Status    |Reestablish|Recover|Cell   |       |           |               |            |UL Data  |
+   |   |LC|RB|EPS|Config|RB  |RB  |Entity|               |               |RLC SN|PDCP SN |Discard |             |        |Retx|Max Retx |Max |Profile|            |Report    |PDCP       |PDCP   |Group  |Primary|UL         |               |            |Split    |
+   |#  |ID|ID|ID |Index |Mode|TYPE|Type  |RLC Path       |Action Type    |Length|Length  |(ms)    |Poll Byte    |Poll PDU|(ms)|Threshold|CID |Mask   |Bearer Type |Required  |Enabled    |Enabled|ID     |LC ID  |Duplication|Dictonary Type |Buffer Size |Threshold|
+   ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+   |  0| 1| 1|  1|    33|  AM| SRB|   LTE|            LTE|            ADD|    10|       5|INFINITY|       320000|      16|  60|       32|   0|      0|     DEFAULT|     false|    DISABLE|DISABLE|      0|      0|    DISABLE|             NA|          NA| INFINITE|
+
+```
+
