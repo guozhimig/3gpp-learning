@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "QCAT log/RRC 状态.md",
+                "file": "QCAT log/LTE/LTE RRC OTA Packet.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "RRC 状态"
+              "title": "LTE RRC OTA Packet"
             }
           }
         ],
@@ -169,13 +169,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "QCAT log/RRC 状态.md",
+                "file": "QCAT log/LTE/LTE RRC OTA Packet.md",
                 "followCursor": false,
                 "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "RRC 状态 的大纲"
+              "title": "LTE RRC OTA Packet 的大纲"
             }
           },
           {
@@ -230,15 +230,15 @@
   },
   "active": "067b91a2d0690c77",
   "lastOpenFiles": [
+    "QCAT log/LTE/LTE RLC.md",
+    "QCAT log/RRC 状态.md",
     "QCAT log/LTE/QTrace Event.md",
     "QCAT log/LTE/LTE RRC OTA Packet.md",
-    "QCAT log/RRC 状态.md",
     "QCAT log/总体结构.canvas",
     "QCAT log/LTE/LTE NAS.md",
     "QCAT log/LTE/LL1.md",
     "QCAT log/LTE/ML1.md",
     "QCAT log/LTE/LTE MAC.md",
-    "QCAT log/LTE/LTE RLC.md",
     "QCAT log/LTE/Event.md",
     "QCAT log/测量相关的trace.md",
     "QCAT log/NR/MAC.md",
