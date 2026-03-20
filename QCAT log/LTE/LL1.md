@@ -17,3 +17,10 @@ Start RB = 90
 Logical Root (q) = 681
 Tx Resampler = 0.013
 ```
+
+# LTE LL1 PDCCH Decoding Result
+
+```
+
+
+```
