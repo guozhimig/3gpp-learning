@@ -283,7 +283,7 @@ lte_emm_msg
       m_tmsi = 3912060219 (0xe92d4d3b)
 ```
 
-# Security mode complete Msg
+## Security mode complete Msg
 
 ```
 
