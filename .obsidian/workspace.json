@@ -215,6 +215,8 @@
   },
   "active": "291ea706a06b9da1",
   "lastOpenFiles": [
+    "QCAT log/LTE/未命名.md",
+    "QCAT log/LTE/LTE RRC OTA Packet.md",
     "QCAT log/NR/MAC.md",
     "QCAT log/NR/NR5G ML1.md",
     "NR5G.md",
@@ -224,7 +226,6 @@
     "QCAT log/NR/NR5G LL1.md",
     "DOCs/FIR滤波器从零开始学习.md",
     "QCAT log/RRC 状态.md",
-    "QCAT log/LTE/LTE RRC OTA Packet.md",
     "QCAT log/LTE/LRRC_QSH_EVENT_CONN_REL.md",
     "QCAT log/LTE/Event.md",
     "DOCs/LTE 学习笔记：一次搞懂 RSRP、RSRQ、RSSI.md",
@@ -269,7 +270,6 @@
     "DOCs/assets/LTE 学习笔记：一次搞懂 RSRP、RSRQ、RSSI/file-20260418174541607.png",
     "DOCs/assets/LTE 学习笔记：一次搞懂 RSRP、RSRQ、RSSI",
     "DOCs/assets",
-    "README.md",
     "DOCs/cablefree_page.html"
   ]
 }
