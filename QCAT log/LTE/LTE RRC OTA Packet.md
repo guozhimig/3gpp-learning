@@ -146,3 +146,40 @@ value DL-CCCH-Message ::=
       }
 }
 ```
+
+# DL_DCCH / UECapabilityEnquiry
+
+```
+
+2026 Jul  9  15:19:52.917  [34]  0xB0C0  LTE RRC OTA Packet  --  DL_DCCH / UECapabilityEnquiry
+Subscription ID = 1
+Pkt Version = 27
+RRC Release Number.Major.minor = 16.1.0
+NR RRC Release Number.Major.minor = 17.4.0
+Radio Bearer ID = 1, Physical Cell ID = 96
+Freq = 1750
+SysFrameNum = N/A, SubFrameNum = 1
+PDU Number = DL_DCCH Message,    Msg Length = 4
+SIB Mask in SI =  0x00
+
+Interpreted PDU:
+
+value DL-DCCH-Message ::= 
+{
+  message c1 : ueCapabilityEnquiry : 
+      {
+        rrc-TransactionIdentifier 2,
+        criticalExtensions c1 : ueCapabilityEnquiry-r8 : 
+            {
+              ue-CapabilityRequest 
+              {
+                eutra,
+                geran-cs,
+                geran-ps,
+                cdma2000-1XRTT
+              }
+            }
+      }
+}
+```
+
