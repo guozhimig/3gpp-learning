@@ -69,3 +69,44 @@ SubPacket - (DL Transport Block Subpacket)
    |    |      |   |          |    |       |   | 87 06 80               |   |   32|        |    |      |      |     |   |     |   |        |
 
 ```
+
+# LTE MAC Rach Attempt
+
+```
+
+2026 Jul  9  15:19:52.887  [34]  0xB062  LTE MAC Rach Attempt
+Subscription ID = 1
+Version = 1
+Number of SubPackets = 1
+SubPacket ID = 6
+SubPacket - ( RACH Attempt Subpacket )
+   Version = 50
+   Subpacket Size = 56 bytes
+   RACH Attempt V50 {
+      Sub Id = 0
+      CC Id = 0
+      Retx counter = 1
+      Rach result = Success
+      Contention procedure = Contention Based RACH procedure
+      Msg1 - RACH Access Preamble[0]
+         Preamble Index = 32
+         Preamble index mask = Invalid
+         Preamble power offset = -100 dB
+         Pcmaxc = 22
+         Group Chosen = Group A
+      Msg2 - Random Access Response
+         Backoff Value = 10 ms
+         Result = True
+         TCRNTI = 10721
+         TA value = 4 
+      Msg3
+         Grant Raw = 0x026020
+         Grant = 18 bytes
+         Harq ID = 3
+         MAC PDU = 0x20, 0x06, 0x1F, 0x5A, 0xEF, 0x71, 0xCF, 0xA0, 0x56, 0x00
+      Earfcn = 19750
+      P Max = 255
+      SCell ID = 0
+      Max Serv RSRP Present = FALSE
+   }
+```
