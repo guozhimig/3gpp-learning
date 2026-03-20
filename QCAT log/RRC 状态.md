@@ -3,3 +3,6 @@
 [LRRC_QSH_EVENT_CONN_REL](LTE/QTrace%20Event.md#LRRC_QSH_EVENT_CONN_REL)
 
 [Detach request Msg](LTE/LRRC_QSH_EVENT_CONN_REL.md#Detach%20request%20Msg)
+
+
+[DL_CCCH / RRCConnectionSetup](LTE%20RRC%20OTA%20Packet#DL_CCCH%20/%20RRCConnectionSetup)
