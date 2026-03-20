@@ -282,3 +282,9 @@ lte_emm_msg
       MME_code = 3 (0x3)
       m_tmsi = 3912060219 (0xe92d4d3b)
 ```
+
+
+# Authentication request Msg
+
+```
+```
