@@ -212,5 +212,33 @@ Records
 
 ```
 
+2026 Jul  9  15:19:52.888  [CD]  0xB130  LTE LL1 PDCCH Decoding Result
+Subscription ID = 1
+Version = 163
+Carrier Index = PCC
+Number of Records = 15
+Hypothesis
+   -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+   |   |         |      |       |          |          |          |                    |        |        |   |   |                  |           |         |      |          |              |       |        |       |     |                                        |          |        |      |Non Zero|Non  |      |
+   |   |         |System|       |          |Two bits  |Aperiodic |                    |        |        |   |CA |                  |           |         |Search|          |              |       |        |       |     |                                        |Norm      |Symbol  |      |Symbol  |Zero |      |
+   |   |Sub-frame|Frame |Band   |CIF       |CSI       |SRS       |                    |Num eNB |        |   |FDD|                  |Aggregation|         |Space |          |              |Payload|Tail    |Alt TBS|Start|                                        |Energy    |Error   |Energy|Mismatch|Llr  |      |
+   |#  |Number   |Number|Width  |Configured|Configured|configured|Frame Structure     |Antennas|DL CP   |SSC|TDD|Payload           |Level      |Candidate|Type  |DCI Format|Decode Status |Size   |Match   |Enabled|CCE  |Prune Status                            |Metric    |Rate    |Metric|Count   |Count|Normal|
+   -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+   |  0|        2|  1017| 20 MHz|     false|     false|     false|                 FDD|  1 or 2|  NORMAL|  0|  0|0x03F0060000000000|       Agg2|        3|  User|         0|        C_RNTI|     44|   Match|      0|   40|                    FAIL_SURVIVOR_SELECT|    0.8081|0.117645|   219|      12|  102|   271|
+   |  1|        2|  1017| 20 MHz|     false|     false|     false|                 FDD|  1 or 2|  NORMAL|  0|  0|0x03F0060000000000|       Agg8|        0|  User|         0|        C_RNTI|     44|   Match|      0|   40|                            SUCCESS_DCI0|    0.9976|0.007813|   964|       1|  128|   966|
+   |  2|        3|  1017| 20 MHz|     false|     false|     false|                 FDD|  1 or 2|  NORMAL|  0|  0|0x03F0060000000000|       Agg4|        0|Common|         0|        C_RNTI|     44|   Match|      0|    0|                    FAIL_SURVIVOR_SELECT|    0.9653|0.039993|   564|       5|  125|   584|
+   |  3|        3|  1017| 20 MHz|     false|     false|     false|                 FDD|  1 or 2|  NORMAL|  0|  0|0x03F0060000000000|       Agg8|        0|Common|         0|        C_RNTI|     44|   Match|      0|    0|                    FAIL_SURVIVOR_SELECT|    0.9927|0.015259|  1085|       2|  131|  1093|
+   |  4|        3|  1017| 20 MHz|     false|     false|     false|                 FDD|  1 or 2|  NORMAL|  0|  0|0x03F0060000000000|       Agg4|        0|  User|         0|        C_RNTI|     44|   Match|      0|    0|                    FAIL_SURVIVOR_SELECT|    0.9653|0.039993|   564|       5|  125|   584|
+   |  5|        3|  1017| 20 MHz|     false|     false|     false|                 FDD|  1 or 2|  NORMAL|  0|  0|0x03F0060000000000|       Agg8|        0|  User|         0|        C_RNTI|     44|   Match|      0|    0|                            SUCCESS_DCI0|    0.9927|0.015259|  1085|       2|  131|  1093|
+   |  6|        4|  1017| 20 MHz|     false|     false|     false|                 FDD|  1 or 2|  NORMAL|  0|  0|0x03F00A0000000000|       Agg8|        0|  User|         0|        C_RNTI|     44|   Match|      0|   16|                            SUCCESS_DCI0|    0.9800|0.038757|  1102|       5|  129|  1124|
+   |  7|        5|  1017| 20 MHz|     false|     false|     false|                 FDD|  1 or 2|  NORMAL|  0|  0|0x03F00A0000000000|       Agg4|        2|Common|         0|        C_RNTI|     44|   Match|      0|    8|                    FAIL_SURVIVOR_SELECT|    0.8779|0.112900|   635|      14|  124|   723|
+   |  8|        5|  1017| 20 MHz|     false|     false|     false|                 FDD|  1 or 2|  NORMAL|  0|  0|0x03F00A0000000000|       Agg8|        1|Common|         0|        C_RNTI|     44|   Match|      0|    8|                    FAIL_SURVIVOR_SELECT|    0.9341|0.103165|  1114|      13|  126|  1192|
+   |  9|        5|  1017| 20 MHz|     false|     false|     false|                 FDD|  1 or 2|  NORMAL|  0|  0|0x03F00A0000000000|       Agg8|        0|  User|         0|        C_RNTI|     44|   Match|      0|    8|                            SUCCESS_DCI0|    0.9341|0.103165|  1114|      13|  126|  1192|
+   | 10|        6|  1017| 20 MHz|     false|     false|     false|                 FDD|  1 or 2|  NORMAL|  0|  0|0x03F0020000000000|       Agg2|        0|  User|         0|        C_RNTI|     44|   Match|      0|   40|                    FAIL_SURVIVOR_SELECT|    0.8765|0.073380|   284|       8|  109|   324|
+   | 11|        6|  1017| 20 MHz|     false|     false|     false|                 FDD|  1 or 2|  NORMAL|  0|  0|0x03F0020000000000|       Agg8|        0|  User|         0|        C_RNTI|     44|   Match|      0|   40|                            SUCCESS_DCI0|    0.9771|0.038757|  1030|       5|  129|  1054|
+   | 12|        7|  1017| 20 MHz|     false|     false|     false|                 FDD|  1 or 2|  NORMAL|  0|  0|0x03F0020000000000|       Agg4|        0|Common|         0|        C_RNTI|     44|   Match|      0|    0|                    FAIL_SURVIVOR_SELECT|    0.9766|0.048767|   588|       6|  123|   602|
+   | 13|        7|  1017| 20 MHz|     false|     false|     false|                 FDD|  1 or 2|  NORMAL|  0|  0|0x03F0020000000000|       Agg8|        0|Common|         0|        C_RNTI|     44|   Match|      0|    0|                    FAIL_SURVIVOR_SELECT|    0.9961|0.007690|  1163|       1|  130|  1167|
+   | 14|        7|  1017| 20 MHz|     false|     false|     false|                 FDD|  1 or 2|  NORMAL|  0|  0|0x03F0020000000000|       Agg8|        0|  User|         0|        C_RNTI|     44|   Match|      0|    0|                            SUCCESS_DCI0|    0.9961|0.007690|  1163|       1|  130|  1167|
 
 ```
+

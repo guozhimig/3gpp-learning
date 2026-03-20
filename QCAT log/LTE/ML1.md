@@ -260,7 +260,7 @@ Redundancy Version Index = 0
 HARQ ID = 3
 ```
 
-# LTE Contention Resolution Message (MSG4) Report
+## LTE Contention Resolution Message (MSG4) Report
 
 ```
 
