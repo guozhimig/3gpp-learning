@@ -259,3 +259,17 @@ Transport Block Size Index = TBS_INDEX_1
 Redundancy Version Index = 0
 HARQ ID = 3
 ```
+
+# LTE Contention Resolution Message (MSG4) Report
+
+```
+
+2026 Jul  9  15:19:52.887  [34]  0xB16A  LTE Contention Resolution Message (MSG4) Report
+Subscription ID = 1
+Version = 1
+SFN = 1016
+Sub-fn = 9
+Contention Result = Pass
+UL ACK Timing SFN = 1017
+UL ACK Timing Sub-fn = 3
+```
