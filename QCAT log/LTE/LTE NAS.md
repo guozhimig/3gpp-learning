@@ -1,5 +1,12 @@
-## LTE NAS EMM Plain OTA Outgoing Message
-### Detach request Msg
+# LTE NAS EMM Plain OTA Outgoing Message
+## Attach request Msg
+
+```
+
+
+```
+
+## Detach request Msg
 ```
 2026 Jun 26  14:16:37.523  [CD]  0xB0ED  LTE NAS EMM Plain OTA Outgoing Message  --  Detach request Msg
 pkt_version = 1 (0x1)
