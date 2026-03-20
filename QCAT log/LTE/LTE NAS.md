@@ -283,6 +283,24 @@ lte_emm_msg
       m_tmsi = 3912060219 (0xe92d4d3b)
 ```
 
+# Security mode complete Msg
+
+```
+
+2026 Jul  9  15:19:53.060  [00]  0xB0ED  LTE NAS EMM Plain OTA Outgoing Message  --  Security mode complete Msg
+pkt_version = 1 (0x1)
+rel_number = 9 (0x9)
+rel_version_major = 5 (0x5)
+rel_version_minor = 0 (0x0)
+security_header_or_skip_ind = 0 (0x0)
+prot_disc = 7 (0x7) (EPS mobility management messages)
+msg_type = 94 (0x5e) (Security mode complete)
+lte_emm_msg
+  emm_sec_mode_complete
+    mod_id_incl = 0 (0x0)
+    Replayed_nas_contianer_incl = 0 (0x0)
+
+```
 # LTE NAS EMM Plain OTA Incoming Message
 ## Authentication request Msg
 
@@ -382,3 +400,4 @@ lte_emm_msg
     hash_mime_incl = 0 (0x0)
     replayed_ue_add_security_cap_incl = 0 (0x0)
 ```
+
