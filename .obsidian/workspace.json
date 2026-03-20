@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "QCAT log/NR/MAC.md",
+                "file": "QCAT log/LTE/LTE RRC OTA Packet.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "MAC"
+              "title": "LTE RRC OTA Packet"
             }
           }
         ]
@@ -154,13 +154,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "QCAT log/NR/MAC.md",
+                "file": "QCAT log/LTE/LTE RRC OTA Packet.md",
                 "followCursor": false,
                 "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "MAC 的大纲"
+              "title": "LTE RRC OTA Packet 的大纲"
             }
           },
           {
@@ -215,8 +215,8 @@
   },
   "active": "291ea706a06b9da1",
   "lastOpenFiles": [
-    "QCAT log/NR/NR5G ML1.md",
     "QCAT log/NR/MAC.md",
+    "QCAT log/NR/NR5G ML1.md",
     "NR5G.md",
     "QCAT log/总体结构.canvas",
     "QCAT log/测量相关的trace.md",
