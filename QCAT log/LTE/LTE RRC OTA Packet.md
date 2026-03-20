@@ -142,6 +142,52 @@ value BCCH-DL-SCH-Message ::=
 
 ```
 
+2026 Jul  9  15:19:52.958  [CD]  0xB0C0  LTE RRC OTA Packet  --  PCCH / Paging
+Subscription ID = 1
+Pkt Version = 27
+RRC Release Number.Major.minor = 16.1.0
+NR RRC Release Number.Major.minor = 17.4.0
+Radio Bearer ID = 0, Physical Cell ID = 96
+Freq = 1750
+SysFrameNum = 0, SubFrameNum = 9
+PDU Number = PCCH Message,    Msg Length = 18
+SIB Mask in SI =  0x00
+
+Interpreted PDU:
+
+value PCCH-Message ::= 
+{
+  message c1 : paging : 
+      {
+        pagingRecordList 
+        {
+          {
+            ue-Identity s-TMSI : 
+              {
+                mmec '11011100'B,
+                m-TMSI '11000001 10110011 00001011 11111111'B
+              },
+            cn-Domain ps
+          },
+          {
+            ue-Identity s-TMSI : 
+              {
+                mmec '00000001'B,
+                m-TMSI '11100011 01010110 01011001 10110000'B
+              },
+            cn-Domain ps
+          },
+          {
+            ue-Identity s-TMSI : 
+              {
+                mmec '11011110'B,
+                m-TMSI '11001000 01000000 01100001 10101111'B
+              },
+            cn-Domain ps
+          }
+        }
+      }
+}
 
 ```
 # UL_CCCH / RRCConnectionRequest
