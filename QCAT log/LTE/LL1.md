@@ -110,3 +110,29 @@ Doppler Request Type = No Request
 
 
 ```
+
+# LTE LL1 PUSCH Tx Report
+
+```
+
+2026 Jul  9  15:19:52.887  [34]  0xB139  LTE LL1 PUSCH Tx Report
+Subscription ID = 1
+Version = 162
+Serving Cell ID = 96
+Number of Records = 1
+Dispatch SFN SF = 10174
+Records
+   ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+   |       |       |      |      |      |           |        |      |       |          |     |     |   |       |      |       |       |       |              |            |                                |       |       |       |   |        |        |       |        |        |    |       |         |        |      |    |    |     |     |                 |                                                |               |Cyclic   |Cyclic   |    |    |
+   |       |       |      |      |      |           |        |      |       |          |     |     |   |       |      |       |       |       |              |            |                                |       |       |       |   |        |        |       |        |        |    |       |         |        |      |    |    |     |     |                 |                                                |               |Shift of |Shift of |    |    |
+   |       |       |      |      |      |           |        |      |       |          |Start|Start|   |       |Enable|       |       |Rate   |              |            |                                |ACK/NAK|ACK/NAK|       |   |        |        |PUSCH  |        |        |    |Rate   |         |        |      |    |    |     |PUSCH|                 |                                                |               |DMRS     |DMRS     |DMRS|DMRS|
+   |       |UL     |      |      |      |           |        |      |       |Resource  |RB   |RB   |Num|DL     |UL    |PUSCH  |       |Matched|              |            |                                |Inp    |Inp    |Rate   |   |        |PUSCH   |Digital|        |        |Num |Matched|         |        |Ack   |Ack |    |     |Tx   |                 |                                                |               |Symbols  |Symbols  |Root|Root|
+   |Current|Carrier|      |      |      |Frequency  |Re-tx   |Redund|Mirror |Allocation|Slot |Slot |of |Carrier|DMRS  |TB Size|Coding |ACK    |              |Num RI Bits |                                |Length |Length |Matched|UE |SRS     |Mod     |Gain   |Start RB|Num RB  |CQI |CQI    |         |Num DL  |Nack  |Nack|CSF |Drop |Power|                 |                                                |               |Slot 0   |Slot 1   |Slot|Slot|
+   |SFN SF |Index  |ACK   |CQI   |RI    |Hopping    |Index   |Ver   |Hopping|Type      |0    |1    |RB |Index  |OCC   |(bytes)|Rate   |Bits   |RI Payload    |(bits)      |ACK Payload                     |0      |1      |RI Bits|SRS|Occasion|Order   |(dB)   |Cluster1|Cluster1|Bits|Bits   |reserved4|Carriers|Index |Late|Late|PUSCH|(dBm)|DROP_PUSCH_REASON|CQI Payload                                     |Tx Resampler   |(Samples)|(Samples)|0   |1   |
+   ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+   |  10163|    PCC|  None|  None|  None|   Disabled|   First|     0|      0|         0|    4|    4|  4|    PCC|     0|     18|  0.146|      0|00000000000000|           0|00000000000000000000000000000000|      0|      0|      0|OFF|     OFF|    QPSK|    195|       0|       0|   0|      0|        0|       0|0x0000|   0|   0|    0|   -1|          NO_DROP|  0x00000000  0x00000000  0x00000000  0x00000000|  -0.3999989277|        8|        5|  15|  15|
+   |       |       |      |      |      |           |        |      |       |          |     |     |   |       |      |       |       |       |              |            |00000000000000000000000000000000|       |       |       |   |        |        |       |        |        |    |       |         |        |      |    |    |     |     |                 |  0x00000000  0x00000000  0x00000000  0x00000000|               |         |         |    |    |
+   |       |       |      |      |      |           |        |      |       |          |     |     |   |       |      |       |       |       |              |            |00000000000000000000000000000000|       |       |       |   |        |        |       |        |        |    |       |         |        |      |    |    |     |     |                 |  0x00000000  0x00000000  0x00000000            |               |         |         |    |    |
+   |       |       |      |      |      |           |        |      |       |          |     |     |   |       |      |       |       |       |              |            |00000000000000000000000000000000|       |       |       |   |        |        |       |        |        |    |       |         |        |      |    |    |     |     |                 |                                                |               |         |         |    |    |
+
+```
