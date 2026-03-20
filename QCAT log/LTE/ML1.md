@@ -234,3 +234,26 @@ Sub-fn = 7
 Timing Advance = 4
 ```
 
+# LTE UE Identification Message (MSG3) Report
+
+```
+
+2026 Jul  9  15:19:52.878  [CD]  0xB169  LTE UE Identification Message (MSG3) Report
+Subscription ID = 1
+Version = 40
+Modulation Type = QPSK
+Cell Index = 0
+TPC = 0
+MCS = 1
+RIV = 304
+CQI = Disabled
+UL Delay = Don't Delay
+SFN = 1016
+Sub-fn = 3
+Hopping Flag = Disabled
+Starting Resource Block = 4
+Num Resource Blocks = 4
+Transport Block Size Index = TBS_INDEX_1
+Redundancy Version Index = 0
+HARQ ID = 3
+```
