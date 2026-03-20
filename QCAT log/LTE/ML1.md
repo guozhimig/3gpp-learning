@@ -216,3 +216,21 @@ PRACH Actual Tx Power = -3
 PRACH RX Freq Error = 3326
 ```
 
+#  LTE Random Access Response (MSG2) Report
+
+```
+
+2026 Jul  9  15:19:52.878  [CD]  0xB168  LTE Random Access Response (MSG2) Report
+Subscription ID = 1
+Version = 24
+Cell Index = 0
+RACH Procedure Type = Contention Based
+RACH Procedure Mode = Initial Access
+RNTI Type = TEMP_C_RNTI
+RNTI Value = 10721
+Timing Advance Included = Included
+SFN = 1015
+Sub-fn = 7
+Timing Advance = 4
+```
+
