@@ -299,7 +299,25 @@ lte_emm_msg
   emm_sec_mode_complete
     mod_id_incl = 0 (0x0)
     Replayed_nas_contianer_incl = 0 (0x0)
+```
 
+## Activate default EPS bearer context accept Msg
+
+```
+
+2026 Jul  9  15:19:53.525  [00]  0xB0E3  LTE NAS ESM Plain OTA Outgoing Message  --  Activate default EPS bearer context accept Msg
+pkt_version = 1 (0x1)
+rel_number = 9 (0x9)
+rel_version_major = 5 (0x5)
+rel_version_minor = 0 (0x0)
+eps_bearer_id_or_skip_id = 6 (0x6)
+prot_disc = 2 (0x2) (EPS session management messages)
+trans_id = 0 (0x0)
+msg_type = 194 (0xc2) (Activate default EPS bearer context accept)
+lte_esm_msg
+  act_def_eps_bearer_context_accept
+    prot_config_incl = 0 (0x0)
+    ext_prot_config_incl = 0 (0x0)
 ```
 # LTE NAS EMM Plain OTA Incoming Message
 ## Authentication request Msg
