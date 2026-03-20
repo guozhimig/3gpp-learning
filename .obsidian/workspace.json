@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "QCAT log/LTE/LTE NAS.md",
+                "file": "QCAT log/RRC 状态.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "LTE NAS"
+              "title": "RRC 状态"
             }
           }
         ],
@@ -169,13 +169,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "QCAT log/LTE/LTE NAS.md",
+                "file": "QCAT log/RRC 状态.md",
                 "followCursor": false,
                 "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "LTE NAS 的大纲"
+              "title": "RRC 状态 的大纲"
             }
           },
           {
@@ -230,15 +230,15 @@
   },
   "active": "067b91a2d0690c77",
   "lastOpenFiles": [
-    "QCAT log/LTE/LTE RRC OTA Packet.md",
+    "QCAT log/总体结构.canvas",
     "QCAT log/LTE/LTE NAS.md",
+    "QCAT log/LTE/LTE RRC OTA Packet.md",
     "QCAT log/LTE/LL1.md",
     "QCAT log/LTE/ML1.md",
     "QCAT log/LTE/LTE MAC.md",
     "QCAT log/LTE/LTE RLC.md",
     "QCAT log/LTE/Event.md",
     "QCAT log/测量相关的trace.md",
-    "QCAT log/总体结构.canvas",
     "QCAT log/NR/MAC.md",
     "QCAT log/NR/NR5G ML1.md",
     "NR5G.md",
@@ -281,7 +281,6 @@
     "DOCs/assets/LTE 学习笔记：一次搞懂 RSRP、RSRQ、RSSI/file-20260516224549407.png",
     "DOCs/FIR滤波器从零开始学习_优化版.md",
     "DOCs/5G通信算法核心概念详解.md",
-    "DOCs/信道估计：从SISO到MIMO（原理与工程对照）.md",
     "DOCs/assets/LTE 学习笔记：一次搞懂 RSRP、RSRQ、RSSI/file-20260418174541607.png",
     "DOCs/assets/LTE 学习笔记：一次搞懂 RSRP、RSRQ、RSSI",
     "DOCs/assets",
