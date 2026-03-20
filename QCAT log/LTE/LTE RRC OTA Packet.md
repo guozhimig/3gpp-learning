@@ -221,6 +221,7 @@ value UL-CCCH-Message ::=
 }
 ```
 
+
 # DL_CCCH / RRCConnectionSetup
 
 ```
@@ -1254,6 +1255,66 @@ value UL-DCCH-Message ::=
         criticalExtensions rrcConnectionReconfigurationComplete-r8 : 
           {
           }
+      }
+}
+```
+
+# UL_DCCH / MeasurementReport
+
+```
+
+2026 Jul  9  15:19:53.569  [67]  0xB0C0  LTE RRC OTA Packet  --  UL_DCCH / MeasurementReport
+Subscription ID = 1
+Pkt Version = 27
+RRC Release Number.Major.minor = 16.1.0
+NR RRC Release Number.Major.minor = 17.4.0
+Radio Bearer ID = 1, Physical Cell ID = 96
+Freq = 1750
+SysFrameNum = N/A, SubFrameNum = 0
+PDU Number = UL_DCCH Message,    Msg Length = 16
+SIB Mask in SI =  0x00
+
+Interpreted PDU:
+
+value UL-DCCH-Message ::= 
+{
+  message c1 : measurementReport : 
+      {
+        criticalExtensions c1 : measurementReport-r8 : 
+            {
+              measResults 
+              {
+                measId 1,
+                measResultPCell 
+                {
+                  rsrpResult 54,
+                  rsrqResult 8
+                },
+                measResultNeighCells measResultListEUTRA : 
+                  {
+                    {
+                      physCellId 69,
+                      measResult 
+                      {
+                        rsrpResult 61,
+                        rsrqResult 17
+                      }
+                    }
+                  },
+                measResultServFreqList-r10 
+                {
+                  {
+                    servFreqId-r10 0,
+                    measResultBestNeighCell-r10 
+                    {
+                      physCellId-r10 69,
+                      rsrpResultNCell-r10 61,
+                      rsrqResultNCell-r10 17
+                    }
+                  }
+                }
+              }
+            }
       }
 }
 ```
