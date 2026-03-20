@@ -375,6 +375,166 @@ value DL-DCCH-Message ::=
 }
 ```
 
+# DL_DCCH / RRCConnectionReconfiguration
+
+```
+
+2026 Jul  9  15:19:53.344  [67]  0xB0C0  LTE RRC OTA Packet  --  DL_DCCH / RRCConnectionReconfiguration
+Subscription ID = 1
+Pkt Version = 27
+RRC Release Number.Major.minor = 16.1.0
+NR RRC Release Number.Major.minor = 17.4.0
+Radio Bearer ID = 1, Physical Cell ID = 96
+Freq = 1750
+SysFrameNum = N/A, SubFrameNum = 3
+PDU Number = DL_DCCH Message,    Msg Length = 299
+SIB Mask in SI =  0x00
+
+Interpreted PDU:
+
+value DL-DCCH-Message ::= 
+{
+  message c1 : rrcConnectionReconfiguration : 
+      {
+        rrc-TransactionIdentifier 0,
+        criticalExtensions c1 : rrcConnectionReconfiguration-r8 : 
+            {
+              dedicatedInfoNASList 
+              {
+                '278148313F02FE85B031BCE166EFBAFF130180FD526B0C4F8C9B8BE74873BA4DFD32C826AA8BEB88F0BB6D4309C19FC52DC5FEBB8703CCE631DA1212D074E514079C6A5C8B5E69B6528CB699A450DA33DA7FE3B2C2692CCBAB44DD4517FF9CF2A2376C34885DD5691215DD304C264021EEB7C56D0C114AA2C4FD5A4761698E5D0340F7CDEF35947A2F36B933B1BFDDCAD74F3A7719DC711968F0778EC352F4AF0257278291FFA724FDEAF50BE0899F445735B5776A8FFAEAD88D90231D7BA2F43FC8819F541B2C7267C4B16F43085085DCEA7E52004F9C3BFD39D17C3763D272833E5771397059C4DCEB572E765BA57CBA931DD3E81B9359ACE3BC2D5B0884'H
+              },
+              radioResourceConfigDedicated 
+              {
+                srb-ToAddModList 
+                {
+                  {
+                    srb-Identity 2,
+                    rlc-Config explicitValue : am : 
+                        {
+                          ul-AM-RLC 
+                          {
+                            t-PollRetransmit ms60,
+                            pollPDU p16,
+                            pollByte kBinfinity,
+                            maxRetxThreshold t32
+                          },
+                          dl-AM-RLC 
+                          {
+                            t-Reordering ms45,
+                            t-StatusProhibit ms20
+                          }
+                        },
+                    logicalChannelConfig explicitValue : 
+                      {
+                        ul-SpecificParameters 
+                        {
+                          priority 3,
+                          prioritisedBitRate infinity,
+                          bucketSizeDuration ms50,
+                          logicalChannelGroup 0
+                        }
+                      }
+                  }
+                },
+                drb-ToAddModList 
+                {
+                  {
+                    eps-BearerIdentity 5,
+                    drb-Identity 3,
+                    pdcp-Config 
+                    {
+                      discardTimer infinity,
+                      rlc-AM 
+                      {
+                        statusReportRequired TRUE
+                      },
+                      headerCompression notUsed : NULL
+                    },
+                    rlc-Config am : 
+                      {
+                        ul-AM-RLC 
+                        {
+                          t-PollRetransmit ms60,
+                          pollPDU p16,
+                          pollByte kBinfinity,
+                          maxRetxThreshold t32
+                        },
+                        dl-AM-RLC 
+                        {
+                          t-Reordering ms45,
+                          t-StatusProhibit ms20
+                        }
+                      },
+                    logicalChannelIdentity 3,
+                    logicalChannelConfig 
+                    {
+                      ul-SpecificParameters 
+                      {
+                        priority 12,
+                        prioritisedBitRate kBps16,
+                        bucketSizeDuration ms500,
+                        logicalChannelGroup 3
+                      }
+                    }
+                  }
+                },
+                mac-MainConfig explicitValue : 
+                  {
+                    drx-Config setup : 
+                      {
+                        onDurationTimer psf10,
+                        drx-InactivityTimer psf100,
+                        drx-RetransmissionTimer psf8,
+                        longDRX-CycleStartOffset sf320 : 22,
+                        shortDRX 
+                        {
+                          shortDRX-Cycle sf40,
+                          drxShortCycleTimer 1
+                        }
+                      },
+                    timeAlignmentTimerDedicated infinity,
+                    phr-Config setup : 
+                      {
+                        periodicPHR-Timer sf1000,
+                        prohibitPHR-Timer sf10,
+                        dl-PathlossChange dB3
+                      }
+                  },
+                physicalConfigDedicated 
+                {
+                  antennaInfo-r10 explicitValue-r10 : 
+                    {
+                      transmissionMode-r10 tm4,
+                      codebookSubsetRestriction-r10 '111111'B,
+                      ue-TransmitAntennaSelection release : NULL
+                    },
+                  cif-Presence-r10 FALSE,
+                  cqi-ReportConfig-r10 
+                  {
+                    cqi-ReportAperiodic-r10 setup : 
+                      {
+                        cqi-ReportModeAperiodic-r10 rm31
+                      },
+                    nomPDSCH-RS-EPRE-Offset 2,
+                    cqi-ReportPeriodic-r10 setup : 
+                      {
+                        cqi-PUCCH-ResourceIndex-r10 0,
+                        cqi-pmi-ConfigIndex 108,
+                        cqi-FormatIndicatorPeriodic-r10 widebandCQI-r10 : 
+                          {
+                          },
+                        ri-ConfigIndex 483,
+                        simultaneousAckNackAndCQI TRUE
+                      }
+                  }
+                }
+              }
+            }
+      }
+}
+
+```
+
 # UL_DCCH / UECapabilityInformation
 
 ```
