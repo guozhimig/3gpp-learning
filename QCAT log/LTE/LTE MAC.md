@@ -111,3 +111,51 @@ SubPacket - ( RACH Attempt Subpacket )
    }
 ```
 
+# LTE MAC DL Transport Block
+
+```
+
+2026 Jul  9  15:19:52.887  [34]  0xB063  LTE MAC DL Transport Block
+Subscription ID = 1
+Version = 50
+TB Log Buff
+   Config Info
+      Num Tb = 1
+      Reason = 0
+   TB Info[0]
+      TB Common Info[0]
+         -----------------------------------------------------------------------------------------
+         |   |           |           |     |        |       |               |  |    |Num|        |
+         |   |           |Num Pad    |     |        |Reparse|               |CC|HARQ|MAC|MAC Hdr |
+         |#  |TB Size    |Bytes      |Frame|SubFrame|Flag   |RNTI Type      |ID|ID  |Sdu|Len     |
+         -----------------------------------------------------------------------------------------
+         |  0|         32|          0| 1016|       9|      1|       T_C_RNTI| 0|   2|  2|       3|
+
+      MAC Sdu Info[0]
+         MAC Sdu Info Table[0]
+            --------------------------------------------------------------------------------------------------------------
+            |   |                                  |SDU CE Info                                          |               |
+            |   |                                  |RLC PDCP Info                                |       |               |
+            |   |MAC Common Info                   |       |  | |  | |  |   |       |Num |       |       |Dynamic Log    |
+            |   |Is |                      |       |       |  | |  | |  |   |       |PDCP|Num    |Mac CE |Info           |
+            |#  |MCE|LCID                  |Sdu Len|SN     |DC|P|RF|E|FI|LSF|SO     |Grp |NLOs   |Payload|Li Num|Li Len  |
+            --------------------------------------------------------------------------------------------------------------
+            |  0|  1|                    28|      6|       |  | |  | |  |   |       |    |       |     90|      |        |
+            |   |   |                      |       |       |  | |  | |  |   |       |    |       |    239|      |        |
+            |   |   |                      |       |       |  | |  | |  |   |       |    |       |    113|      |        |
+            |   |   |                      |       |       |  | |  | |  |   |       |    |       |    207|      |        |
+            |   |   |                      |       |       |  | |  | |  |   |       |    |       |    160|      |        |
+            |   |   |                      |       |       |  | |  | |  |   |       |    |       |     86|      |        |
+
+      MAC Sdu Info[1]
+         MAC Sdu Info Table[0]
+            --------------------------------------------------------------------------------------------------------------
+            |   |                                  |SDU CE Info                                          |               |
+            |   |                                  |RLC PDCP Info                                |       |               |
+            |   |MAC Common Info                   |       |  | |  | |  |   |       |Num |       |       |Dynamic Log    |
+            |   |Is |                      |       |       |  | |  | |  |   |       |PDCP|Num    |Mac CE |Info           |
+            |#  |MCE|LCID                  |Sdu Len|SN     |DC|P|RF|E|FI|LSF|SO     |Grp |NLOs   |Payload|Li Num|Li Len  |
+            --------------------------------------------------------------------------------------------------------------
+            |  0|  0|                     0|     23|      0| 1|0| 0|1| 0|  0|      0|   0|      0|       |      |        |
+
+```
