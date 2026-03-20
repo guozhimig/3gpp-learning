@@ -60,6 +60,32 @@ Serving Cell Measurement Result
 # LTE ML1 Serving Cell Meas and Eval
 
 ```
+
+2026 Jul  9  15:19:52.878  [CD]  0xB17F  LTE ML1 Serving Cell Meas and Eval
+Subscription ID = 1
+Version = 5
+Standards Version = Release 9
+E-ARFCN = 1750
+Physical Cell ID = 96
+Serving Layer Priority = 5
+Measured RSRP = -88.00 dBm
+Average RSRP = -88.00 dBm
+Measured RSRQ = -21.63 dB
+Average RSRQ = -21.63 dB
+Measured RSSI = -45.88 dBm
+Q_rxlevmin = -128.00 dB
+P_max = 23 dBm
+Max UE Tx Power = 23 dBm
+S_rxlev = 40 dB
+Num DRX S Fail = 0 DRX cycles
+S Intra Search = 62 dB
+S Non Intra Search = 18 dB
+Measurement Rules Updated = false
+Measurement Rules = Measure no neighbor cells
+Q Qual Min = -25 dB
+S Qual = 3 dB
+S Intra Search Q = 4
+S Non Intra Search Q = 1
 ```
 # LTE ML1 Cell Measurement Results
 
