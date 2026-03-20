@@ -1228,3 +1228,32 @@ value UE-EUTRA-Capability ::=
 }
 
 ```
+
+# UL_DCCH / RRCConnectionReconfigurationComplete
+
+```
+
+2026 Jul  9  15:19:53.375  [00]  0xB0C0  LTE RRC OTA Packet  --  UL_DCCH / RRCConnectionReconfigurationComplete
+Subscription ID = 1
+Pkt Version = 27
+RRC Release Number.Major.minor = 16.1.0
+NR RRC Release Number.Major.minor = 17.4.0
+Radio Bearer ID = 1, Physical Cell ID = 96
+Freq = 1750
+SysFrameNum = N/A, SubFrameNum = 0
+PDU Number = UL_DCCH Message,    Msg Length = 2
+SIB Mask in SI =  0x00
+
+Interpreted PDU:
+
+value UL-DCCH-Message ::= 
+{
+  message c1 : rrcConnectionReconfigurationComplete : 
+      {
+        rrc-TransactionIdentifier 1,
+        criticalExtensions rrcConnectionReconfigurationComplete-r8 : 
+          {
+          }
+      }
+}
+```
