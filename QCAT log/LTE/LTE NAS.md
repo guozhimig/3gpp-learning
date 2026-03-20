@@ -283,8 +283,56 @@ lte_emm_msg
       m_tmsi = 3912060219 (0xe92d4d3b)
 ```
 
-
-# Authentication request Msg
+# LTE NAS EMM Plain OTA Incoming Message
+## Authentication request Msg
 
 ```
+
+2026 Jul  9  15:19:52.947  [34]  0xB0EC  LTE NAS EMM Plain OTA Incoming Message  --  Authentication request Msg
+pkt_version = 1 (0x1)
+rel_number = 9 (0x9)
+rel_version_major = 5 (0x5)
+rel_version_minor = 0 (0x0)
+security_header_or_skip_ind = 0 (0x0)
+prot_disc = 7 (0x7) (EPS mobility management messages)
+msg_type = 82 (0x52) (Authentication request)
+lte_emm_msg
+  emm_auth_req
+    tsc = 0 (0x0) (cached sec context)
+    nas_key_set_id = 1 (0x1)
+    auth_param_RAND
+      rand_val[0] = 230 (0xe6)
+      rand_val[1] = 73 (0x49)
+      rand_val[2] = 58 (0x3a)
+      rand_val[3] = 62 (0x3e)
+      rand_val[4] = 92 (0x5c)
+      rand_val[5] = 177 (0xb1)
+      rand_val[6] = 11 (0xb)
+      rand_val[7] = 61 (0x3d)
+      rand_val[8] = 13 (0xd)
+      rand_val[9] = 234 (0xea)
+      rand_val[10] = 140 (0x8c)
+      rand_val[11] = 70 (0x46)
+      rand_val[12] = 55 (0x37)
+      rand_val[13] = 213 (0xd5)
+      rand_val[14] = 223 (0xdf)
+      rand_val[15] = 238 (0xee)
+    auth_param_AUTN
+      autn_len = 16 (0x10)
+      autn[0] = 29 (0x1d)
+      autn[1] = 237 (0xed)
+      autn[2] = 60 (0x3c)
+      autn[3] = 45 (0x2d)
+      autn[4] = 100 (0x64)
+      autn[5] = 28 (0x1c)
+      autn[6] = 128 (0x80)
+      autn[7] = 0 (0x0)
+      autn[8] = 29 (0x1d)
+      autn[9] = 181 (0xb5)
+      autn[10] = 180 (0xb4)
+      autn[11] = 206 (0xce)
+      autn[12] = 74 (0x4a)
+      autn[13] = 193 (0xc1)
+      autn[14] = 134 (0x86)
+      autn[15] = 229 (0xe5)
 ```
