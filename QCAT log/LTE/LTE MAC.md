@@ -49,3 +49,23 @@ SubPacket - ( RACH Reason Subpacket )
 ```
 
 # LTE MAC DL RAR Transport Block
+
+```
+
+2026 Jul  9  15:19:52.878  [CD]  0xB06E  LTE MAC DL RAR Transport Block
+Subscription ID = 1
+Version = 49
+Number of SubPackets = 1
+SubPacket ID = 20
+SubPacket - (DL Transport Block Subpacket)
+   Version = 1
+   Subpacket Size = 44
+   -----------------------------------------------------------------------------------------------------------------------------------------
+   |    |      |   |          |    |       |   |                        |   |     |Absolute|    |      |      |     |   |     |   |        |
+   |Cell|      |   |          |HARQ|DL TBS |LOG|                        |BI |Rapid|TA Val  |Hop |RB    |Coding|TBS  |TPC|UL   |CQI|        |
+   |Id  |Sub-FN|SFN|RNTI Type |Id  |(bytes)|LEN|RAR TB                  |Val|Val  |(16xTs) |Flag|Assign|Scheme|Index|dB |Delay|Req|T-C-RNTI|
+   -----------------------------------------------------------------------------------------------------------------------------------------
+   |  96|     7|1015|   RA_RNTI|   2|     11| 11| 81 60 00 42 60 20 29 E1|  1|     |       4|   0|   304|  QPSK|    1| -6|    0|  0|  0x29E1|
+   |    |      |   |          |    |       |   | 87 06 80               |   |   32|        |    |      |      |     |   |     |   |        |
+
+```
