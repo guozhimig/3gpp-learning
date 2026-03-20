@@ -47,3 +47,5 @@ SubPacket - ( RACH Reason Subpacket )
       Radio condn = 97 dB
       CRNTI = 0xCC47
 ```
+
+# LTE MAC DL RAR Transport Block
