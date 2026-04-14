@@ -24,10 +24,16 @@
 所以它不是“整带宽总功率”，而是“参考信号 RE 的平均功率”。
 
 图组（同一主题）：参考信号在时频域的位置与采样视角  
-图1 参考信号在时频域的位置示意（含多天线场景下的 DTX 交织分布）  
-![[images/CableFree-LTE-RS-RE-Distribution.png]]
-图2 从 OFDMA 信道估计视角补充展示 RS/RE 采样位置（用于理解 RSRP 测量抓取点）  
-![[images/CableFree-LTE-OFDMA-Channel-RSRP.png]]
+<div style="display:flex; gap:12px; align-items:flex-start;">
+  <div style="flex:1;">
+    <img src="images/CableFree-LTE-RS-RE-Distribution.png" alt="图1 参考信号在时频域的位置示意（含多天线场景下的 DTX 交织分布）" />
+    <p>图1 参考信号在时频域的位置示意（含多天线场景下的 DTX 交织分布）</p>
+  </div>
+  <div style="flex:1;">
+    <img src="images/CableFree-LTE-OFDMA-Channel-RSRP.png" alt="图2 从 OFDMA 信道估计视角补充展示 RS/RE 采样位置（用于理解 RSRP 测量抓取点）" />
+    <p>图2 从 OFDMA 信道估计视角补充展示 RS/RE 采样位置（用于理解 RSRP 测量抓取点）</p>
+  </div>
+</div>
 
 ### 2.2 RSRQ 是什么
 
