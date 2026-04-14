@@ -39,7 +39,7 @@
 
 `RSSI`（Received Signal Strength Indicator）是总接收功率统计量，包含服务小区功率、其他小区干扰以及热噪声等（按规范规定的符号和带宽条件统计）。
 
-图2 OFDMA 信道估计中的 RS/RE 采样示意（用于理解 RSRP 的测量抓取点）  
+图2 与图1属于同一主题：从 OFDMA 信道估计视角补充展示 RS/RE 的采样位置（用于理解 RSRP 测量抓取点）  
 ![[images/CableFree-LTE-OFDMA-Channel-RSRP.png]]
 
 ---
