@@ -47,6 +47,17 @@ PRB、RE 与 Cell-RS 的对应关系（含多天线下 DTX 分布）
 
 `RSSI`（Received Signal Strength Indicator）是总接收功率统计量，包含服务小区功率、其他小区干扰以及热噪声等（按规范规定的符号和带宽条件统计）。
 
+常见直觉表达可以写成：
+
+`RSSI = wideband power = noise + serving cell power + interference power`
+
+这个表达用于理解 RSSI 的组成是正确的。进一步地，在**理想化前提**下（无噪声、无外部干扰、且下行 PRB 100% 活动，并采用文中对应测量口径）可得到近似关系：
+
+`RSSI ~= 12 * N * RSRP`
+
+其中 `N` 为测量带宽内的 PRB 数。  
+注意：这不是所有场景都严格成立的恒等式，真实网络中会受负载、端口配置、功率分配与干扰环境影响。
+
 ---
 
 ## 3. 为什么切换/重选要同时看 RSRP 和 RSRQ
