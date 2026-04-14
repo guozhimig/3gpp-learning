@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DOCs/78-rsrp-and-rsrq-measurement-in-lte_核查与翻译.md",
+                "file": "DOCs/LTE 学习笔记：一次搞懂 RSRP、RSRQ、RSSI.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "78-rsrp-and-rsrq-measurement-in-lte_核查与翻译"
+              "title": "LTE 学习笔记：一次搞懂 RSRP、RSRQ、RSSI"
             }
           }
         ]
@@ -154,13 +154,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DOCs/78-rsrp-and-rsrq-measurement-in-lte_核查与翻译.md",
+                "file": "DOCs/LTE 学习笔记：一次搞懂 RSRP、RSRQ、RSSI.md",
                 "followCursor": false,
                 "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "78-rsrp-and-rsrq-measurement-in-lte_核查与翻译 的大纲"
+              "title": "LTE 学习笔记：一次搞懂 RSRP、RSRQ、RSSI 的大纲"
             }
           },
           {
@@ -215,6 +215,9 @@
   },
   "active": "63be2ffd3d6a5be0",
   "lastOpenFiles": [
+    "DOCs/README.md",
+    "DOCs/LTE 学习笔记：一次搞懂 RSRP、RSRQ、RSSI.md",
+    "DOCs/78-rsrp-and-rsrq-measurement-in-lte_核查与翻译.md",
     "DOCs/images/CableFree-LTE-SINR-Limit.png",
     "DOCs/images/CableFree-LTE-SNR-to-RSRP.png",
     "DOCs/images/CableFree-LTE-RSRQ-reporting-range.png",
@@ -225,9 +228,7 @@
     "DOCs/cablefree_page.html",
     "DOCs/arimas_page.html",
     "DOCs/images",
-    "DOCs/README.md",
     "README.md",
-    "DOCs/78-rsrp-and-rsrq-measurement-in-lte_核查与翻译.md",
     "Features/Cards.canvas",
     "Features/Borders.canvas",
     "obsidian 使用技巧.md",
@@ -241,7 +242,6 @@
     "Stencils/media/Stickers/youtube-cc-image.svg",
     "Stencils/media/Stickers/wifi-cc-image.svg",
     "Stencils/media/Stickers/upload-cc-image.svg",
-    "Stencils/media/Stickers/twitter-cc-image.svg",
     "Stencils/media/Stickers",
     "Stencils/media/diamonds",
     "Stencils/Stickers.canvas",
