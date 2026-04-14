@@ -27,10 +27,10 @@ PRB、RE 与 Cell-RS 的对应关系（含多天线下 DTX 分布）
 
 <div style="display:flex; gap:2px; align-items:flex-start; flex-wrap:wrap;">
   <div style="flex:1; min-width:280px;">
-    <img src="images/CableFree-LTE-RS-RE-Distribution.png"  style="width:100%; max-width:420px; height:auto;" />    
+    <img src="images/CableFree-LTE-RS-RE-Distribution.png"  style="width:100%; max-width:620px; height:auto;" />    
   </div>
   <div style="flex:1; min-width:280px;">
-    <img src="images/CableFree-LTE-OFDMA-Channel-RSRP.png"  style="width:100%; max-width:420px; height:auto;" />   
+    <img src="images/CableFree-LTE-OFDMA-Channel-RSRP.png"  style="width:100%; max-width:620px; height:auto;" />   
   </div>
 </div>
 
