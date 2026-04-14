@@ -1,5 +1,3 @@
-# LTE 学习笔记：一次搞懂 RSRP、RSRQ、RSSI
-
 在 LTE 中，终端（UE）做小区重选和切换时，最核心的无线测量量就是 `RSRP` 和 `RSRQ`。这篇笔记按“先理解，再会用”的顺序，带你把 `RSRP`、`RSRQ`、`RSSI` 一次理顺，并避免常见误区。
 
 ---
@@ -18,7 +16,7 @@
 
 ## 2. 三个量的定义与关系
 
-## 2.1 RSRP 是什么
+### 2.1 RSRP 是什么
 
 `RSRP`（Reference Signal Received Power）是：  
 在测量带宽内，对承载小区参考信号（CRS）的资源元素（RE）功率做线性平均（结果常以 dBm 表示）。
@@ -28,7 +26,7 @@
 图1 CRS/RE 分布示意（帮助理解 RSRP 的测量对象）  
 ![[images/CableFree-LTE-RS-RE-Distribution.png]]
 
-## 2.2 RSRQ 是什么
+### 2.2 RSRQ 是什么
 
 `RSRQ`（Reference Signal Received Quality）定义为：
 
@@ -37,7 +35,7 @@
 其中 `N` 是 RSSI 测量带宽内的 RB 数。  
 关键点是：**分子与分母必须在同一测量带宽、同一 RB 集上得到**。
 
-## 2.3 RSSI 是什么
+### 2.3 RSSI 是什么
 
 `RSSI`（Received Signal Strength Indicator）是总接收功率统计量，包含服务小区功率、其他小区干扰以及热噪声等（按规范规定的符号和带宽条件统计）。
 
