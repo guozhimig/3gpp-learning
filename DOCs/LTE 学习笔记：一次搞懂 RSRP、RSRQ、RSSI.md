@@ -23,8 +23,11 @@
 
 所以它不是“整带宽总功率”，而是“参考信号 RE 的平均功率”。
 
+图组（同一主题）：参考信号在时频域的位置与采样视角  
 图1 参考信号在时频域的位置示意（含多天线场景下的 DTX 交织分布）  
 ![[images/CableFree-LTE-RS-RE-Distribution.png]]
+图2 从 OFDMA 信道估计视角补充展示 RS/RE 采样位置（用于理解 RSRP 测量抓取点）  
+![[images/CableFree-LTE-OFDMA-Channel-RSRP.png]]
 
 ### 2.2 RSRQ 是什么
 
@@ -38,9 +41,6 @@
 ### 2.3 RSSI 是什么
 
 `RSSI`（Received Signal Strength Indicator）是总接收功率统计量，包含服务小区功率、其他小区干扰以及热噪声等（按规范规定的符号和带宽条件统计）。
-
-图2 与图1属于同一主题：从 OFDMA 信道估计视角补充展示 RS/RE 的采样位置（用于理解 RSRP 测量抓取点）  
-![[images/CableFree-LTE-OFDMA-Channel-RSRP.png]]
 
 ---
 
