@@ -38,9 +38,9 @@ PRB、RE 与 Cell-RS 的对应关系（含多天线下 DTX 分布）
 
 `RSRQ`（Reference Signal Received Quality）定义为：
 
-`RSRQ = N * RSRP / RSSI`
+`RSRQ = N * RSRP / RSSI = RSRP / (RSSI/N)`
 
-其中 `N` 是 RSSI 测量带宽内的 RB 数。  
+其中 `N` 是 RSSI 测量带宽内的 RB 数。`RSSI/N` 可以理解为“每个 RB 的平均总接收功率”，所以 `RSRQ = RSRP/(RSSI/N)` 的写法更利于直觉理解。  
 关键点是：**分子与分母必须在同一测量带宽、同一 RB 集上得到**。
 
 ### 2.3 RSSI 是什么
