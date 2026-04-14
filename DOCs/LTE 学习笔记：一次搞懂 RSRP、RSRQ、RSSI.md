@@ -23,15 +23,14 @@
 
 所以它不是“整带宽总功率”，而是“参考信号 RE 的平均功率”。
 
-图组（同一主题）：PRB、RE 与 Cell-RS 的对应关系（含多天线下 DTX 分布）  
+PRB、RE 与 Cell-RS 的对应关系（含多天线下 DTX 分布）
+
 <div style="display:flex; gap:2px; align-items:flex-start; flex-wrap:wrap;">
   <div style="flex:1; min-width:280px;">
-    <img src="images/CableFree-LTE-RS-RE-Distribution.png"  style="width:100%; max-width:420px; height:auto;" />
-    <p style="margin:4px 0 0 0;">图1 PRB 与 RE 网格中 Cell-RS 的位置及多天线下 DTX 交织分布</p>
+    <img src="images/CableFree-LTE-RS-RE-Distribution.png"  style="width:100%; max-width:420px; height:auto;" />    
   </div>
   <div style="flex:1; min-width:280px;">
-    <img src="images/CableFree-LTE-OFDMA-Channel-RSRP.png"  style="width:100%; max-width:420px; height:auto;" />
-    <p style="margin:4px 0 0 0;">图2 从 OFDMA 信道估计视角补充展示 PRB/RE 上的 Cell-RS 采样位置</p>
+    <img src="images/CableFree-LTE-OFDMA-Channel-RSRP.png"  style="width:100%; max-width:420px; height:auto;" />   
   </div>
 </div>
 
