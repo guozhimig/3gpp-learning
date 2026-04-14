@@ -23,15 +23,15 @@
 
 所以它不是“整带宽总功率”，而是“参考信号 RE 的平均功率”。
 
-图组（同一主题）：参考信号在时频域的位置与采样视角  
-<div style="display:flex; gap:12px; align-items:flex-start;">
-  <div style="flex:1;">
-    <img src="images/CableFree-LTE-RS-RE-Distribution.png" alt="图1 参考信号在时频域的位置示意（含多天线场景下的 DTX 交织分布）" />
-    <p>图1 参考信号在时频域的位置示意（含多天线场景下的 DTX 交织分布）</p>
+图组（同一主题）：PRB、RE 与 Cell-RS 的对应关系（含多天线下 DTX 分布）  
+<div style="display:flex; gap:12px; align-items:flex-start; flex-wrap:wrap;">
+  <div style="flex:1; min-width:280px;">
+    <img src="images/CableFree-LTE-RS-RE-Distribution.png" alt="图1 PRB与RE网格中Cell-RS的位置及多天线下DTX交织分布" style="width:100%; max-width:420px; height:auto;" />
+    <p>图1 PRB 与 RE 网格中 Cell-RS 的位置及多天线下 DTX 交织分布</p>
   </div>
-  <div style="flex:1;">
-    <img src="images/CableFree-LTE-OFDMA-Channel-RSRP.png" alt="图2 从 OFDMA 信道估计视角补充展示 RS/RE 采样位置（用于理解 RSRP 测量抓取点）" />
-    <p>图2 从 OFDMA 信道估计视角补充展示 RS/RE 采样位置（用于理解 RSRP 测量抓取点）</p>
+  <div style="flex:1; min-width:280px;">
+    <img src="images/CableFree-LTE-OFDMA-Channel-RSRP.png" alt="图2 从OFDMA信道估计视角补充展示PRB和RE上的Cell-RS采样位置" style="width:100%; max-width:420px; height:auto;" />
+    <p>图2 从 OFDMA 信道估计视角补充展示 PRB/RE 上的 Cell-RS 采样位置</p>
   </div>
 </div>
 
