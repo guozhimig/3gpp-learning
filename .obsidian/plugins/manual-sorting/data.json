@@ -1,0 +1,145 @@
+{
+  "customOrder": {
+    "/": {
+      "children": [
+        "Features",
+        "Stencils",
+        "obsidian 使用技巧.md",
+        "DOCs",
+        "3GPP_无线通信协议_参考手册.mdc",
+        "38331-h50.asn",
+        "README.md"
+      ],
+      "sortOrder": "custom"
+    },
+    "DOCs": {
+      "children": [
+        "DOCs/3GPP_R12",
+        "DOCs/3GPP_R17",
+        "DOCs/78-rsrp-and-rsrq-measurement-in-lte_核查与翻译.md",
+        "DOCs/README.md"
+      ],
+      "sortOrder": "custom"
+    },
+    "DOCs/3GPP_R12": {
+      "children": [
+        "DOCs/3GPP_R12/LTE_R12_文档索引.md"
+      ],
+      "sortOrder": "custom"
+    },
+    "DOCs/3GPP_R17": {
+      "children": [
+        "DOCs/3GPP_R17/NR_R17_文档索引.md"
+      ],
+      "sortOrder": "custom"
+    },
+    "Features": {
+      "children": [
+        "Features/Borders.canvas",
+        "Features/Cards.canvas",
+        "Features/Headers and Labels.canvas",
+        "Features/Stickers.canvas"
+      ],
+      "sortOrder": "custom"
+    },
+    "Stencils": {
+      "children": [
+        "Stencils/media",
+        "Stencils/Borders Stencil.canvas",
+        "Stencils/Flowcharts - Circles.canvas",
+        "Stencils/Flowcharts - Diamonds.canvas",
+        "Stencils/Flowcharts - Ovals.canvas",
+        "Stencils/Flowcharts - Parallelogram.canvas",
+        "Stencils/Flowcharts - Squares.canvas",
+        "Stencils/Footers.canvas",
+        "Stencils/Gradients.canvas",
+        "Stencils/Headers.canvas",
+        "Stencils/Headers Footers Combined.canvas",
+        "Stencils/Labels.canvas",
+        "Stencils/Stickers.canvas"
+      ],
+      "sortOrder": "custom"
+    },
+    "Stencils/media": {
+      "children": [
+        "Stencils/media/diamonds",
+        "Stencils/media/Stickers"
+      ],
+      "sortOrder": "custom"
+    },
+    "Stencils/media/diamonds": {
+      "children": [
+        "Stencils/media/diamonds/diamond-brown-soft-cc-image.svg",
+        "Stencils/media/diamonds/diamond-brown-solid-cc-image.svg",
+        "Stencils/media/diamonds/diamond-green-soft-cc-image.svg",
+        "Stencils/media/diamonds/diamond-green-solid-cc-image.svg",
+        "Stencils/media/diamonds/diamond-grey-solid-cc-image.svg",
+        "Stencils/media/diamonds/diamond-orange-soft-cc-image.svg",
+        "Stencils/media/diamonds/diamond-orange-solid-cc-image.svg",
+        "Stencils/media/diamonds/diamond-purple-soft-cc-image.svg",
+        "Stencils/media/diamonds/diamond-purple-solid-cc-image.svg",
+        "Stencils/media/diamonds/diamond-red-soft-cc-image.svg",
+        "Stencils/media/diamonds/diamond-red-solid-cc-image.svg",
+        "Stencils/media/diamonds/diamond-turquoise-soft-cc-image.svg",
+        "Stencils/media/diamonds/diamond-turquoise-solid-cc-image.svg"
+      ],
+      "sortOrder": "custom"
+    },
+    "Stencils/media/Stickers": {
+      "children": [
+        "Stencils/media/Stickers/calendar-cc-image.svg",
+        "Stencils/media/Stickers/car-cc-image.svg",
+        "Stencils/media/Stickers/car2-cc-image.svg",
+        "Stencils/media/Stickers/cloud-cc-image.svg",
+        "Stencils/media/Stickers/cloud-cc-image 1.svg",
+        "Stencils/media/Stickers/cloudy-cc-image.svg",
+        "Stencils/media/Stickers/compass-cc-image.svg",
+        "Stencils/media/Stickers/compass2-cc-image.svg",
+        "Stencils/media/Stickers/computer-cc-image.svg",
+        "Stencils/media/Stickers/computer2-cc-image.svg",
+        "Stencils/media/Stickers/crosshair-cc-image.svg",
+        "Stencils/media/Stickers/dialog-cc-image.svg",
+        "Stencils/media/Stickers/document-cc-image.svg",
+        "Stencils/media/Stickers/exclamation-mark-cc-image.svg",
+        "Stencils/media/Stickers/facebook-cc-image.svg",
+        "Stencils/media/Stickers/finger-cc-image.svg",
+        "Stencils/media/Stickers/fire-cc-image.svg",
+        "Stencils/media/Stickers/gauge-cc-image.svg",
+        "Stencils/media/Stickers/heart-cc-image.svg",
+        "Stencils/media/Stickers/index-finger-cc-image.svg",
+        "Stencils/media/Stickers/instagram-cc-image.svg",
+        "Stencils/media/Stickers/left-cc-image.svg",
+        "Stencils/media/Stickers/lightbulb-cc-image.svg",
+        "Stencils/media/Stickers/list-cc-image.svg",
+        "Stencils/media/Stickers/magnifying-glass-cc-image.svg",
+        "Stencils/media/Stickers/maibox-cc-image.svg",
+        "Stencils/media/Stickers/manuscript-cc-image.svg",
+        "Stencils/media/Stickers/news-cc-image.svg",
+        "Stencils/media/Stickers/parts-cc-image.svg",
+        "Stencils/media/Stickers/party-cc-image.svg",
+        "Stencils/media/Stickers/post-it-cc-image.svg",
+        "Stencils/media/Stickers/printer-cc-image.svg",
+        "Stencils/media/Stickers/right-cc-image.svg",
+        "Stencils/media/Stickers/rocket-cc-image.svg",
+        "Stencils/media/Stickers/smartphone-cc-image.svg",
+        "Stencils/media/Stickers/smiley-cc-image.svg",
+        "Stencils/media/Stickers/speech-cc-image.svg",
+        "Stencils/media/Stickers/speech2-cc-image.svg",
+        "Stencils/media/Stickers/stop-cc-image.svg",
+        "Stencils/media/Stickers/sun-cc-image.svg",
+        "Stencils/media/Stickers/tablet-cc-image.svg",
+        "Stencils/media/Stickers/target-cc-image.svg",
+        "Stencils/media/Stickers/thermometer-cc-image.svg",
+        "Stencils/media/Stickers/tick-cc-image.svg",
+        "Stencils/media/Stickers/twitter-cc-image.svg",
+        "Stencils/media/Stickers/upload-cc-image.svg",
+        "Stencils/media/Stickers/wifi-cc-image.svg",
+        "Stencils/media/Stickers/youtube-cc-image.svg"
+      ],
+      "sortOrder": "custom"
+    }
+  },
+  "sortOrder": "custom",
+  "debugMode": false,
+  "newItemPlacement": "bottom"
+}

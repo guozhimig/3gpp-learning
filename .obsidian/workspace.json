@@ -1,0 +1,256 @@
+{
+  "main": {
+    "id": "40651586fd7007b8",
+    "type": "split",
+    "children": [
+      {
+        "id": "6310313158988416",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "63be2ffd3d6a5be0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "DOCs/78-rsrp-and-rsrq-measurement-in-lte_核查与翻译.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "78-rsrp-and-rsrq-measurement-in-lte_核查与翻译"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "93bdec42dffaa9b4",
+    "type": "split",
+    "children": [
+      {
+        "id": "5de81fef2adc455c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "069313eba475e1f1",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "custom",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "a2362836ea45246d",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "18979d4eb3b84da9",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "e5a9e28aca473050",
+    "type": "split",
+    "children": [
+      {
+        "id": "3ed2b07dc8841d77",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7e25d37f5a5b6a9e",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": true,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "反向链接"
+            }
+          },
+          {
+            "id": "9381d2e83e651849",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "出链"
+            }
+          },
+          {
+            "id": "16448d7a19ead827",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "1ce15895db3d18ae",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "添加笔记属性"
+            }
+          },
+          {
+            "id": "e001829228fbf3ae",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "DOCs/78-rsrp-and-rsrq-measurement-in-lte_核查与翻译.md",
+                "followCursor": false,
+                "showSearch": true,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "78-rsrp-and-rsrq-measurement-in-lte_核查与翻译 的大纲"
+            }
+          },
+          {
+            "id": "91e7cbee8e731059",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "advanced-tables-toolbar"
+            }
+          },
+          {
+            "id": "c5e88a706cc64aef",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "git-view"
+            }
+          },
+          {
+            "id": "ad7fed52bad63edd",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "calendar"
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 601.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "bases:新建数据库": false,
+      "obsidian-git:Open Git source control": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false
+    }
+  },
+  "active": "63be2ffd3d6a5be0",
+  "lastOpenFiles": [
+    "Features/Cards.canvas",
+    "Features/Borders.canvas",
+    "obsidian 使用技巧.md",
+    "Features/Headers and Labels.canvas",
+    "Stencils/Flowcharts - Parallelogram.canvas",
+    "Stencils/Flowcharts - Diamonds.canvas",
+    "Stencils/Borders Stencil.canvas",
+    "Features/Stickers.canvas",
+    "Stencils/Gradients.canvas",
+    "Stencils/Flowcharts - Circles.canvas",
+    "Stencils/media/Stickers/youtube-cc-image.svg",
+    "Stencils/media/Stickers/wifi-cc-image.svg",
+    "Stencils/media/Stickers/upload-cc-image.svg",
+    "Stencils/media/Stickers/twitter-cc-image.svg",
+    "Stencils/media/Stickers/tick-cc-image.svg",
+    "Stencils/media/Stickers/thermometer-cc-image.svg",
+    "Stencils/media/Stickers/target-cc-image.svg",
+    "Stencils/media/Stickers/tablet-cc-image.svg",
+    "Stencils/media/Stickers/sun-cc-image.svg",
+    "Stencils/media/Stickers/stop-cc-image.svg",
+    "Stencils/media/Stickers",
+    "Stencils/media/diamonds",
+    "Stencils/Stickers.canvas",
+    "Stencils/media",
+    "Stencils",
+    "Features",
+    "经验总结.md",
+    "未命名.md",
+    "2026-02-24.md",
+    "2026-02-27.md",
+    "assets/经验总结",
+    "assets",
+    "2026-02-14.md",
+    "asdf.md",
+    "test.md",
+    "assets/test",
+    "assets/未命名"
+  ]
+}
