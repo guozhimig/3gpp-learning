@@ -51,7 +51,10 @@ PRB、RE 与 Cell-RS 的对应关系（含多天线下 DTX 分布）
 
 `RSSI = wideband power = noise + serving cell power + interference power`
 
-这个表达用于理解 RSSI 的组成是正确的。进一步地，在**理想化前提**下（无噪声、无外部干扰、且下行 PRB 100% 活动，并采用文中对应测量口径）可得到近似关系：
+这个表达用于理解 RSSI 的组成是正确的。  
+需要区分两件事：
+- 从定义上，`RSSI` 本来就包含噪声和干扰；
+- 在做简化推导时，常临时假设“无噪声、无外部干扰、下行 PRB 100% 活动”，仅用于得到近似关系：
 
 `RSSI ~= 12 * N * RSRP`
 
