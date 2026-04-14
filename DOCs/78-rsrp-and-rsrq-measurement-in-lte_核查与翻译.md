@@ -136,7 +136,7 @@
 - 建议图题：`图1 LTE资源网格中 CRS 的位置（示意）`
 
 Obsidian 插图语法（本地图片）：
-`![[images/lte-crs-resource-grid.png]]`
+`![[images/CableFree-LTE-RS-RE-Distribution.png]]`
 
 ### 图2：RSRP/RSRQ/RSSI 关系图（核心）
 
@@ -145,7 +145,7 @@ Obsidian 插图语法（本地图片）：
 - 建议图题：`图2 RSRP、RSRQ、RSSI 关系框图`
 
 Obsidian 插图语法（本地图片）：
-`![[images/rsrp-rsrq-rssi-relationship.png]]`
+`![[images/CableFree-LTE-OFDMA-Channel-RSRP.png]]`
 
 ### 图3：RSRP 与 RSRQ 在切换中的角色（流程图）
 
@@ -154,7 +154,7 @@ Obsidian 插图语法（本地图片）：
 - 建议图题：`图3 切换/重选中 RSRP 与 RSRQ 的分工`
 
 Obsidian 插图语法（本地图片）：
-`![[images/handover-rsrp-rsrq-flow.png]]`
+`![[images/CableFree-LTE_Network_little.png]]`
 
 ### 图4：典型误区对照图（可选）
 
@@ -163,7 +163,7 @@ Obsidian 插图语法（本地图片）：
 - 建议图题：`图4 RSRP/RSRQ 常见误区对照`
 
 Obsidian 插图语法（本地图片）：
-`![[images/rsrp-rsrq-misconceptions.png]]`
+`![[images/CableFree-LTE-RSRQ-reporting-range.png]]`
 
 ## 10.2 你可以直接用的“图注模板”
 
@@ -197,4 +197,16 @@ Obsidian 插图语法（本地图片）：
 - 本文统一使用 `![[images/xxx.png]]` 引用
 
 这样后续迁移笔记或导出 PDF 时，图片路径最稳定。
+
+## 10.5 已下载图片（可直接显示）
+
+下面这些图片已下载到 `DOCs/images/`，可直接在 Obsidian 中引用：
+
+- `![[images/CableFree-LTE-RS-RE-Distribution.png]]`
+- `![[images/CableFree-LTE-OFDMA-Channel-RSRP.png]]`
+- `![[images/CableFree-LTE_Network_little.png]]`
+- `![[images/CableFree-LTE-RSRP-Table.png]]`
+- `![[images/CableFree-LTE-RSRQ-reporting-range.png]]`
+- `![[images/CableFree-LTE-SNR-to-RSRP.png]]`
+- `![[images/CableFree-LTE-SINR-Limit.png]]`
 

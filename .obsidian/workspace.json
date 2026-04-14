@@ -215,6 +215,15 @@
   },
   "active": "63be2ffd3d6a5be0",
   "lastOpenFiles": [
+    "DOCs/images/CableFree-LTE-SINR-Limit.png",
+    "DOCs/images/CableFree-LTE-SNR-to-RSRP.png",
+    "DOCs/images/CableFree-LTE-RSRQ-reporting-range.png",
+    "DOCs/images/CableFree-LTE-RSRP-Table.png",
+    "DOCs/images/CableFree-LTE-RS-RE-Distribution.png",
+    "DOCs/images/CableFree-LTE-OFDMA-Channel-RSRP.png",
+    "DOCs/images/CableFree-LTE_Network_little.png",
+    "DOCs/cablefree_page.html",
+    "DOCs/arimas_page.html",
     "DOCs/images",
     "DOCs/README.md",
     "README.md",
@@ -233,12 +242,6 @@
     "Stencils/media/Stickers/wifi-cc-image.svg",
     "Stencils/media/Stickers/upload-cc-image.svg",
     "Stencils/media/Stickers/twitter-cc-image.svg",
-    "Stencils/media/Stickers/tick-cc-image.svg",
-    "Stencils/media/Stickers/thermometer-cc-image.svg",
-    "Stencils/media/Stickers/target-cc-image.svg",
-    "Stencils/media/Stickers/tablet-cc-image.svg",
-    "Stencils/media/Stickers/sun-cc-image.svg",
-    "Stencils/media/Stickers/stop-cc-image.svg",
     "Stencils/media/Stickers",
     "Stencils/media/diamonds",
     "Stencils/Stickers.canvas",
@@ -253,8 +256,6 @@
     "assets",
     "2026-02-14.md",
     "asdf.md",
-    "test.md",
-    "assets/test",
-    "assets/未命名"
+    "test.md"
   ]
 }
