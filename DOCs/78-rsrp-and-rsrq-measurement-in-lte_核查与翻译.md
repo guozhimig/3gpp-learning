@@ -36,6 +36,9 @@
 
 `RSSI`（Received Signal Strength Indicator）是总接收功率统计量，包含服务小区、其他小区干扰、热噪声等贡献（按规范指定的符号/带宽条件测量）。
 
+图1 LTE资源网格中 CRS 的位置（示意）
+![[images/CableFree-LTE-RS-RE-Distribution.png]]
+
 ---
 
 ## 3. 单位与量纲（学习时最容易混）
@@ -57,6 +60,9 @@
 - `RSRQ` 作为质量补充判据；
 - 最终通过 RRC 事件参数（如 A3/A5）触发重选或切换。
 
+图2 切换/重选中 RSRP 与 RSRQ 的分工
+![[images/CableFree-LTE_Network_little.png]]
+
 ---
 
 ## 5. 常见公式怎么理解（而不是死记）
@@ -69,6 +75,9 @@
 - 这条式子适合建立“量级直觉”；
 - 不要把它当所有场景都精确成立的工程公式；
 - 一旦涉及真实参数设计，必须回到规范定义和实测数据。
+
+图3 RSRP、RSRQ、RSSI 关系示意
+![[images/CableFree-LTE-OFDMA-Channel-RSRP.png]]
 
 ---
 
@@ -88,6 +97,9 @@
 
 5. 把“天线影响”说成唯一因果。  
    天线配置会影响统计结果，但定义层面仍是 `N*RSRP/RSSI`。
+
+图4 RSRQ 报告范围示意（辅助记忆）
+![[images/CableFree-LTE-RSRQ-reporting-range.png]]
 
 ---
 
@@ -136,7 +148,7 @@
 - 建议图题：`图1 LTE资源网格中 CRS 的位置（示意）`
 
 Obsidian 插图语法（本地图片）：
-`![[images/CableFree-LTE-RS-RE-Distribution.png]]`
+![[images/CableFree-LTE-RS-RE-Distribution.png]]
 
 ### 图2：RSRP/RSRQ/RSSI 关系图（核心）
 
@@ -145,7 +157,7 @@ Obsidian 插图语法（本地图片）：
 - 建议图题：`图2 RSRP、RSRQ、RSSI 关系框图`
 
 Obsidian 插图语法（本地图片）：
-`![[images/CableFree-LTE-OFDMA-Channel-RSRP.png]]`
+![[images/CableFree-LTE-OFDMA-Channel-RSRP.png]]
 
 ### 图3：RSRP 与 RSRQ 在切换中的角色（流程图）
 
@@ -154,7 +166,7 @@ Obsidian 插图语法（本地图片）：
 - 建议图题：`图3 切换/重选中 RSRP 与 RSRQ 的分工`
 
 Obsidian 插图语法（本地图片）：
-`![[images/CableFree-LTE_Network_little.png]]`
+![[images/CableFree-LTE_Network_little.png]]
 
 ### 图4：典型误区对照图（可选）
 
@@ -163,7 +175,7 @@ Obsidian 插图语法（本地图片）：
 - 建议图题：`图4 RSRP/RSRQ 常见误区对照`
 
 Obsidian 插图语法（本地图片）：
-`![[images/CableFree-LTE-RSRQ-reporting-range.png]]`
+![[images/CableFree-LTE-RSRQ-reporting-range.png]]
 
 ## 10.2 你可以直接用的“图注模板”
 
@@ -202,11 +214,11 @@ Obsidian 插图语法（本地图片）：
 
 下面这些图片已下载到 `DOCs/images/`，可直接在 Obsidian 中引用：
 
-- `![[images/CableFree-LTE-RS-RE-Distribution.png]]`
-- `![[images/CableFree-LTE-OFDMA-Channel-RSRP.png]]`
-- `![[images/CableFree-LTE_Network_little.png]]`
-- `![[images/CableFree-LTE-RSRP-Table.png]]`
-- `![[images/CableFree-LTE-RSRQ-reporting-range.png]]`
-- `![[images/CableFree-LTE-SNR-to-RSRP.png]]`
-- `![[images/CableFree-LTE-SINR-Limit.png]]`
+- ![[images/CableFree-LTE-RS-RE-Distribution.png]]
+- ![[images/CableFree-LTE-OFDMA-Channel-RSRP.png]]
+- ![[images/CableFree-LTE_Network_little.png]]
+- ![[images/CableFree-LTE-RSRP-Table.png]]
+- ![[images/CableFree-LTE-RSRQ-reporting-range.png]]
+- ![[images/CableFree-LTE-SNR-to-RSRP.png]]
+- ![[images/CableFree-LTE-SINR-Limit.png]]
 
