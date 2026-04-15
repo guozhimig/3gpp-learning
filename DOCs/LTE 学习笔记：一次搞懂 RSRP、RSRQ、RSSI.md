@@ -78,6 +78,8 @@ PRB、RE 与 Cell-RS 的对应关系（含多天线下 DTX 分布）
 | 高层指示 `all OFDM symbols for performing RSRQ measurements` | 统计测量子帧下行部分的所有 OFDM symbols |
 | 高层指示特定子帧/发现信号测量场景 | 按指示的子帧或 discovery signal occasions 统计对应下行 OFDM symbols |
 
+无论采用哪种符号范围，`RSSI` 都是在该范围与测量带宽内对总接收功率做**线性平均**（不是简单累加后直接上报）。
+
 速记一句话：`RSSI` 默认在 RS 符号上统计，但可被高层配置扩展到更多符号范围。
 
 常见直觉表达可以写成：
