@@ -60,7 +60,7 @@ PRB、RE 与 Cell-RS 的对应关系（含多天线下 DTX 分布）
 `RSSI = wideband power = noise + serving cell power + interference power`
 
 这个表达用于理解 RSSI 的组成是正确的。  
-`RSSI` 是总接收功率，包括有用信号（RSRP）、噪声（noise）和干扰（interference）；若不考虑干扰，`RSSI` 和 `RSRP` 的关系可近似写为：`RSSI ~= 12*N*RSRP`。
+`RSSI` 是总接收功率，包括有用信号（RSRP）、噪声（noise）和干扰（interference）；所以如果没有噪声和干扰，而且整个带宽都在传输数据，`RSSI` 和 `RSRP` 的关系可近似写为：`RSSI ~= 12*N*RSRP`。
 
 可把它理解为两种统计视角：
 - `RSRP` 更像“点状统计”（单个参考信号 RE 的平均功率）；
