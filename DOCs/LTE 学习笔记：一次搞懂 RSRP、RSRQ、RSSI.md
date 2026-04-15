@@ -70,9 +70,15 @@ PRB、RE 与 Cell-RS 的对应关系（含多天线下 DTX 分布）
 `RSSI`（Received Signal Strength Indicator）是总接收功率统计量，包含服务小区功率、其他小区干扰以及热噪声等（按规范规定的符号和带宽条件统计）。
 
 统计口径上，`RSSI` 不是“一个 slot（0.5ms）里所有 RE 的简单总和”，也不是只取某一个 symbol。  
-更准确地说，它是在**包含参考信号的 OFDM symbols**上、在测量带宽（`N` 个 RB）内对总接收功率做线性平均。
+根据 `36.214`，`RSSI` 的统计口径是“默认规则 + 高层可配置规则”：
 
-速记一句话：`RSSI = 在 RS 符号上的带宽内总功率平均值`。
+| 场景 | RSSI 统计符号范围 |
+|---|---|
+| 默认（未被高层特别指示） | 仅统计包含参考信号（antenna port 0 RS）的 OFDM symbols |
+| 高层指示 `all OFDM symbols for performing RSRQ measurements` | 统计测量子帧下行部分的所有 OFDM symbols |
+| 高层指示特定子帧/发现信号测量场景 | 按指示的子帧或 discovery signal occasions 统计对应下行 OFDM symbols |
+
+速记一句话：`RSSI` 默认在 RS 符号上统计，但可被高层配置扩展到更多符号范围。
 
 常见直觉表达可以写成：
 
