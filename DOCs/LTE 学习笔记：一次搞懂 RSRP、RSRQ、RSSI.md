@@ -69,6 +69,11 @@ PRB、RE 与 Cell-RS 的对应关系（含多天线下 DTX 分布）
 
 `RSSI`（Received Signal Strength Indicator）是总接收功率统计量，包含服务小区功率、其他小区干扰以及热噪声等（按规范规定的符号和带宽条件统计）。
 
+统计口径上，`RSSI` 不是“一个 slot（0.5ms）里所有 RE 的简单总和”，也不是只取某一个 symbol。  
+更准确地说，它是在**包含参考信号的 OFDM symbols**上、在测量带宽（`N` 个 RB）内对总接收功率做线性平均。
+
+速记一句话：`RSSI = 在 RS 符号上的带宽内总功率平均值`。
+
 常见直觉表达可以写成：
 
 `RSSI = wideband power = noise + serving cell power + interference power`
