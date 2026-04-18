@@ -50,6 +50,9 @@ PRB、RE 与 Cell-RS 的对应关系（含多天线下 DTX 分布）
 - 若强行引入 `12` 做 RE 级归一化，会更依赖端口映射、RS 位置、DTX 等细节，工程上反而不稳；
 - LTE 调度最小单位是 PRB，因此按 PRB 维度归一化更符合网优和移动性决策使用方式。
 
+RSRQ 报告范围示意
+![[images/CableFree-LTE-RSRQ-reporting-range.png]]
+
 规范映射里 `RSRQ` 上报上限可到 `-3 dB`，明显高于很多资料常提到的 `-10.8 dB`。  
 这两者并不矛盾，原因是它们对应的场景不同：
 
@@ -71,9 +74,6 @@ PRB、RE 与 Cell-RS 的对应关系（含多天线下 DTX 分布）
 > 2. 双天线下，继承 1 的假设，CRS 不叠加，其他 RE 能量叠加：`(12 - 4) * 2 = 16`，再叠加 4 个 Cell-RS RE，总计 20 个 RE 能量：`RSRQ = N/20N = -13 dB`
 > 3. 完全空载情况下，单天线：`RSRQ = N/2N = -3 dB`
 > 4. 完全空载情况下，双天线：`RSRQ = N/4N = -6 dB`
-
-RSRQ 报告范围示意（辅助记忆）  
-![[images/CableFree-LTE-RSRQ-reporting-range.png]]
 
 ### 2.3 SINR/SNR 是什么
 
