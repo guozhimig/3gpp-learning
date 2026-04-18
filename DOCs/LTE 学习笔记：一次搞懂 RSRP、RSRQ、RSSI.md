@@ -34,7 +34,6 @@ PRB、RE 与 Cell-RS 的对应关系（含多天线下 DTX 分布）
   </div>
 </div>
 
-
 ### 2.2 RSRQ 是什么
 
 `RSRQ`（Reference Signal Received Quality）定义为：
@@ -79,6 +78,7 @@ RSRQ 报告范围示意（辅助记忆）
 ### 2.3 SINR/SNR 是什么
 
 `SINR = S / (I + N)`
+
 `SNR = S / N`
 
 其中 `S` 是有用信号功率，`I` 是干扰功率，`N` 是噪声功率。
@@ -156,7 +156,6 @@ RSRQ 报告范围示意（辅助记忆）
 
 5. **把天线影响当成唯一因果**  
    纠正：天线配置会影响统计结果，但定义本身仍是 `N*RSRP/RSSI`。
-
 
 ## 5. 相关内容在协议中的位置
 
