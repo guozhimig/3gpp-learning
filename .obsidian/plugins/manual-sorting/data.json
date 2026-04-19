@@ -16,8 +16,14 @@
       "children": [
         "DOCs/3GPP_R12",
         "DOCs/3GPP_R17",
-        "DOCs/78-rsrp-and-rsrq-measurement-in-lte_核查与翻译.md",
-        "DOCs/README.md"
+        "DOCs/README.md",
+        "DOCs/assets",
+        "DOCs/images",
+        "DOCs/信道估计：从SISO到MIMO（原理与工程对照）.md",
+        "DOCs/AI协作规则（学习文档整理）.md",
+        "DOCs/arimas_page.html",
+        "DOCs/cablefree_page.html",
+        "DOCs/LTE 学习笔记：一次搞懂 RSRP、RSRQ、RSSI.md"
       ],
       "sortOrder": "custom"
     },
@@ -30,6 +36,30 @@
     "DOCs/3GPP_R17": {
       "children": [
         "DOCs/3GPP_R17/NR_R17_文档索引.md"
+      ],
+      "sortOrder": "custom"
+    },
+    "DOCs/assets": {
+      "children": [
+        "DOCs/assets/LTE 学习笔记：一次搞懂 RSRP、RSRQ、RSSI"
+      ],
+      "sortOrder": "custom"
+    },
+    "DOCs/assets/LTE 学习笔记：一次搞懂 RSRP、RSRQ、RSSI": {
+      "children": [
+        "DOCs/assets/LTE 学习笔记：一次搞懂 RSRP、RSRQ、RSSI/file-20260418174541607.png"
+      ],
+      "sortOrder": "custom"
+    },
+    "DOCs/images": {
+      "children": [
+        "DOCs/images/CableFree-LTE_Network_little.png",
+        "DOCs/images/CableFree-LTE-OFDMA-Channel-RSRP.png",
+        "DOCs/images/CableFree-LTE-RS-RE-Distribution.png",
+        "DOCs/images/CableFree-LTE-RSRP-Table.png",
+        "DOCs/images/CableFree-LTE-RSRQ-reporting-range.png",
+        "DOCs/images/CableFree-LTE-SINR-Limit.png",
+        "DOCs/images/CableFree-LTE-SNR-to-RSRP.png"
       ],
       "sortOrder": "custom"
     },

@@ -53,10 +53,14 @@
     }
   ],
   "pandocPath": {
-    "win32": "D:\\迅雷下载\\pandoc-3.9-windows-x86_64\\pandoc-3.9"
+    "win32": "D:\\迅雷下载\\pandoc-3.9-windows-x86_64\\pandoc-3.9\\pandoc.exe"
   },
   "defaultExportDirectoryMode": "Auto",
   "openExportedFile": true,
   "env": {},
-  "showExportProgressBar": true
+  "showExportProgressBar": true,
+  "lastExportDirectory": {
+    "win32": "e:\\桌面"
+  },
+  "lastExportType": "Word (.docx)"
 }
