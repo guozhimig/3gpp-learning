@@ -93,11 +93,7 @@ $$
 \mathbf{W}_{\mathrm{MMSE}} = \arg\min_{\mathbf{W}} \ \mathbb{E}\left[\|\mathbf{W}\mathbf{r}-\mathbf{s}\|^2\right].
 $$
 
-在常见的线性模型 $\mathbf{r}=\mathbf{H}\mathbf{s}+\mathbf{n}$ 下，若噪声（或噪声+干扰）的协方差为
-$
-\mathbf{R}_n=\mathbb{E}[\mathbf{n}\mathbf{n}^H]
-$
-，并假设发送符号在各层上独立同分布（$\mathbb{E}[\mathbf{s}\mathbf{s}^H]\propto\mathbf{I}$），会得到常见的闭式解族。你在工程代码里能看到的一种形态是
+在常见的线性模型 $\mathbf{r}=\mathbf{H}\mathbf{s}+\mathbf{n}$ 下，若噪声（或噪声+干扰）的协方差为 $\mathbf{R}_n=\mathbb{E}[\mathbf{n}\mathbf{n}^H]$，并假设发送符号在各层上独立同分布（$\mathbb{E}[\mathbf{s}\mathbf{s}^H]\propto\mathbf{I}$），会得到常见的闭式解族。你在工程代码里能看到的一种形态是
 
 $$
 \mathbf{W}=\mathbf{H}^H\left(\mathbf{H}\mathbf{H}^H+\mathbf{R}_n\right)^{-1},
