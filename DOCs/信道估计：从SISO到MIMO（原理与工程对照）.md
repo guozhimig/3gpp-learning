@@ -15,9 +15,9 @@
 
 ```mermaid
 flowchart LR
-  A[已知参考符号 x] --> B[经过信道 H 与噪声 n]
-  B --> C[接收 y]
-  C --> D[估计 Ĥ 与噪声统计量]
+  A["已知参考符号 x"] --> B["经过信道 H 与噪声 n"]
+  B --> C["接收 y"]
+  C --> D["估计 H_hat 与噪声统计量"]
 ```
 
 > [!note] 规范结论 vs 经验说法
@@ -66,15 +66,15 @@ flowchart LR
 
 ```mermaid
 flowchart TB
-  subgraph pilots[导频 RE]
-    P1[测得部分频点的 Ĥ]
+  subgraph pilots["导频 RE"]
+    P1["测得部分频点的 H_hat"]
   end
-  subgraph post[后处理常见选项]
-    P2[频域平滑 / 时频插值]
-    P3[变换域滤波 / 加窗]
+  subgraph post["后处理常见选项"]
+    P2["频域平滑或时频插值"]
+    P3["变换域滤波或加窗"]
   end
-  subgraph out[输出]
-    O[数据 RE 上可用的 Ĥ(f,t)]
+  subgraph out["输出"]
+    O["数据 RE 上可用的 H_hat"]
   end
   P1 --> P2 --> O
   P1 --> P3 --> O
