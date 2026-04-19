@@ -118,9 +118,67 @@ flowchart TB
 | 噪声统计估计 | 由参考或残差得到 $\mathbf{R}_n$ 的近似（如按 RB 平均） |
 | 线性均衡（如 MMSE） | 用 $\hat{\mathbf{H}}$ 与 $\mathbf{R}_n$ 构造合并矩阵 |
 
-例如上行 **2×2** 合并中，对每个子载波构造 $\mathbf{H}$，并配合估计的噪声协方差 $\mathbf{R}$，计算形如 $\mathbf{W} = \mathbf{H}^H (\mathbf{H}\mathbf{H}^H + \mathbf{R})^{-1}$ 的权重，再对接收向量线性合并——这与「先估信道、再估噪声二阶量、再做 MMSE」的链条一致（实现上变量命名与维度以具体工程为准）。
+例如上行 **2×2** 合并中，对每个子载波构造 $\mathbf{H}$，并配合估计的噪声协方差 $\mathbf{R}$，计算形如 $\mathbf{W} = \mathbf{H}^H (\mathbf{H}\mathbf{H}^H + \mathbf{R})^{-1}$ 的权重，再对接收向量线性合并——这与「先估信道、再估噪声二阶量、再做 MMSE」的链条一致。下文 **§4.3** 给出本机仿真仓库中的**具体文件与调用关系**（经验实现，非 3GPP 条文）。
 
-### 4.3 其他图解来源（便于扩展阅读）
+### 4.3 仿真仓库 `jt_validate_ca`：信道估计与均衡实现索引
+
+> [!note] 路径说明
+> 下列路径相对于仓库根目录 **`jt_validate_ca`**（与 `3GPP learning` 笔记库可位于不同目录；阅读时以你本机克隆路径为准）。
+
+#### 下行（CRS）：从已知参考到 $\hat{H}$ 再到均衡
+
+| 文件 | 作用（经验归纳） |
+|------|------------------|
+| `Downlink/v_cell_rs_gen.m` | 按 **36.211** 思路生成 **Cell-specific RS（CRS）** 序列及映射相关量；为 LS 提供已知 $s$。 |
+| `Downlink/v_dl_chan_est.m` | **主入口**：TDD 下若子帧为上行则跳过；否则对每对 $(i,k)$ 收/发天线，在 CRS RE 上做 **$\hat{h} \approx r \cdot \mathrm{conj}(s)$**（参考功率归一假设），再 **频域线性插值**（`v_linear_interp`）填满子载波，**时域**将含 RS 的符号结果复制到无 RS 符号；部分 OFDM 行再调用 `v_crs_chnl_est` 做增强。输出嵌套胞元 `h{i}{k}` 与 `rs_rpt`。 |
+| `Downlink/v_crs_chnl_est.m` | **CRS 频响后处理**：对一段频域 $\hat{H}$ 做 **频域扩展 + 余弦窗衔接 → IFFT 得 PDP → 时域去噪/置零 → FFT 回频域**；扩展长度 $L$ 借 **`v_get_ul_bw_idx` / `v_get_ul_bw`** 查「下一档带宽 PRB 数」算出差分（实现细节见该文件头注释）。 |
+| `Downlink/v_dl_rs_analyze.m` | 在 CRS 估计结果上提取 **dBTo1、rms、time_off** 等报告量，供调试与链路质量观察。 |
+| `Downlink/v_dl_chan_equ_div.m` | 利用已估 CRS 信道做 **下行均衡**（除法型合并等，与估计模块衔接）。 |
+
+**典型调用方（grep 归纳）**：`Downlink/v_dl_analyzer_smallcell.m`、`v_dl_analyzer.m`、`v_dl_sfrm_analysis.m`；上行侧分析里复用下行 CRS 的如 `Uplink/v_analyzer_smallcell.m`、`v_ul_ant_wv_reorder_smallcell.m` 等也会调用 `v_dl_chan_est`。
+
+```mermaid
+flowchart LR
+  subgraph dl["下行 CRS 链"]
+    A["v_cell_rs_gen"] --> B["CRS RE 上 LS"]
+    B --> C["v_linear_interp 频域"]
+    C --> D["时域复制到无 RS 符号"]
+    D --> E["v_crs_chnl_est 可选增强"]
+  end
+```
+
+#### 上行（PUSCH）：按层/天线估信道 → MMSE 合并
+
+| 文件 | 作用（经验归纳） |
+|------|------------------|
+| `Uplink/v_pusch_chnl_est.m` | **PUSCH 单 slot 频域信道后处理**：对接收得到的频域信道系数做 **扩展 → IFFT → PDP 上抑制噪声 → 回 FFT**（与下行 `v_crs_chnl_est` 同族思路，参数表针对 PUSCH）。 |
+| `Uplink/v_pusch_ch_equ.m` 等 | **单流/分集**：`v_pusch_ch_equ_single_ant_0.m`、`…_1.m`、`v_pusch_ch_equ_mrc.m`、`v_pusch_ch_equ_irc.m` 等在各自流程中调用 `v_pusch_chnl_est` 得到平滑后的 $\hat{H}$，再接 MRC/IRC 等合并。 |
+| `Uplink/v_pusch_ch_equ_mimo2x2.m` | **双流 2×2**：对每层、每接收天线调用 `v_pusch_chnl_est` 得到 `ch_layer0/ch_layer1`，再调用 **`v_mimo2x2_combine`**，传入四路 $h_{11}\ldots h_{22}$ 与噪声辅助量 `n0,n1` 及接收 `r0,r1`，完成 **MMSE**（见该函数头与附录）。 |
+| `Uplink/v_mimo2x2_combine.m` | **MMSE 线性合并**：按 RB 估 $\mathbf{R}$，逐子载波 $\mathbf{W}=\mathbf{H}^H(\mathbf{H}\mathbf{H}^H+\mathbf{R})^{-1}$；文件内附 **MMSE 与 2×2 MIMO** 学习附录（与 Gold/PN 无关；PN 见 `Common/v_pn_seq_gen.m`）。 |
+
+```mermaid
+flowchart TB
+  subgraph ul["上行 PUSCH 2x2 示意"]
+    P1["v_pusch_chnl_est 每天线/层"] --> P2["v_mimo2x2_combine MMSE"]
+    P2 --> P3["输出两路估计符号"]
+  end
+```
+
+#### 与「参考信号生成」强相关、但非信道估计主链
+
+| 文件 | 说明 |
+|------|------|
+| `Common/v_pn_seq_gen.m` | **Gold / 伪随机序列**；规范 36.211 §7.2；CRS/加扰等多处会用到同类序列生成。 |
+| `Downlink/v_calc_rsrp.m` | **RSRP-like**：在已提取 CRS RE 接收符号上，与 **PCI 相关本地序列**做匹配式度量（与纯能量平均的 RSSI 类指标不同），依赖 `v_pn_seq_gen` 等。 |
+
+#### 与 MathWorks 文档的粗对照（学习用）
+
+| 本仓库抽象步骤 | MathWorks LTE Toolbox 常见步骤 |
+|----------------|----------------------------------|
+| CRS 位置 LS + 频域插值 + 时域填洞 | `lteDLChannelEstimate` 中 LS、平滑、插值组合 |
+| `v_crs_chnl_est` / `v_pusch_chnl_est` 的 IDFT 域去噪 | 类似「变换域 / 时域滤波」类可选后处理 |
+
+### 4.4 其他图解来源（便于扩展阅读）
 
 - [ShareTechnote：Channel Estimation 总览](http://www.sharetechnote.com/html/Communication_ChannelEstimation.html#General_Algorithm)：英文图解 + 多制式索引，适合与本文并列查阅。  
 - [MathWorks：`lteDLChannelEstimate` 参考页](https://www.mathworks.com/help/lte/ref/ltedlchannelestimate.html)：函数级参数与实现说明，适合对照仿真代码。
@@ -148,7 +206,8 @@ flowchart TB
 1. **入门直觉（中文图解）**：[信道估计（channel estimation）图解——从 SISO 到 MIMO 原理介绍](https://www.cnblogs.com/louisanu/p/13046621.html)（博客园，**学习向**，非 3GPP 原文）。  
 2. **英文图解索引**：[ShareTechnote - Channel Estimation](http://www.sharetechnote.com/html/Communication_ChannelEstimation.html)。  
 3. **可执行参考（MATLAB）**：[LTE Toolbox - Channel Estimation](https://www.mathworks.com/help/lte/ug/channel-estimation.html) 及 `lteDLChannelEstimate` / `lteULChannelEstimate` 文档。  
-4. **规范向**：从 **3GPP TS 36.211**（参考信号与资源映射）→ **36.213**（物理层过程）建立「导频从哪来、接收机要满足什么」的框架，再回读仿真实现。
+4. **规范向**：从 **3GPP TS 36.211**（参考信号与资源映射）→ **36.213**（物理层过程）建立「导频从哪来、接收机要满足什么」的框架，再回读仿真实现。  
+5. **本仓库实现索引**：同文档 **§4.3**（`jt_validate_ca` 中 CRS/PUSCH/MMSE 等文件与调用关系）。
 
 ---
 
@@ -157,7 +216,8 @@ flowchart TB
 - **信道估计** = 用**已知参考**在接收端反推 $\mathbf{H}$，并常估计 **噪声统计量**。  
 - **OFDM**：频域逐点（或逐矩阵）的 $\hat{\mathbf{H}}$，再 **插值/平滑** 到数据 RE。  
 - **MIMO**：$\mathbf{H}$ 的每个元素 = 一条 **发端口 → 收天线** 链路；**2×2** 共 **4 个复系数**。  
-- **MMSE 检测**在工程上常接在「信道估计 + 噪声协方差估计」之后，出现 $\mathbf{H}\mathbf{H}^H+\mathbf{R}_n$ 结构是**正常形态**，不是两套无关理论。
+- **MMSE 检测**在工程上常接在「信道估计 + 噪声协方差估计」之后，出现 $\mathbf{H}\mathbf{H}^H+\mathbf{R}_n$ 结构是**正常形态**，不是两套无关理论。  
+- **一页收齐**：原理与误区见 §1–§3、§5；**工程代码路径与数据流**见 **§4.3**；外链见 §4.4、§6。
 
 ---
 
