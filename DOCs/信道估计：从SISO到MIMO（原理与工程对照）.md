@@ -192,13 +192,13 @@ flowchart TB
 
 #### 下行（CRS）：从已知参考到 $\hat{H}$ 再到均衡
 
-| 文件 | 作用（经验归纳） |
-|------|------------------|
-| `Downlink/v_cell_rs_gen.m` | 按 **36.211** 思路生成 **Cell-specific RS（CRS）** 序列及映射相关量；为 LS 提供已知 $s$。 |
-| `Downlink/v_dl_chan_est.m` | **主入口**：TDD 下若子帧为上行则跳过；否则对每对 $(i,k)$ 收/发天线，在 CRS RE 上做 **$\hat{h} \approx r \cdot \mathrm{conj}(s)$**（参考功率归一假设），再 **频域线性插值**（`v_linear_interp`）填满子载波，**时域**将含 RS 的符号结果复制到无 RS 符号；部分 OFDM 行再调用 `v_crs_chnl_est` 做增强。输出嵌套胞元 `h{i}{k}` 与 `rs_rpt`。 |
-| `Downlink/v_crs_chnl_est.m` | **CRS 频响后处理**：对一段频域 $\hat{H}$ 做 **频域扩展 + 余弦窗衔接 → IFFT 得 PDP → 时域去噪/置零 → FFT 回频域**；扩展长度 $L$ 借 **`v_get_ul_bw_idx` / `v_get_ul_bw`** 查「下一档带宽 PRB 数」算出差分（实现细节见该文件头注释）。 |
-| `Downlink/v_dl_rs_analyze.m` | 在 CRS 估计结果上提取 **dBTo1、rms、time_off** 等报告量，供调试与链路质量观察。 |
-| `Downlink/v_dl_chan_equ_div.m` | 利用已估 CRS 信道做 **下行均衡**（除法型合并等，与估计模块衔接）。 |
+| 文件                             | 作用（经验归纳）                                                                                                                                                                                                                                        |
+| ------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `Downlink/v_cell_rs_gen.m`     | 按 **36.211** 思路生成 **Cell-specific RS（CRS）** 序列及映射相关量；为 LS 提供已知 $s$。                                                                                                                                                                             |
+| `Downlink/v_dl_chan_est.m`     | **主入口**：TDD 下若子帧为上行则跳过；否则对每对 $(i,k)$ 收/发天线，在 CRS RE 上做 **$\hat{h} \approx r \cdot \mathrm{conj}(s)$**（参考功率归一假设），再 **频域线性插值**（`v_linear_interp`）填满子载波，**时域**将含 RS 的符号结果复制到无 RS 符号；部分 OFDM 行再调用 `v_crs_chnl_est` 做增强。输出嵌套胞元 `h{i}{k}` 与 `rs_rpt`。 |
+| `Downlink/v_crs_chnl_est.m`    | **CRS 频响后处理**：对一段频域 $\hat{H}$ 做 **频域扩展 + 余弦窗衔接 → IFFT 得 PDP → 时域去噪/置零 → FFT 回频域**；扩展长度 $L$ 借 **`v_get_ul_bw_idx` / `v_get_ul_bw`** 查「下一档带宽 PRB 数」算出差分（实现细节见该文件头注释）。                                                                             |
+| `Downlink/v_dl_rs_analyze.m`   | 在 CRS 估计结果上提取 **dBTo1、rms、time_off** 等报告量，供调试与链路质量观察。                                                                                                                                                                                           |
+| `Downlink/v_dl_chan_equ_div.m` | 利用已估 CRS 信道做 **下行均衡**（除法型合并等，与估计模块衔接）。                                                                                                                                                                                                          |
 
 **典型调用方（grep 归纳）**：`Downlink/v_dl_analyzer_smallcell.m`、`v_dl_analyzer.m`、`v_dl_sfrm_analysis.m`；上行侧分析里复用下行 CRS 的如 `Uplink/v_analyzer_smallcell.m`、`v_ul_ant_wv_reorder_smallcell.m` 等也会调用 `v_dl_chan_est`。
 
