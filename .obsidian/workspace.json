@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DOCs/信道估计：从SISO到MIMO（原理与工程对照）.md",
+                "file": "DOCs/测量模块相关知识学习.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "信道估计：从SISO到MIMO（原理与工程对照）"
+              "title": "测量模块相关知识学习"
             }
           }
         ]
@@ -154,13 +154,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DOCs/信道估计：从SISO到MIMO（原理与工程对照）.md",
+                "file": "DOCs/测量模块相关知识学习.md",
                 "followCursor": false,
                 "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "信道估计：从SISO到MIMO（原理与工程对照） 的大纲"
+              "title": "测量模块相关知识学习 的大纲"
             }
           },
           {
@@ -215,6 +215,7 @@
   },
   "active": "63be2ffd3d6a5be0",
   "lastOpenFiles": [
+    "DOCs/信道估计：从SISO到MIMO（原理与工程对照）.md",
     "DOCs/测量模块相关知识学习.md",
     "测量模块相关知识学习.md",
     "DOCs/LTE 学习笔记：一次搞懂 RSRP、RSRQ、RSSI.md",
