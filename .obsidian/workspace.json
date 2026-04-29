@@ -169,8 +169,8 @@
             "state": {
               "type": "advanced-tables-toolbar",
               "state": {},
-              "icon": "spreadsheet",
-              "title": "Advanced Tables"
+              "icon": "lucide-ghost",
+              "title": "advanced-tables-toolbar"
             }
           },
           {
@@ -179,8 +179,8 @@
             "state": {
               "type": "git-view",
               "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
+              "icon": "lucide-ghost",
+              "title": "git-view"
             }
           },
           {
@@ -189,8 +189,8 @@
             "state": {
               "type": "calendar",
               "state": {},
-              "icon": "calendar-with-checkmark",
-              "title": "Calendar"
+              "icon": "lucide-ghost",
+              "title": "calendar"
             }
           }
         ],
@@ -213,19 +213,20 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "e001829228fbf3ae",
+  "active": "63be2ffd3d6a5be0",
   "lastOpenFiles": [
-    "DOCs/测量模块相关知识学习.md",
-    "DOCs/5G通信算法核心概念详解.md",
     "DOCs/信道估计：从SISO到MIMO（原理与工程对照）.md",
-    "测量模块相关知识学习.md",
+    "DOCs/测量模块相关知识学习.md",
     "DOCs/LTE 学习笔记：一次搞懂 RSRP、RSRQ、RSSI.md",
+    "DOCs/AI协作规则（学习文档整理）.md",
+    "DOCs/5G通信算法核心概念详解.md",
+    "conflict-files-obsidian-git.md",
+    "测量模块相关知识学习.md",
     "DOCs/assets/LTE 学习笔记：一次搞懂 RSRP、RSRQ、RSSI/file-20260418174541607.png",
     "DOCs/assets/LTE 学习笔记：一次搞懂 RSRP、RSRQ、RSSI",
     "DOCs/assets",
     "README.md",
     "obsidian 使用技巧.md",
-    "DOCs/AI协作规则（学习文档整理）.md",
     "DOCs/README.md",
     "DOCs/78-rsrp-and-rsrq-measurement-in-lte_核查与翻译.md",
     "DOCs/images/CableFree-LTE-SINR-Limit.png",
