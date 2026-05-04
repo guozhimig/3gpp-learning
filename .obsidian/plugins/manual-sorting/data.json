@@ -25,7 +25,8 @@
         "DOCs/cablefree_page.html",
         "DOCs/LTE 学习笔记：一次搞懂 RSRP、RSRQ、RSSI.md",
         "DOCs/测量模块相关知识学习.md",
-        "DOCs/5G通信算法核心概念详解.md"
+        "DOCs/5G通信算法核心概念详解.md",
+        "DOCs/FIR滤波器从零开始学习.md"
       ],
       "sortOrder": "custom"
     },

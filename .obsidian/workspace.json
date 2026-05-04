@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DOCs/5G通信算法核心概念详解.md",
+                "file": "DOCs/FIR滤波器从零开始学习.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "5G通信算法核心概念详解"
+              "title": "FIR滤波器从零开始学习"
             }
           }
         ]
@@ -154,13 +154,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DOCs/5G通信算法核心概念详解.md",
+                "file": "DOCs/FIR滤波器从零开始学习.md",
                 "followCursor": false,
                 "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "5G通信算法核心概念详解 的大纲"
+              "title": "FIR滤波器从零开始学习 的大纲"
             }
           },
           {
@@ -215,11 +215,11 @@
   },
   "active": "63be2ffd3d6a5be0",
   "lastOpenFiles": [
+    "DOCs/5G通信算法核心概念详解.md",
     "DOCs/信道估计：从SISO到MIMO（原理与工程对照）.md",
     "DOCs/测量模块相关知识学习.md",
     "DOCs/LTE 学习笔记：一次搞懂 RSRP、RSRQ、RSSI.md",
     "DOCs/AI协作规则（学习文档整理）.md",
-    "DOCs/5G通信算法核心概念详解.md",
     "conflict-files-obsidian-git.md",
     "测量模块相关知识学习.md",
     "DOCs/assets/LTE 学习笔记：一次搞懂 RSRP、RSRQ、RSSI/file-20260418174541607.png",
