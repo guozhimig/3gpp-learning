@@ -285,85 +285,146 @@ h[0] h[1] h[2]
 
 ```matlab
 %% FIR 滤波器学习 Demo（从零到可跑）
+% 本脚本演示了两种FIR滤波器设计方法:
+%   1. firls - 最小二乘法 (分段理想幅度逼近)
+%   2. fir1  - 窗函数法 (汉明窗)
+%
+% 测试信号包含三个频率分量:
+%   - 10 Hz (低频,期望被保留)
+%   - 50 Hz (中频,期望被衰减)
+%   - 200 Hz (高频,期望被大幅衰减)
+%
+% 滤波器指标:
+%   - 截止频率: 30 Hz
+%   - 抽头数 M: 31 (阶数 = 30)
+%   - 采样率: 1000 Hz
+%
+% 输出: 6个子图展示滤波效果和滤波器特性
+
 clear; clc; close all;
 
 %% 采样与测试信号
-fs = 1000;                 % 采样率 Hz
-t_duration = 1;
-t = (0:1/fs:t_duration-1/fs).';
+fs = 1000;                 % 采样率 Hz (每秒采集1000个样本)
+t_duration = 1;              % 信号持续时间 1 秒
+t = (0:1/fs:t_duration-1/fs).';  % 时间向量: 从0到0.999秒,步长1/1000秒
 
+%% 生成多频测试信号
+% 包含三个频率分量:
+% - f1 = 10 Hz (低频,期望被保留)
+% - f2 = 50 Hz (中频,期望被衰减)
+% - f3 = 200 Hz (高频,期望被大幅衰减)
 f1 = 10; f2 = 50; f3 = 200;
 x_clean = sin(2*pi*f1*t) + 0.8*sin(2*pi*f2*t) + 0.5*sin(2*pi*f3*t);
+
+%% 添加高斯白噪声
+% randn 生成标准正态分布 N(0,1)
+% 0.3 是噪声的标准差(幅度)
+% size(x_clean) 保证噪声向量与信号同维度
 noise = 0.3 * randn(size(x_clean));
-x_noisy = x_clean + noise;
+x_noisy = x_clean + noise;  % 含噪信号 = 原始信号 + 噪声
 
 %% 设计指标：低通，截止约 30 Hz；抽头数 M（系数长度）
-fc = 30;
-M = 31;                    % 系数个数；阶数常为 M-1
-nyq = fs / 2;
-Wn = fc / nyq;             % fir1 用归一化截止（0~1）
+fc = 30;                    % 截止频率 (Cutoff Frequency) Hz
+M = 31;                     % 系数个数 (抽头数); 阶数为 M-1 = 30
+nyq = fs / 2;               % 奈奎斯特频率 = 采样率/2 = 500 Hz
+Wn = fc / nyq;              % fir1 用归一化截止频率 (0~1), 30/500 = 0.06
 
 %% 方法 1：firls（分段理想幅度 + 最小二乘）
+% f: 频率分段点 (归一化到 [0,1], 1 对应 Nyquist)
+%    [0, fc/nyq]      : 通带 (0-0.06)
+%    [fc/nyq, 1.2*fc/nyq]: 过渡带 (0.06-0.072)
+%    [1.2*fc/nyq, 1]  : 阻带 (0.072-1)
+% a: 对应的期望幅度
+%    [1, 1] : 通带期望幅度为 1
+%    [0, 0] : 阻带期望幅度为 0
+% firls 在最小二乘意义下逼近这些理想幅度
 f = [0, fc/nyq, 1.2*fc/nyq, 1];
 a = [1, 1, 0, 0];
-h_firls = firls(M-1, f, a);
+h_firls = firls(M-1, f, a);  % M-1 是滤波器阶数
 
 %% 方法 2：fir1（窗函数法，汉明窗）
+% fir1 是经典的窗函数法设计
+% 参数说明:
+%   M-1    : 滤波器阶数
+%   Wn     : 归一化截止频率 (0~1)
+%   'low'  : 低通滤波器
+%   hamming(M): 汉明窗 (减少吉布斯现象)
+% 汉明窗相比矩形窗有更好的阻带衰减,但过渡带更宽
 h_fir1 = fir1(M-1, Wn, 'low', hamming(M));
 
-%% 频响
+%% 频响 (频率响应)
+% freqz 计算数字滤波器的频率响应
+% 参数: (分子系数, 分母系数, 频率点数, 采样率)
+% 返回: H(复数频率响应), w(频率向量 Hz)
+% FIR滤波器分母为1,因为它是全零点系统(无极点)
 [H_firls, w] = freqz(h_firls, 1, 1024, fs);
-H_firls_mag = 20*log10(max(abs(H_firls), 1e-12));
+H_firls_mag = 20*log10(max(abs(H_firls), 1e-12));  % 幅度响应 (dB), 1e-12避免log10(0)
 
-[H_fir1, ~] = freqz(h_fir1, 1, 1024, fs);
+[H_fir1, ~] = freqz(h_fir1, 1, 1024, fs);  % ~表示不关心第二个返回值
 H_fir1_mag = 20*log10(max(abs(H_fir1), 1e-12));
 
-%% 群延迟（取通带中心附近中位数，避免打印整向量）
+%% 群延迟 (Group Delay)
+% 群延迟 = -dφ/dω, 表示信号包络的延迟
+% 对于线性相位FIR, 群延迟 = (M-1)/2 = 15 样点
+% grpdelay 参数: (分子系数, 分母系数, 频率点数, 采样率)
 gd_firls = grpdelay(h_firls, 1, 1024, fs);
 gd_fir1  = grpdelay(h_fir1, 1, 1024, fs);
+
+% 只看通带内的群延迟 (w <= fc)
 idx = w <= fc;
 fprintf('firls 群延迟（约，通带内中位数）: %.2f 样点\n', median(gd_firls(idx)));
 fprintf('fir1  群延迟（约，通带内中位数）: %.2f 样点\n', median(gd_fir1(idx)));
 
-%% 滤波
-y_firls = filter(h_firls, 1, x_noisy);
-y_fir1  = filter(h_fir1, 1, x_noisy);
+%% 滤波 (应用设计好的FIR滤波器)
+% filter 函数实现差分方程: y[n] = b[0]x[n] + b[1]x[n-1] + ... + b[M-1]x[n-M+1]
+% 参数: (分子系数, 分母系数, 输入信号)
+% FIR滤波器分母为1,因为它是全零点系统(无极点)
+% 输出 y[n] 是输入信号与滤波器系数的卷积
+y_firls = filter(h_firls, 1, x_noisy);  % 使用firls设计的滤波器
+y_fir1  = filter(h_fir1, 1, x_noisy);   % 使用fir1设计的滤波器
 
 %% 作图（6 子图：与说明一致）
+% 创建新窗口: 名称 'FIR 学习 Demo', 位置 [x, y, width, height]
 figure('Name', 'FIR 学习 Demo', 'Position', [100, 100, 1200, 800]);
 
-subplot(3, 2, 1);
-plot(t, x_clean, 'b', 'LineWidth', 1.2); hold on;
-plot(t, x_noisy, 'r', 'LineWidth', 0.8);
+%% 子图1: 原始信号 vs 含噪信号
+subplot(3, 2, 1);  % 3行2列的第1个位置
+plot(t, x_clean, 'b', 'LineWidth', 1.2); hold on;  % 蓝色粗线: 原始信号
+plot(t, x_noisy, 'r', 'LineWidth', 0.8);        % 红色细线: 含噪信号
 title('原始 vs 含噪');
 xlabel('时间 / s'); ylabel('幅度');
 legend('原始', '含噪', 'Location', 'best');
 grid on;
 
+%% 子图2: firls滤波器输出
 subplot(3, 2, 2);
 plot(t, x_clean, 'b', 'LineWidth', 1.2); hold on;
-plot(t, y_firls, 'g', 'LineWidth', 1);
+plot(t, y_firls, 'g', 'LineWidth', 1);  % 绿色: firls滤波后信号
 title('firls 输出');
 xlabel('时间 / s'); ylabel('幅度');
 legend('原始', 'firls 后', 'Location', 'best');
 grid on;
 
+%% 子图3: fir1滤波器输出
 subplot(3, 2, 3);
 plot(t, x_clean, 'b', 'LineWidth', 1.2); hold on;
-plot(t, y_fir1, 'm', 'LineWidth', 1);
+plot(t, y_fir1, 'm', 'LineWidth', 1);  % 品红色: fir1滤波后信号
 title('fir1 输出');
 xlabel('时间 / s'); ylabel('幅度');
 legend('原始', 'fir1 后', 'Location', 'best');
 grid on;
 
+%% 子图4: 幅度频率响应对比
 subplot(3, 2, 4);
 plot(w, H_firls_mag, 'b', 'LineWidth', 1.5); hold on;
 plot(w, H_fir1_mag, 'r', 'LineWidth', 1.5);
 title('幅度频率响应');
 xlabel('频率 / Hz'); ylabel('幅度 / dB');
 legend('firls', 'fir1', 'Location', 'best');
-grid on; xlim([0, 200]); ylim([-80, 5]);
+grid on; xlim([0, 200]); ylim([-80, 5]);  % x轴限制0-200Hz, y轴限制-80到5dB
 
+%% 子图5: 滤波器系数对比
+% stem 绘制离散序列图 (火柴杆图)
 subplot(3, 2, 5);
 stem(0:M-1, h_firls, 'b', 'filled', 'MarkerSize', 5); hold on;
 stem(0:M-1, h_fir1, 'r', 'filled', 'MarkerSize', 4);
