@@ -166,6 +166,7 @@ RSRQ 报告范围示意
 RSRP 在本质上就是 dbm/15khz, 所以这里看到的 cell power:-60 dbm/15kzh，就代表的是 RSRP的功率，后面的 -32.22dbm/10mhz 是指单port口在10m带宽上的功率
 `RSRP = cell power - 10 * log10(Nrb * 12) = -32.22 - 10 * log10(600) = -32.22 -27.78 = -60`
 
+这个里面还可以看到 Reference Signal Power(SIB2) : 18, simuLated path logss: 78, `18 -78 = -60`
 
 ## 7. 参考资料
 
