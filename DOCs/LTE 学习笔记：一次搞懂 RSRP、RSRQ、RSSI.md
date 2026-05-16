@@ -163,7 +163,8 @@ RSRQ 报告范围示意
 ![](assets/LTE%20学习笔记：一次搞懂%20RSRP、RSRQ、RSSI/file-20260516224549407.png)
 
 ##  仪表参数解读
-RSRP 在本质上就是 dbm/15khz, 所以这里看到的 cell power:-60
+RSRP 在本质上就是 dbm/15khz, 所以这里看到的 cell power:-60 dbm/15kzh，就代表的是 RSRP的功率，后面的 -32.22dbm/10mhz 是指单port口在10m带宽上的功率
+
 
 ## 7. 参考资料
 
