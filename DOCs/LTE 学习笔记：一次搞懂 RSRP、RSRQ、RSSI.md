@@ -167,6 +167,7 @@ RSRP 在本质上就是 dbm/15khz, 所以这里看到的 cell power:-60 dbm/15kz
 `RSRP = cell power - 10 * log10(Nrb * 12) = -32.22 - 10 * log10(600) = -32.22 -27.78 = -60`
 
 这个里面还可以看到 Reference Signal Power(SIB2) : 18, simuLated path logss: 78, `18 -78 = -60`
+可以看到它模拟的基站的发射功率为：`18 dbm + 10 * log10(600) = 45`
 
 ## 7. 参考资料
 
