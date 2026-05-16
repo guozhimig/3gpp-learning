@@ -181,7 +181,7 @@ RSRP 在本质上就是 dbm/15khz, 所以这里看到的 cell power:-60 dbm/15kz
 
 `RSRQ = N * RSRP / RSSI = RSRP / (RSSI/N) = -63 - (-37.3 - 10*math.log(50,10)) ≈ -8.7`, 和log中的-8.5基本一致，0.2应该是量化误差，或者是RSRP本身的误差之类导致的
 
-≈
+`SINR = S / (I + N) = -63 - （）`
 
 
 ## 7. 参考资料
