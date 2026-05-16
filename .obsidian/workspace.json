@@ -154,13 +154,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DOCs/FIR滤波器从零开始学习.md",
+                "file": "DOCs/LTE 学习笔记：一次搞懂 RSRP、RSRQ、RSSI.md",
                 "followCursor": false,
                 "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "FIR滤波器从零开始学习 的大纲"
+              "title": "LTE 学习笔记：一次搞懂 RSRP、RSRQ、RSSI 的大纲"
             }
           },
           {
@@ -194,7 +194,7 @@
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -215,6 +215,7 @@
   },
   "active": "63be2ffd3d6a5be0",
   "lastOpenFiles": [
+    "DOCs/assets/LTE 学习笔记：一次搞懂 RSRP、RSRQ、RSSI/file-20260516224549407.png",
     "DOCs/FIR滤波器从零开始学习.md",
     "DOCs/FIR滤波器从零开始学习_优化版.md",
     "通信助手.md",

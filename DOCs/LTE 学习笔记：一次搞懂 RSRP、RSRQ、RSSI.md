@@ -159,7 +159,13 @@ RSRQ 报告范围示意
 - `TS 36.331`：测量配置、触发事件（A1~A5）、上报机制。
 - `TS 36.211`：CRS 与物理资源映射细节。
 
-## 6. 参考资料
+# 6. 仪表以及UE看到的测量值
+![](assets/LTE%20学习笔记：一次搞懂%20RSRP、RSRQ、RSSI/file-20260516224549407.png)
+
+## 仪表参数解读
+
+
+## 7. 参考资料
 
 - https://www.cablefree.net/wirelesstechnology/4glte/rsrp-rsrq-measurement-lte/
 - https://arimas.com/2016/04/04/78-rsrp-and-rsrq-measurement-in-lte/
