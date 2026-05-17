@@ -183,7 +183,7 @@ RSRP 在本质上就是 dbm/15khz, 所以这里看到的 cell power:-60 dbm/15kz
 
 `SINR = S / (I + N) = -63 - N =35， N = -98`, 考虑天线1的sinr为39， 它看到的噪声就成了`-63 - 39 = -102`, 其实不管是 -98 还是 -102都是相当大的了，
 
-
+理论热噪声公式为：`Pnoise​=−174 dBm/Hz+10⋅log10​(Bandwidth)+Noise Figure (NF)`,这样每个子载波
 ## 7. 参考资料
 
 - https://www.cablefree.net/wirelesstechnology/4glte/rsrp-rsrq-measurement-lte/
