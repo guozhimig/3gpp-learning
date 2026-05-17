@@ -189,6 +189,10 @@ RSRP 在本质上就是 dbm/15khz, 所以这里看到的 cell power:-60 dbm/15kz
 ![](assets/LTE%20学习笔记：一次搞懂%20RSRP、RSRQ、RSSI/file-20260517100733864.png)
 `SINR = -92 - N = 28`, 噪声就是 `-92 - 28 = -120` ,看天线 1 就是`-93 - 30 = -123` 
 ==仪表产生的非现象干扰通常与信号强度成正比。信号功率降低了30db，干扰功率也大幅降低了==
+
+### 把仪表信号调弱到-95后
+
+
 ## 7. 参考资料
 
 - https://www.cablefree.net/wirelesstechnology/4glte/rsrp-rsrq-measurement-lte/
