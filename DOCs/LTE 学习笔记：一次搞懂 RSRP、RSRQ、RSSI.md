@@ -185,6 +185,8 @@ RSRP 在本质上就是 dbm/15khz, 所以这里看到的 cell power:-60 dbm/15kz
 
 理论热噪声公式为：`Pnoise​=−174 dBm/Hz+10⋅log10​(Bandwidth)+Noise Figure (NF)`,这样每个子载波(15khz)的理论噪声底 `Pnoise_per_RE​=−174+10⋅log10​(15000)+6≈−174+41.7+6=−126.3 dBm`
 
+### 把仪表信号调弱到-90 后
+![](assets/LTE%20学习笔记：一次搞懂%20RSRP、RSRQ、RSSI/file-20260517100733864.png)
 
 ## 7. 参考资料
 
