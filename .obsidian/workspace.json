@@ -82,7 +82,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "inb rssi",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -103,7 +103,8 @@
               "title": "书签"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -243,7 +244,7 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "6c2f559910d24990",
+  "active": "a2362836ea45246d",
   "lastOpenFiles": [
     "DOCs/assets/重心/file-20260609165231680.jpg",
     "DOCs/assets/重心",
