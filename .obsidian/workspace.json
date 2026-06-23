@@ -82,7 +82,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "inb rssi",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -103,8 +103,7 @@
               "title": "书签"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -244,12 +243,12 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "a2362836ea45246d",
+  "active": "069313eba475e1f1",
   "lastOpenFiles": [
+    "DOCs/重心.md",
     "DOCs/assets/重心/file-20260609165231680.jpg",
     "DOCs/assets/重心",
     "DOCs/LTE 学习笔记：一次搞懂 RSRP、RSRQ、RSSI.md",
-    "DOCs/重心.md",
     "DOCs/assets/LTE 学习笔记：一次搞懂 RSRP、RSRQ、RSSI/file-20260517191959068.png",
     "DOCs/assets/LTE 学习笔记：一次搞懂 RSRP、RSRQ、RSSI/file-20260517100733864.png",
     "DOCs/assets/LTE 学习笔记：一次搞懂 RSRP、RSRQ、RSSI/file-20260516230141225.png",
@@ -274,7 +273,6 @@
     "DOCs/images/CableFree-LTE-SNR-to-RSRP.png",
     "DOCs/images/CableFree-LTE-RSRQ-reporting-range.png",
     "DOCs/images/CableFree-LTE-RSRP-Table.png",
-    "DOCs/images/CableFree-LTE-RS-RE-Distribution.png",
     "DOCs/cablefree_page.html",
     "DOCs/arimas_page.html",
     "DOCs/images",

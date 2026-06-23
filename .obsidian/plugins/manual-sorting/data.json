@@ -46,7 +46,14 @@
     },
     "DOCs/assets": {
       "children": [
-        "DOCs/assets/LTE 学习笔记：一次搞懂 RSRP、RSRQ、RSSI"
+        "DOCs/assets/LTE 学习笔记：一次搞懂 RSRP、RSRQ、RSSI",
+        "DOCs/assets/重心"
+      ],
+      "sortOrder": "custom"
+    },
+    "DOCs/assets/重心": {
+      "children": [
+        "DOCs/assets/重心/file-20260609165231680.jpg"
       ],
       "sortOrder": "custom"
     },
