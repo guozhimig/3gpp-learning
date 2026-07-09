@@ -3,6 +3,7 @@
   "accentColor": "",
   "theme": "moonstone",
   "enabledCssSnippets": [
-    "canvas-candy"
+    "canvas-candy",
+    "hide-links-hover"
   ]
 }
