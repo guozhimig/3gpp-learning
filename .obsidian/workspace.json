@@ -141,8 +141,8 @@
               "state": {
                 "file": "QCAT log/总体结构.canvas",
                 "viewState": {
-                  "x": -690,
-                  "y": -370,
+                  "x": -710,
+                  "y": -324.00000403144134,
                   "zoom": 0
                 }
               },
@@ -284,13 +284,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "QCAT log/总体结构.canvas",
+                "file": "QCAT log/RRC 状态.md",
                 "followCursor": false,
                 "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "总体结构 的大纲"
+              "title": "RRC 状态 的大纲"
             }
           },
           {
@@ -345,17 +345,17 @@
   },
   "active": "e97e8305ee12ef44",
   "lastOpenFiles": [
+    "QCAT log/RRC 状态.md",
+    "QCAT log/总体结构.canvas",
     "QCAT log/目前无法显示的trace.md",
     "QCAT log/测量相关的trace.md",
     "obsidian 使用技巧.md",
-    "QCAT log/RRC 状态.md",
     "QCAT log/LTE/ML1.md",
     "QCAT log/LTE/assets/ML1/file-20260309110745193.png",
     "QCAT log/LRRC_QSH_EVENT_CONN_REL.md",
     "QCAT log/LTE RRC OTA Packet.md",
     "QCAT log/LTE/assets/ML1/file-20260309110829587.png",
     "QCAT log/LTE/assets/ML1/file-20260309142008962.png",
-    "QCAT log/总体结构.canvas",
     "QCAT log/QTrace Event.md",
     "QCAT log/Event.md",
     "QCAT log/LTE/assets/ML1/file-20260309110657330.png",

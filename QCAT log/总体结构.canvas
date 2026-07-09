@@ -1,9 +1,29 @@
 {
 	"nodes":[
 		{"type":"text","text":">[!cc-header] 总览\n\n**Callout:**\n```\n>[!cc-header]\n```","id":"60a5f9d2ee51eda2","x":-1280,"y":-460,"width":360,"height":260,"color":"4"},
-		{"id":"ca2b0ec64150e846","type":"file","file":"QCAT log/测量相关的trace.md","x":-680,"y":-360,"width":600,"height":400}
+		{"id":"ca2b0ec64150e846","type":"file","file":"QCAT log/测量相关的trace.md","x":-740,"y":-820,"width":600,"height":400},
+		{"id":"ab4fcce981f0f4e7","type":"file","file":"QCAT log/RRC 状态.md","x":-740,"y":-360,"width":640,"height":400}
 	],
-	"edges":[],
+	"edges":[
+		{
+			"id":"52d3cd7f5c7f14cc",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"60a5f9d2ee51eda2",
+			"fromSide":"right",
+			"toNode":"ca2b0ec64150e846",
+			"toSide":"left"
+		},
+		{
+			"id":"4d92040881f26c8e",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"60a5f9d2ee51eda2",
+			"fromSide":"right",
+			"toNode":"ab4fcce981f0f4e7",
+			"toSide":"left"
+		}
+	],
 	"metadata":{
 		"version":"1.0-1.0",
 		"frontmatter":{},
