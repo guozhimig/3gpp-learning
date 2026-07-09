@@ -1,0 +1,28 @@
+/* 1. 默认状态下：隐藏链接的 URL 路径部分 */
+.cm-url.cm-string:not(.cm-hmd-barelink) {
+  display: inline-block !important;
+  max-width: 0 !important;
+  overflow: hidden !important;
+  vertical-align: bottom !important;
+  transition: max-width 0.3s ease !important; /* 添加平滑过渡动画 */
+}
+
+/* 2. 默认状态下：隐藏链接周围的括号 */
+.cm-formatting-link-string {
+  display: inline-block !important;
+  max-width: 0 !important;
+  overflow: hidden !important;
+  opacity: 0 !important;
+  transition: max-width 0.3s ease, opacity 0.3s ease !important;
+}
+
+/* 3. 鼠标悬停时：展开显示 URL 路径 */
+.cm-url.cm-string:not(.cm-hmd-barelink):hover {
+  max-width: 500px !important; /* 限制最大宽度，防止过长撑爆屏幕 */
+}
+
+/* 4. 鼠标悬停时：展开显示括号 */
+.cm-formatting-link-string:hover {
+  max-width: 50px !important;
+  opacity: 1 !important;
+}
