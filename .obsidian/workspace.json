@@ -137,14 +137,17 @@
             "id": "e97e8305ee12ef44",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "QCAT log/测量相关的trace.md",
-                "mode": "source",
-                "source": false
+                "file": "QCAT log/总体结构.canvas",
+                "viewState": {
+                  "x": -690,
+                  "y": -370,
+                  "zoom": 0
+                }
               },
-              "icon": "lucide-file",
-              "title": "测量相关的trace"
+              "icon": "lucide-layout-dashboard",
+              "title": "总体结构"
             }
           }
         ],
@@ -281,13 +284,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "QCAT log/测量相关的trace.md",
+                "file": "QCAT log/总体结构.canvas",
                 "followCursor": false,
                 "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "测量相关的trace 的大纲"
+              "title": "总体结构 的大纲"
             }
           },
           {
@@ -342,12 +345,12 @@
   },
   "active": "e97e8305ee12ef44",
   "lastOpenFiles": [
-    "obsidian 使用技巧.md",
+    "QCAT log/目前无法显示的trace.md",
     "QCAT log/测量相关的trace.md",
+    "obsidian 使用技巧.md",
     "QCAT log/RRC 状态.md",
     "QCAT log/LTE/ML1.md",
     "QCAT log/LTE/assets/ML1/file-20260309110745193.png",
-    "QCAT log/目前无法显示的trace.md",
     "QCAT log/LRRC_QSH_EVENT_CONN_REL.md",
     "QCAT log/LTE RRC OTA Packet.md",
     "QCAT log/LTE/assets/ML1/file-20260309110829587.png",
