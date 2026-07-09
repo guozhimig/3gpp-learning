@@ -1,28 +1,25 @@
-/* 1. 默认状态下：隐藏链接的 URL 路径部分 */
+/* 1. 默认状态：彻底隐藏 URL 路径，并去掉点击时的蓝色背景 */
 .cm-url.cm-string:not(.cm-hmd-barelink) {
-  display: inline-block !important;
-  max-width: 0 !important;
-  overflow: hidden !important;
+  font-size: 0 !important;          /* 将字体缩小到0，彻底隐藏字符 */
+  background-color: transparent !important; /* 去掉点击时的蓝色高亮底色 */
   vertical-align: bottom !important;
-  transition: max-width 0.3s ease !important; /* 添加平滑过渡动画 */
+  transition: font-size 0.3s ease !important; /* 添加平滑过渡动画 */
 }
 
-/* 2. 默认状态下：隐藏链接周围的括号 */
+/* 2. 默认状态：隐藏链接周围的括号 */
 .cm-formatting-link-string {
-  display: inline-block !important;
-  max-width: 0 !important;
-  overflow: hidden !important;
-  opacity: 0 !important;
-  transition: max-width 0.3s ease, opacity 0.3s ease !important;
+  font-size: 0 !important;
+  background-color: transparent !important;
+  vertical-align: bottom !important;
+  transition: font-size 0.3s ease !important;
 }
 
-/* 3. 鼠标悬停时：展开显示 URL 路径 */
+/* 3. 鼠标悬停时：恢复字体大小，展开显示 URL 路径 */
 .cm-url.cm-string:not(.cm-hmd-barelink):hover {
-  max-width: 500px !important; /* 限制最大宽度，防止过长撑爆屏幕 */
+  font-size: var(--font-text-size) !important; /* 恢复为Obsidian默认文本大小 */
 }
 
-/* 4. 鼠标悬停时：展开显示括号 */
+/* 4. 鼠标悬停时：恢复并展开括号 */
 .cm-formatting-link-string:hover {
-  max-width: 50px !important;
-  opacity: 1 !important;
+  font-size: var(--font-text-size) !important;
 }
