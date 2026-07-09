@@ -97,12 +97,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "QCAT log/测量相关的trace.md",
+                "file": "QCAT log/RRC 状态.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "测量相关的trace"
+              "title": "RRC 状态"
             }
           }
         ],
@@ -239,13 +239,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "QCAT log/测量相关的trace.md",
+                "file": "QCAT log/RRC 状态.md",
                 "followCursor": false,
                 "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "测量相关的trace 的大纲"
+              "title": "RRC 状态 的大纲"
             }
           },
           {
@@ -300,8 +300,8 @@
   },
   "active": "e1bdb12854a1aa72",
   "lastOpenFiles": [
-    "QCAT log/RRC 状态.md",
     "QCAT log/测量相关的trace.md",
+    "QCAT log/RRC 状态.md",
     "QCAT log/目前无法显示的trace.md",
     "QCAT log/LTE/ML1.md",
     "QCAT log/总体结构.canvas",
