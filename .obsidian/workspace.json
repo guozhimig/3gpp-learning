@@ -149,9 +149,26 @@
               "icon": "lucide-layout-dashboard",
               "title": "总体结构"
             }
+          },
+          {
+            "id": "291ea706a06b9da1",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "QCAT log/总体结构.canvas",
+                "viewState": {
+                  "x": -690,
+                  "y": -390,
+                  "zoom": 0
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "总体结构"
+            }
           }
         ],
-        "currentTab": 9
+        "currentTab": 10
       }
     ],
     "direction": "vertical"
@@ -284,13 +301,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "QCAT log/RRC 状态.md",
+                "file": "QCAT log/总体结构.canvas",
                 "followCursor": false,
                 "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "RRC 状态 的大纲"
+              "title": "总体结构 的大纲"
             }
           },
           {
@@ -343,12 +360,12 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "e97e8305ee12ef44",
+  "active": "291ea706a06b9da1",
   "lastOpenFiles": [
-    "QCAT log/RRC 状态.md",
-    "QCAT log/总体结构.canvas",
-    "QCAT log/目前无法显示的trace.md",
     "QCAT log/测量相关的trace.md",
+    "QCAT log/总体结构.canvas",
+    "QCAT log/RRC 状态.md",
+    "QCAT log/目前无法显示的trace.md",
     "obsidian 使用技巧.md",
     "QCAT log/LTE/ML1.md",
     "QCAT log/LTE/assets/ML1/file-20260309110745193.png",
