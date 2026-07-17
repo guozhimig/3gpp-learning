@@ -1,11 +1,19 @@
-/* 强行让编辑模式和阅读模式下的代码块都不换行，并显示横向滚动条 */
-.markdown-rendered pre code, 
-.cm-theme-obsidian .cm-content,
-.cm-line,
+/* 1. 确保代码块的父容器（块级）允许横向滚动，且只在底部产生一个滚动条 */
+.markdown-rendered pre,
 .code-styler-pre,
 pre[class*="language-"] {
+    overflow-x: auto !important;
+    white-space: pre !important;
+}
+
+/* 2. 让代码块内部的代码容器和每一行代码都彻底放弃换行，使其向右无限延伸 */
+.markdown-rendered pre code, 
+.cm-theme-obsidian .cm-content,
+.cm-line {
     white-space: pre !important;
     word-break: normal !important;
     word-wrap: normal !important;
-    overflow-x: auto !important;
+    display: inline-block !important; /* 关键：将其转为行内块，避免宽度被父级挤压 */
+    min-width: 100% !important;     /* 保证短行也能铺满背景 */
+    overflow: visible !important;     /* 绝不允许在行级别产生滚动条 */
 }
