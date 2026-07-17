@@ -1,7 +1,8 @@
 # UL Physical Channel Schedule Report
 
 # UL Physical Channel Power Control
-```
+```txt
+
 2026 Jul 12  11:19:35.493  [CD]  0xB884  NR5G MAC UL Physical Channel Power Control
 Subscription ID = 1
 Misc ID         = 0

@@ -1,6 +1,9 @@
-/* 禁用代码块自动换行并启用横向滚动 */
+/* 禁用代码块自动换行并启用横向滚动 - 全视图通用版 */
+.HyperMD-codeblock,
 .markdown-preview-view pre,
-.markdown-preview-view code[class*="lang"] {
-  white-space: pre;
+.markdown-preview-view code,
+pre > code,
+code[class*="language-"] {
+  white-space: pre !important;
   overflow-x: auto;
 }
