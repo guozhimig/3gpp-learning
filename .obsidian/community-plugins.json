@@ -9,5 +9,6 @@
   "obsidian-tasks-plugin",
   "dataview",
   "manual-sorting",
-  "easy-copy"
+  "easy-copy",
+  "code-styler"
 ]
