@@ -1,35 +1,31 @@
-/* ==========================================
-   Obsidian 代码块横向滚动 - 终极稳定版
-   ========================================== */
-
-/* 1. 阅读模式 (Reading View) */
-.markdown-preview-view pre {
-    /* 核心布局控制 */
-    display: block !important;        /* 确保 pre 是块级元素 */
-    width: 100% !important;           /* 占满父容器宽度 */
-    max-width: 100% !important;       /* 绝不允许超出屏幕/笔记边界 */
-    box-sizing: border-box !important;/* 包含 padding 在宽度计算内 */
-    
-    /* 滚动控制：只在这里开启滚动 */
-    overflow-x: auto !important;      /* 内容溢出时显示横向滚动条 */
-    overflow-y: hidden !important;    /* 禁止纵向滚动条（由外层控制） */
-    
-    /* 保持代码格式 */
-    white-space: pre !important;      /* 强制保留空格和换行 */
+/* 仅作用于代码块的 pre 容器（关键！） */
+.markdown-preview-view > .markdown-preview-sizer > .markdown-preview-view pre,
+.markdown-source-view .cm-content pre {
+  /* 严格限制宽度边界 */
+  max-width: 100% !important;       /* 强制不超过笔记区域 */
+  width: fit-content !important;    /* 允许内容延伸但不撑破父级 */
+  box-sizing: border-box !important;
+  
+  /* 滚动控制（仅在此处声明！） */
+  overflow-x: auto !important;      /* 横向滚动条只出现在这里 */
+  overflow-y: hidden !important;   /* 禁止纵向滚动 */
+  
+  /* 保持代码格式 */
+  white-space: pre !important;
+  display: block !important;
 }
 
-/* 2. 内部 code 标签处理 (关键修复点) */
-.markdown-preview-view pre > code {
-    /* 核心：绝对不要在这里写 overflow！ */
-    white-space: pre !important;      /* 强制内容不换行，允许无限向右延伸 */
-    display: inline-block !important; /* 让 code 宽度随内容自适应，而不是被 pre 压缩 */
-    min-width: 100% !important;       /* 至少占满 pre 的宽度 */
+/* 确保 code 标签不触发任何滚动 */
+.markdown-preview-view pre > code,
+.cm-s-obsidian .HyperMD-codeblock code {
+  white-space: pre !important;     /* 仅保留换行格式 */
+  overflow-x: visible !important;  /* 禁止生成滚动条 */
+  display: inline-block !important; /* 允许内容自由延伸 */
+  width: auto !important;           /* 宽度由内容决定 */
 }
 
-/* 3. 实时预览/编辑模式 (Live Preview) */
-/* 编辑器中通常不需要复杂处理，只需防止换行 */
-.cm-s-obsidian .HyperMD-codeblock,
-.cm-s-obsidian .HyperMD-codeblock-bg {
-    white-space: pre !important;      /* 编辑器内强制不换行 */
-    /* 注意：编辑器通常由 Obsidian 自身处理滚动，这里不建议强行加 overflow */
+/* 实时预览模式（Live Preview） */
+.cm-s-obsidian .HyperMD-codeblock {
+  overflow-x: auto !important;      /* 显式启用滚动 */
+  max-width: 100% !important;       /* 防止撑破编辑区 */
 }
