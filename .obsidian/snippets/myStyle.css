@@ -1,22 +1,11 @@
-/* ==========================================
-   代码块横向滚动修复版 (Obsidian)
-   ========================================== */
-
-/* 1. 针对阅读模式 (Reading View) */
-.markdown-preview-view pre {
-    white-space: pre !important;      /* 强制内容不换行 */
-    overflow-x: auto !important;      /* 仅当内容超出宽度时显示滚动条 */
-    width: 100%;                      /* 确保容器占满宽度 */
-}
-
-/* 2. 针对编辑模式 (Live Preview / Editing View) */
-.cm-s-obsidian .HyperMD-codeblock-bg,
-.cm-s-obsidian .HyperMD-codeblock {
-    white-space: pre !important;      /* 强制编辑器内的代码行不换行 */
-}
-
-/* 3. 全局通用设置 (防止个别主题覆盖) */
-pre > code {
-    white-space: pre !important;      /* 确保内部文字绝对不换行 */
-    display: block;                   /* 确保代码被视为块级元素 */
+/* 强行让编辑模式和阅读模式下的代码块都不换行，并显示横向滚动条 */
+.markdown-rendered pre code, 
+.cm-theme-obsidian .cm-content,
+.cm-line,
+.code-styler-pre,
+pre[class*="language-"] {
+    white-space: pre !important;
+    word-break: normal !important;
+    word-wrap: normal !important;
+    overflow-x: auto !important;
 }
