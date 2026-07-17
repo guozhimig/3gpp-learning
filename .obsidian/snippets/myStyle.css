@@ -1,34 +1,47 @@
-/* ==================== 1. 阅读视图 (Reading View) 隔离 ==================== */
-.markdown-rendered pre {
+/* ==================== 1. 编辑/实时预览模式 (Live Preview) 完美修复 ==================== */
+
+/* 核心：解除编辑器代码块外层容器的 Flex 宽度限制，允许它自适应内容宽度 */
+.cm-embed-block:has(.HyperMD-codeblock),
+.code-styler-pre-parent {
     max-width: 100% !important;
-    overflow-x: auto !important; /* 滚动条严格留在代码块底部 */
+    width: 100% !important;
     display: block !important;
 }
+
+/* 锁定 Code Styler 插件的代码块包装盒，将滚动条牢牢锁在它的底部 */
+.code-styler-pre {
+    max-width: 100% !important;
+    overflow-x: auto !important; /* 滚动条精确挂在 block 底部 */
+    display: block !important;
+    white-space: pre !important;
+}
+
+/* 关键：强制代码行所在的容器横向无限延伸，绝不向内收缩 */
+.code-styler-pre .cm-content,
+.code-styler-pre .cm-line {
+    white-space: pre !important;
+    word-break: normal !important;
+    word-wrap: normal !important;
+    display: block !important;
+    width: max-content !important; /* 强制依靠最长那行日志来撑开容器 */
+    min-width: 100% !important;
+    overflow: visible !important;  /* 确保行级绝不出现滚动条 */
+}
+
+
+/* ==================== 2. 阅读模式 (Reading View) 完美修复 ==================== */
+
+.markdown-rendered pre {
+    max-width: 100% !important;
+    overflow-x: auto !important; /* 滚动条挂在阅读视图 block 底部 */
+    display: block !important;
+}
+
 .markdown-rendered pre code {
     white-space: pre !important;
     word-break: normal !important;
     word-wrap: normal !important;
     display: block !important;
-    width: max-content !important; /* 关键：靠内容撑开内部，不影响外层 */
+    width: max-content !important;
     min-width: 100% !important;
-}
-
-/* ==================== 2. 编辑/实时预览视图 (Live Preview) 隔离 ==================== */
-/* 锁定 Code Styler 在编辑模式下生成的代码块包裹容器 */
-.code-styler-pre,
-.cm-embed-block:has(.HyperMD-codeblock) {
-    max-width: 100% !important;
-    overflow-x: auto !important; /* 强行把横向滚动条按在代码块盒子的底部 */
-    display: block !important;
-}
-
-/* 确保每一行代码在容器内部横向延伸，但绝不撑大编辑器的总宽度 */
-.code-styler-pre .cm-line,
-.cm-embed-block .cm-line {
-    white-space: pre !important;
-    word-break: normal !important;
-    word-wrap: normal !important;
-    width: max-content !important; /* 关键：内盒自适应超长文本宽度 */
-    min-width: 100% !important;
-    overflow: visible !important;  /* 绝不产生多余的行级滚动条 */
 }
