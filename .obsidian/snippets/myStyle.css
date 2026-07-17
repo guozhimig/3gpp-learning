@@ -1,45 +1,48 @@
-/* ==================== 1. 实时预览/编辑模式 (Live Preview) ==================== */
+/* ==================== 1. 编辑模式 (Live Preview) 的终极解法 ==================== */
 
-/* 强制把滚动条限制在代码块（Block）的外层容器底部 */
+/* 第一步：强制代码块的外壳显示滚动条，并防止它被编辑器宽度挤压 */
 .cm-embed-block:has(.HyperMD-codeblock) {
     max-width: 100% !important;
-    overflow-x: auto !important; /* 滚动条锁定在 block 底部 */
-}
-
-/* 穿透：解除 CodeMirror 编辑器内部的所有弹性盒/宽度限制 */
-.cm-embed-block:has(.HyperMD-codeblock) .cm-content,
-.cm-embed-block:has(.HyperMD-codeblock) .code-styler-pre,
-.cm-embed-block:has(.HyperMD-codeblock) .code-styler-pre-parent {
-    width: max-content !important;   /* 极其重要：强制容器整体宽度由最长的那行日志决定 */
-    min-width: 100% !important;
-    max-width: none !important;      /* 破除编辑器的右边界硬限制 */
+    overflow-x: auto !important; /* 滚动条精准、唯一地显示在 block 的正下方 */
     display: block !important;
 }
 
-/* 强制代码块中的每一行也按照内容的真实物理宽度向右无限延伸 */
-.cm-embed-block:has(.HyperMD-codeblock) .cm-line {
+/* 第二步：将代码块内部的内容盒，从普通的 block/flex 彻底松绑为 table */
+/* 
+   这是最关键的黑魔法！
+   在 CSS 中，'display: table' 的特殊性质是：它会为了包裹住最长的行而“无限横向延伸”，
+   从而完全不受任何父级 max-width 的折行挤压限制。
+*/
+.cm-embed-block:has(.HyperMD-codeblock) .cm-content {
+    display: table !important;       /* 强制打破 Flex，允许无限宽度延伸 */
+    width: max-content !important;    /* 宽度完美贴合最长日志的宽度 */
+    max-width: none !important;       /* 彻底解除外围宽度魔咒 */
+    white-space: pre !important;      /* 强制不换行 */
+}
+
+/* 第三步：强制让每一行代码不折行，且贴合内容盒宽度 */
+.cm-embed-block:has(.HyperMD-codeblock) .cm-line,
+.cm-embed-block:has(.HyperMD-codeblock) .cm-line * {
     white-space: pre !important;
-    word-break: normal !important;
+    word-break: keep-all !important;
     word-wrap: normal !important;
-    display: block !important;
-    width: max-content !important;   /* 绝不向内压缩 */
-    min-width: 100% !important;
+    display: table-row !important;   /* 完美配合 table 布局，绝对不换行 */
 }
 
 
-/* ==================== 2. 阅读模式 (Reading View) ==================== */
+/* ==================== 2. 阅读模式 (Reading View) 同步优化 ==================== */
 
 .markdown-rendered pre {
     max-width: 100% !important;
-    overflow-x: auto !important;     /* 滚动条锁定在阅读模式 block 底部 */
+    overflow-x: auto !important;
     display: block !important;
 }
 
 .markdown-rendered pre code {
     white-space: pre !important;
-    word-break: normal !important;
+    word-break: keep-all !important;
     word-wrap: normal !important;
-    display: block !important;
+    display: table !important;       /* 同样使用 table 机制确保无限延伸 */
     width: max-content !important;
     min-width: 100% !important;
 }
