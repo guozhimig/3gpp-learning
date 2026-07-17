@@ -6,14 +6,20 @@ pre[class*="language-"] {
     white-space: pre !important;
 }
 
-/* 2. 让代码块内部的代码容器和每一行代码都彻底放弃换行，使其向右无限延伸 */
+/* 2. 让代码块内部的代码行放弃换行，使其向右无限延伸 */
 .markdown-rendered pre code, 
-.cm-theme-obsidian .cm-content,
 .cm-line {
     white-space: pre !important;
     word-break: normal !important;
     word-wrap: normal !important;
-    display: inline-block !important; /* 关键：将其转为行内块，避免宽度被父级挤压 */
+    display: inline-block !important; /* 关键：仅将代码行转为行内块，避免宽度被父级挤压 */
     min-width: 100% !important;     /* 保证短行也能铺满背景 */
     overflow: visible !important;     /* 绝不允许在行级别产生滚动条 */
+}
+
+/* 3. 特殊修复：防止整个编辑器被强行撑宽 */
+.cm-theme-obsidian .cm-content {
+    /* 移除 display: inline-block，恢复编辑器原本的宽度，让滚动条缩回 block 容器内部 */
+    display: block !important; 
+    max-width: 100% !important;
 }
