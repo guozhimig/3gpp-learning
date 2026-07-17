@@ -17,4 +17,4 @@ Misc ID         = 0
                 Payload String = RAT = SYS_RAT_LTE_RADIO_ACCESS, status = End, end reason = Accept, procedure_type = (empty), cause = (empty)
 ```
 
-[LTE RRC OTA Packet](QCAT%20log/LTE/LTE%20RRC%20OTA%20Packet.md#LTE%20NAS%20EMM%20Plain%20OTA%20Outgoing%20Message)
+
