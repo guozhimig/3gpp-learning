@@ -1,29 +1,9 @@
-/* 阅读模式：整个代码块单滚动条 */
-.markdown-preview-view pre {
-  /* 核心：滚动容器必须是 pre */
-  overflow-x: auto !important;     /* 滚动条仅出现在 pre 底部 */
-  overflow-y: hidden !important;   /* 禁止纵向滚动 */
-  max-width: 100% !important;     /* 严格限制宽度边界 */
-  width: 100% !important;          /* 绝不超出笔记区域 */
-  box-sizing: border-box !important;
-  white-space: pre !important;     /* 强制不换行 */
-}
-
-/* 关键修复：解除 code 标签的滚动能力 */
-.markdown-preview-view pre > code {
-  white-space: pre !important;     /* 仅保留不换行 */
-  overflow-x: visible !important;  /* 必须为 visible（禁止滚动条） */
-  display: block !important;       /* 必须为 block（非 inline-block） */
-  width: auto !important;           /* 宽度由 pre 容器决定 */
-}
-
-/* 编辑模式（实时预览）同步修复 */
+/* 核心：仅需这 5 行即可生效 */
+.markdown-preview-view pre,
 .cm-s-obsidian .HyperMD-codeblock {
-  overflow-x: auto !important;
-  max-width: 100% !important;
-  width: 100% !important;
-}
-.cm-s-obsidian .HyperMD-codeblock code {
-  overflow-x: visible !important;
-  display: block !important;
+  white-space: pre !important;     /* 强制不换行 */
+  overflow-x: auto !important;    /* 滚动条仅出现在 pre 底部 */
+  max-width: 100% !important;    /* 严格限制宽度边界 */
+  width: 100% !important;         /* 绝不超出笔记区域 */
+  box-sizing: border-box !important;
 }
