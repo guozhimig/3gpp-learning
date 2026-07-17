@@ -1,0 +1,6 @@
+/* 禁用代码块自动换行并启用横向滚动 */
+.markdown-preview-view pre,
+.markdown-preview-view code[class*="lang"] {
+  white-space: pre;
+  overflow-x: auto;
+}
