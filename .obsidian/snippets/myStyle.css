@@ -1,28 +1,19 @@
-/* ==================== 1. 确保代码块外壳在页面内不超宽，并在其底部产生滚动条 ==================== */
+/* 1. 确保代码块的父容器（块级）允许横向滚动，且只在底部产生一个滚动条 */
 .markdown-rendered pre,
 .code-styler-pre,
-pre[class*="language-"],
-.cm-embed-block:has(.HyperMD-codeblock) {
-    max-width: 100% !important;   /* 极其重要：强制代码块最外层宽度决不能超过笔记宽度 */
-    width: 100% !important;       /* 限制横向溢出 */
-    overflow-x: auto !important;  /* 将滚动条牢牢按在代码块（Block）的最下方 */
-    display: block !important;
+pre[class*="language-"] {
+    overflow-x: auto !important;
+    white-space: pre !important;
 }
 
-/* ==================== 2. 让代码块内部的代码行彻底放弃换行，并向右无限延伸 ==================== */
+/* 2. 让代码块内部的代码容器和每一行代码都彻底放弃换行，使其向右无限延伸 */
 .markdown-rendered pre code, 
+.cm-theme-obsidian .cm-content,
 .cm-line {
     white-space: pre !important;
     word-break: normal !important;
     word-wrap: normal !important;
-    display: inline-block !important; /* 关键：转为行内块，借内容宽度向右无限撑开 */
-    min-width: 100% !important;       /* 保证短行也能铺满背景 */
-    overflow: visible !important;     /* 绝不允许在每一行级别产生滚动条 */
-}
-
-/* ==================== 3. 核心修复：死死扣住编辑器容器，不准它跟着变宽 ==================== */
-.cm-theme-obsidian .cm-content {
-    display: block !important;
-    max-width: 100% !important;       /* 强行锁死整张笔记编辑器的最大宽度，不准它跟着被撑大 */
-    width: 100% !important;
+    display: inline-block !important; /* 关键：将其转为行内块，避免宽度被父级挤压 */
+    min-width: 100% !important;     /* 保证短行也能铺满背景 */
+    overflow: visible !important;     /* 绝不允许在行级别产生滚动条 */
 }
