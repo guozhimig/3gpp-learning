@@ -1,39 +1,37 @@
-/* ==================== 1. 编辑/实时预览模式 (Live Preview) 完美修复 ==================== */
+/* ==================== 1. 实时预览/编辑模式 (Live Preview) ==================== */
 
-/* 核心：解除编辑器代码块外层容器的 Flex 宽度限制，允许它自适应内容宽度 */
-.cm-embed-block:has(.HyperMD-codeblock),
-.code-styler-pre-parent {
+/* 强制把滚动条限制在代码块（Block）的外层容器底部 */
+.cm-embed-block:has(.HyperMD-codeblock) {
     max-width: 100% !important;
-    width: 100% !important;
+    overflow-x: auto !important; /* 滚动条锁定在 block 底部 */
+}
+
+/* 穿透：解除 CodeMirror 编辑器内部的所有弹性盒/宽度限制 */
+.cm-embed-block:has(.HyperMD-codeblock) .cm-content,
+.cm-embed-block:has(.HyperMD-codeblock) .code-styler-pre,
+.cm-embed-block:has(.HyperMD-codeblock) .code-styler-pre-parent {
+    width: max-content !important;   /* 极其重要：强制容器整体宽度由最长的那行日志决定 */
+    min-width: 100% !important;
+    max-width: none !important;      /* 破除编辑器的右边界硬限制 */
     display: block !important;
 }
 
-/* 锁定 Code Styler 插件的代码块包装盒，将滚动条牢牢锁在它的底部 */
-.code-styler-pre {
-    max-width: 100% !important;
-    overflow-x: auto !important; /* 滚动条精确挂在 block 底部 */
-    display: block !important;
-    white-space: pre !important;
-}
-
-/* 关键：强制代码行所在的容器横向无限延伸，绝不向内收缩 */
-.code-styler-pre .cm-content,
-.code-styler-pre .cm-line {
+/* 强制代码块中的每一行也按照内容的真实物理宽度向右无限延伸 */
+.cm-embed-block:has(.HyperMD-codeblock) .cm-line {
     white-space: pre !important;
     word-break: normal !important;
     word-wrap: normal !important;
     display: block !important;
-    width: max-content !important; /* 强制依靠最长那行日志来撑开容器 */
+    width: max-content !important;   /* 绝不向内压缩 */
     min-width: 100% !important;
-    overflow: visible !important;  /* 确保行级绝不出现滚动条 */
 }
 
 
-/* ==================== 2. 阅读模式 (Reading View) 完美修复 ==================== */
+/* ==================== 2. 阅读模式 (Reading View) ==================== */
 
 .markdown-rendered pre {
     max-width: 100% !important;
-    overflow-x: auto !important; /* 滚动条挂在阅读视图 block 底部 */
+    overflow-x: auto !important;     /* 滚动条锁定在阅读模式 block 底部 */
     display: block !important;
 }
 
