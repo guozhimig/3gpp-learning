@@ -823,7 +823,7 @@
       "highlightNonMatchingBrackets": true,
       "enableSelectionMatching": true,
       "usePrismHighlight": false,
-      "unwrapcode": false,
+      "unwrapcode": true,
       "hideFenceLines": false,
       "lineNumberSeparatorStyle": "dashed",
       "hiddenLinesStyle": "dashed",
@@ -889,7 +889,7 @@
       "avoidPageBreaks": false
     },
     "common": {
-      "enableInSourceMode": false
+      "enableInSourceMode": true
     },
     "prompts": {
       "editedDefaults": {},
