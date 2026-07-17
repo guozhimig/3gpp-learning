@@ -156,12 +156,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "QCAT log/LTE/LTE RRC OTA Packet.md",
+                "file": "QCAT log/测量相关的trace.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "LTE RRC OTA Packet"
+              "title": "测量相关的trace"
             }
           }
         ],
@@ -298,13 +298,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "QCAT log/LTE/LTE RRC OTA Packet.md",
+                "file": "QCAT log/测量相关的trace.md",
                 "followCursor": false,
                 "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "LTE RRC OTA Packet 的大纲"
+              "title": "测量相关的trace 的大纲"
             }
           },
           {
@@ -359,18 +359,18 @@
   },
   "active": "291ea706a06b9da1",
   "lastOpenFiles": [
+    "QCAT log/RRC 状态.md",
+    "QCAT log/测量相关的trace.md",
+    "QCAT log/LTE/LTE RRC OTA Packet.md",
     "QCAT log/LTE/LRRC_QSH_EVENT_CONN_REL.md",
     "QCAT log/总体结构.canvas",
     "QCAT log/LTE/Event.md",
-    "QCAT log/LTE/LTE RRC OTA Packet.md",
     "DOCs/LTE 学习笔记：一次搞懂 RSRP、RSRQ、RSSI.md",
     "QCAT log/NR/NR5G LL1.md",
     "QCAT log/NR/NR5G ML1.md",
     "QCAT log/NR/NR5G RRC OTA Packet.md",
-    "QCAT log/测量相关的trace.md",
     "QCAT log/目前无法显示的trace.md",
     "QCAT log/LTE/ML1.md",
-    "QCAT log/RRC 状态.md",
     "QCAT log/NR",
     "QCAT log/LTE/QTrace Event.md",
     "obsidian 使用技巧.md",
