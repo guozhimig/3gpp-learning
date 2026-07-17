@@ -301,7 +301,7 @@
       "codeblock": {
         "lineNumbers": true,
         "unwrapLines": true,
-        "wrapLinesActive": true,
+        "wrapLinesActive": false,
         "curvature": 4
       },
       "gutter": {
