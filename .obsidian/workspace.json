@@ -156,12 +156,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DOCs/LTE 学习笔记：一次搞懂 RSRP、RSRQ、RSSI.md",
+                "file": "QCAT log/LTE/Event.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "LTE 学习笔记：一次搞懂 RSRP、RSRQ、RSSI"
+              "title": "Event"
             }
           }
         ],
@@ -298,13 +298,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DOCs/LTE 学习笔记：一次搞懂 RSRP、RSRQ、RSSI.md",
+                "file": "QCAT log/LTE/Event.md",
                 "followCursor": false,
                 "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "LTE 学习笔记：一次搞懂 RSRP、RSRQ、RSSI 的大纲"
+              "title": "Event 的大纲"
             }
           },
           {
@@ -359,9 +359,10 @@
   },
   "active": "291ea706a06b9da1",
   "lastOpenFiles": [
+    "QCAT log/LTE/LTE RRC OTA Packet.md",
+    "DOCs/LTE 学习笔记：一次搞懂 RSRP、RSRQ、RSSI.md",
     "QCAT log/NR/NR5G LL1.md",
     "QCAT log/NR/NR5G ML1.md",
-    "QCAT log/LTE/LTE RRC OTA Packet.md",
     "QCAT log/总体结构.canvas",
     "QCAT log/NR/NR5G RRC OTA Packet.md",
     "QCAT log/测量相关的trace.md",
@@ -390,7 +391,6 @@
     "Stencils/Flowcharts - Diamonds.canvas",
     "Stencils/Flowcharts - Circles.canvas",
     "Stencils/Borders Stencil.canvas",
-    "DOCs/LTE 学习笔记：一次搞懂 RSRP、RSRQ、RSSI.md",
     "QCAT log",
     "DOCs/重心.md",
     "DOCs/assets/重心/file-20260609165231680.jpg",
