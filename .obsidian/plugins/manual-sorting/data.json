@@ -125,7 +125,8 @@
       "children": [
         "QCAT log/NR/NR5G RRC OTA Packet.md",
         "QCAT log/NR/NR5G LL1.md",
-        "QCAT log/NR/NR5G ML1.md"
+        "QCAT log/NR/NR5G ML1.md",
+        "QCAT log/NR/MAC.md"
       ],
       "sortOrder": "custom"
     },

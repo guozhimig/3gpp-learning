@@ -154,17 +154,14 @@
             "id": "291ea706a06b9da1",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "QCAT log/总体结构.canvas",
-                "viewState": {
-                  "x": -690,
-                  "y": -390,
-                  "zoom": 0
-                }
+                "file": "QCAT log/NR/MAC.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "总体结构"
+              "icon": "lucide-file",
+              "title": "MAC"
             }
           }
         ],
@@ -301,13 +298,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "NR5G.md",
+                "file": "QCAT log/NR/MAC.md",
                 "followCursor": false,
                 "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "NR5G 的大纲"
+              "title": "MAC 的大纲"
             }
           },
           {
@@ -345,7 +342,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 442.5
+    "width": 442.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -360,8 +358,10 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "069313eba475e1f1",
+  "active": "291ea706a06b9da1",
   "lastOpenFiles": [
+    "NR5G.md",
+    "QCAT log/NR/MAC.md",
     "QCAT log/总体结构.canvas",
     "QCAT log/测量相关的trace.md",
     "QCAT log/NR/NR5G RRC OTA Packet.md",
@@ -369,7 +369,6 @@
     "QCAT log/NR/NR5G ML1.md",
     "DOCs/FIR滤波器从零开始学习.md",
     "QCAT log/RRC 状态.md",
-    "NR5G.md",
     "QCAT log/LTE/LTE RRC OTA Packet.md",
     "QCAT log/LTE/LRRC_QSH_EVENT_CONN_REL.md",
     "QCAT log/LTE/Event.md",
