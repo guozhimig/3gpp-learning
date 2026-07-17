@@ -301,13 +301,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "QCAT log/总体结构.canvas",
+                "file": "NR5G.md",
                 "followCursor": false,
                 "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "总体结构 的大纲"
+              "title": "NR5G 的大纲"
             }
           },
           {
@@ -360,10 +360,10 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "291ea706a06b9da1",
+  "active": "069313eba475e1f1",
   "lastOpenFiles": [
-    "QCAT log/测量相关的trace.md",
     "QCAT log/总体结构.canvas",
+    "QCAT log/测量相关的trace.md",
     "QCAT log/NR/NR5G RRC OTA Packet.md",
     "QCAT log/NR/NR5G LL1.md",
     "QCAT log/NR/NR5G ML1.md",
