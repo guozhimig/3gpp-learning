@@ -1,27 +1,35 @@
 /* ==========================================
-   代码块横向滚动修复版 (含宽度约束)
+   Obsidian 代码块横向滚动 - 终极稳定版
    ========================================== */
 
-/* 1. 阅读模式 (Reading View) - 核心修复区 */
+/* 1. 阅读模式 (Reading View) */
 .markdown-preview-view pre {
-    white-space: pre !important;      /* 强制内容不换行 */
-    overflow-x: auto !important;      /* 开启横向滚动 */
+    /* 核心布局控制 */
+    display: block !important;        /* 确保 pre 是块级元素 */
+    width: 100% !important;           /* 占满父容器宽度 */
+    max-width: 100% !important;       /* 绝不允许超出屏幕/笔记边界 */
+    box-sizing: border-box !important;/* 包含 padding 在宽度计算内 */
     
-    /* 关键修复：防止撑破页面 */
-    max-width: 100% !important;       /* 限制最大宽度不超过容器 */
-    width: 100% !important;           /* 强制占满可用空间 */
-    box-sizing: border-box !important;/* 确保内边距不增加总宽度 */
+    /* 滚动控制：只在这里开启滚动 */
+    overflow-x: auto !important;      /* 内容溢出时显示横向滚动条 */
+    overflow-y: hidden !important;    /* 禁止纵向滚动条（由外层控制） */
+    
+    /* 保持代码格式 */
+    white-space: pre !important;      /* 强制保留空格和换行 */
 }
 
-/* 2. 编辑模式 (Live Preview) */
-.cm-s-obsidian .HyperMD-codeblock {
+/* 2. 内部 code 标签处理 (关键修复点) */
+.markdown-preview-view pre > code {
+    /* 核心：绝对不要在这里写 overflow！ */
+    white-space: pre !important;      /* 强制内容不换行，允许无限向右延伸 */
+    display: inline-block !important; /* 让 code 宽度随内容自适应，而不是被 pre 压缩 */
+    min-width: 100% !important;       /* 至少占满 pre 的宽度 */
+}
+
+/* 3. 实时预览/编辑模式 (Live Preview) */
+/* 编辑器中通常不需要复杂处理，只需防止换行 */
+.cm-s-obsidian .HyperMD-codeblock,
+.cm-s-obsidian .HyperMD-codeblock-bg {
     white-space: pre !important;      /* 编辑器内强制不换行 */
-    overflow-x: auto !important;      /* 编辑器内也允许滚动 */
-}
-
-/* 3. 内部代码标签处理 */
-pre > code {
-    white-space: pre !important;
-    display: block;
-    min-width: min-content;           /* 允许内部内容撑开高度，但不撑开外部宽度 */
+    /* 注意：编辑器通常由 Obsidian 自身处理滚动，这里不建议强行加 overflow */
 }
