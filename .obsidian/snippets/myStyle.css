@@ -1,48 +1,19 @@
-/* ==================== 1. 编辑模式 (Live Preview) 的终极解法 ==================== */
-
-/* 第一步：强制代码块的外壳显示滚动条，并防止它被编辑器宽度挤压 */
-.cm-embed-block:has(.HyperMD-codeblock) {
-    max-width: 100% !important;
-    overflow-x: auto !important; /* 滚动条精准、唯一地显示在 block 的正下方 */
-    display: block !important;
-}
-
-/* 第二步：将代码块内部的内容盒，从普通的 block/flex 彻底松绑为 table */
-/* 
-   这是最关键的黑魔法！
-   在 CSS 中，'display: table' 的特殊性质是：它会为了包裹住最长的行而“无限横向延伸”，
-   从而完全不受任何父级 max-width 的折行挤压限制。
-*/
-.cm-embed-block:has(.HyperMD-codeblock) .cm-content {
-    display: table !important;       /* 强制打破 Flex，允许无限宽度延伸 */
-    width: max-content !important;    /* 宽度完美贴合最长日志的宽度 */
-    max-width: none !important;       /* 彻底解除外围宽度魔咒 */
-    white-space: pre !important;      /* 强制不换行 */
-}
-
-/* 第三步：强制让每一行代码不折行，且贴合内容盒宽度 */
-.cm-embed-block:has(.HyperMD-codeblock) .cm-line,
-.cm-embed-block:has(.HyperMD-codeblock) .cm-line * {
-    white-space: pre !important;
-    word-break: keep-all !important;
-    word-wrap: normal !important;
-    display: table-row !important;   /* 完美配合 table 布局，绝对不换行 */
-}
-
-
-/* ==================== 2. 阅读模式 (Reading View) 同步优化 ==================== */
-
-.markdown-rendered pre {
-    max-width: 100% !important;
+/* 1. 确保代码块的父容器（块级）允许横向滚动，且只在底部产生一个滚动条 */
+.markdown-rendered pre,
+.code-styler-pre,
+pre[class*="language-"] {
     overflow-x: auto !important;
-    display: block !important;
+    white-space: pre !important;
 }
 
-.markdown-rendered pre code {
+/* 2. 让代码块内部的代码容器和每一行代码都彻底放弃换行，使其向右无限延伸 */
+.markdown-rendered pre code, 
+.cm-theme-obsidian .cm-content,
+.cm-line {
     white-space: pre !important;
-    word-break: keep-all !important;
+    word-break: normal !important;
     word-wrap: normal !important;
-    display: table !important;       /* 同样使用 table 机制确保无限延伸 */
-    width: max-content !important;
-    min-width: 100% !important;
+    display: inline-block !important; /* 关键：将其转为行内块，避免宽度被父级挤压 */
+    min-width: 100% !important;     /* 保证短行也能铺满背景 */
+    overflow: visible !important;     /* 绝不允许在行级别产生滚动条 */
 }
