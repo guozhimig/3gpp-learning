@@ -1,19 +1,34 @@
-/* 1. 确保代码块的父容器（块级）允许横向滚动，且只在底部产生一个滚动条 */
-.markdown-rendered pre,
-.code-styler-pre,
-pre[class*="language-"] {
-    overflow-x: auto !important;
-    white-space: pre !important;
+/* ==================== 1. 阅读视图 (Reading View) 隔离 ==================== */
+.markdown-rendered pre {
+    max-width: 100% !important;
+    overflow-x: auto !important; /* 滚动条严格留在代码块底部 */
+    display: block !important;
 }
-
-/* 2. 让代码块内部的代码容器和每一行代码都彻底放弃换行，使其向右无限延伸 */
-.markdown-rendered pre code, 
-.cm-theme-obsidian .cm-content,
-.cm-line {
+.markdown-rendered pre code {
     white-space: pre !important;
     word-break: normal !important;
     word-wrap: normal !important;
-    display: inline-block !important; /* 关键：将其转为行内块，避免宽度被父级挤压 */
-    min-width: 100% !important;     /* 保证短行也能铺满背景 */
-    overflow: visible !important;     /* 绝不允许在行级别产生滚动条 */
+    display: block !important;
+    width: max-content !important; /* 关键：靠内容撑开内部，不影响外层 */
+    min-width: 100% !important;
+}
+
+/* ==================== 2. 编辑/实时预览视图 (Live Preview) 隔离 ==================== */
+/* 锁定 Code Styler 在编辑模式下生成的代码块包裹容器 */
+.code-styler-pre,
+.cm-embed-block:has(.HyperMD-codeblock) {
+    max-width: 100% !important;
+    overflow-x: auto !important; /* 强行把横向滚动条按在代码块盒子的底部 */
+    display: block !important;
+}
+
+/* 确保每一行代码在容器内部横向延伸，但绝不撑大编辑器的总宽度 */
+.code-styler-pre .cm-line,
+.cm-embed-block .cm-line {
+    white-space: pre !important;
+    word-break: normal !important;
+    word-wrap: normal !important;
+    width: max-content !important; /* 关键：内盒自适应超长文本宽度 */
+    min-width: 100% !important;
+    overflow: visible !important;  /* 绝不产生多余的行级滚动条 */
 }
