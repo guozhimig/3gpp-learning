@@ -156,12 +156,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "QCAT log/LTE/LRRC_QSH_EVENT_CONN_REL.md",
+                "file": "QCAT log/LTE/LTE RRC OTA Packet.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "LRRC_QSH_EVENT_CONN_REL"
+              "title": "LTE RRC OTA Packet"
             }
           }
         ],
@@ -298,13 +298,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "QCAT log/LTE/LRRC_QSH_EVENT_CONN_REL.md",
+                "file": "QCAT log/LTE/LTE RRC OTA Packet.md",
                 "followCursor": false,
                 "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "LRRC_QSH_EVENT_CONN_REL 的大纲"
+              "title": "LTE RRC OTA Packet 的大纲"
             }
           },
           {
@@ -359,6 +359,7 @@
   },
   "active": "291ea706a06b9da1",
   "lastOpenFiles": [
+    "QCAT log/LTE/LRRC_QSH_EVENT_CONN_REL.md",
     "QCAT log/总体结构.canvas",
     "QCAT log/LTE/Event.md",
     "QCAT log/LTE/LTE RRC OTA Packet.md",
@@ -372,7 +373,6 @@
     "QCAT log/RRC 状态.md",
     "QCAT log/NR",
     "QCAT log/LTE/QTrace Event.md",
-    "QCAT log/LTE/LRRC_QSH_EVENT_CONN_REL.md",
     "obsidian 使用技巧.md",
     "QCAT log/LTE/assets/ML1/file-20260309110745193.png",
     "QCAT log/LTE/assets/ML1/file-20260309110829587.png",
