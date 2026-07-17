@@ -4,6 +4,7 @@
   "theme": "moonstone",
   "enabledCssSnippets": [
     "hide-links-hover",
-    "canvas-candy"
+    "canvas-candy",
+    "myStyle"
   ]
 }
