@@ -105,19 +105,8 @@
     },
     "QCAT log/LTE": {
       "children": [
-        "QCAT log/LTE/assets",
         "QCAT log/LTE/ML1.md"
       ],
-      "sortOrder": "custom"
-    },
-    "QCAT log/LTE/assets": {
-      "children": [
-        "QCAT log/LTE/assets/ML1"
-      ],
-      "sortOrder": "custom"
-    },
-    "QCAT log/LTE/assets/ML1": {
-      "children": [],
       "sortOrder": "custom"
     },
     "Stencils": {
