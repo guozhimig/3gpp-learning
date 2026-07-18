@@ -96,16 +96,37 @@
         "QCAT log/测量相关的trace.md",
         "QCAT log/RRC 状态.md",
         "QCAT log/LTE",
-        "QCAT log/LTE RRC OTA Packet.md",
-        "QCAT log/LRRC_QSH_EVENT_CONN_REL.md",
-        "QCAT log/QTrace Event.md",
-        "QCAT log/Event.md"
+        "QCAT log/NR"
       ],
       "sortOrder": "custom"
     },
     "QCAT log/LTE": {
       "children": [
-        "QCAT log/LTE/ML1.md"
+        "QCAT log/LTE/assets",
+        "QCAT log/LTE/LTE RRC OTA Packet.md",
+        "QCAT log/LTE/ML1.md",
+        "QCAT log/LTE/LRRC_QSH_EVENT_CONN_REL.md",
+        "QCAT log/LTE/QTrace Event.md",
+        "QCAT log/LTE/Event.md"
+      ],
+      "sortOrder": "custom"
+    },
+    "QCAT log/LTE/assets": {
+      "children": [
+        "QCAT log/LTE/assets/ML1"
+      ],
+      "sortOrder": "custom"
+    },
+    "QCAT log/LTE/assets/ML1": {
+      "children": [],
+      "sortOrder": "custom"
+    },
+    "QCAT log/NR": {
+      "children": [
+        "QCAT log/NR/NR5G RRC OTA Packet.md",
+        "QCAT log/NR/NR5G LL1.md",
+        "QCAT log/NR/NR5G ML1.md",
+        "QCAT log/NR/MAC.md"
       ],
       "sortOrder": "custom"
     },
