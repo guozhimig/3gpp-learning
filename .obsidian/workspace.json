@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "QCAT log/NR/MAC.md",
+                "file": "QCAT log/NR/NR5G ML1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "MAC"
+              "title": "NR5G ML1"
             }
           }
         ],
@@ -232,6 +232,8 @@
   "active": "2019b00a1723bcca",
   "lastOpenFiles": [
     "QCAT log/NR/NR5G LL1.md",
+    "QCAT log/NR/NR5G RRC OTA Packet.md",
+    "QCAT log/NR/MAC.md",
     "QCAT log/NR/NR5G ML1.md",
     "QCAT log/LTE/Event.md",
     "QCAT log/LTE/QTrace Event.md",
@@ -240,8 +242,6 @@
     "QCAT log/目前无法显示的trace.md",
     "DOCs/LTE 学习笔记：一次搞懂 RSRP、RSRQ、RSSI.md",
     "conflict-files-obsidian-git.md",
-    "QCAT log/NR/NR5G RRC OTA Packet.md",
-    "QCAT log/NR/MAC.md",
     "QCAT log/NR",
     "QCAT log/LTE/ML1.md",
     "QCAT log/测量相关的trace.md",
