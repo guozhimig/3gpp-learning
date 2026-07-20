@@ -25,17 +25,14 @@
             "id": "067b91a2d0690c77",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "QCAT log/总体结构.canvas",
-                "viewState": {
-                  "x": -690,
-                  "y": -390,
-                  "zoom": 0
-                }
+                "file": "QCAT log/LTE/LRRC_QSH_EVENT_CONN_REL.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "总体结构"
+              "icon": "lucide-file",
+              "title": "LRRC_QSH_EVENT_CONN_REL"
             }
           }
         ],
@@ -172,13 +169,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "QCAT log/总体结构.canvas",
+                "file": "QCAT log/LTE/LRRC_QSH_EVENT_CONN_REL.md",
                 "followCursor": false,
                 "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "总体结构 的大纲"
+              "title": "LRRC_QSH_EVENT_CONN_REL 的大纲"
             }
           },
           {
@@ -233,12 +230,12 @@
   },
   "active": "067b91a2d0690c77",
   "lastOpenFiles": [
+    "QCAT log/总体结构.canvas",
     "QCAT log/RRC 状态.md",
     "QCAT log/LTE/LTE RRC OTA Packet.md",
     "QCAT log/LTE/LTE NAS.md",
     "QCAT log/LTE/LTE RLC.md",
     "QCAT log/LTE/QTrace Event.md",
-    "QCAT log/总体结构.canvas",
     "QCAT log/LTE/LL1.md",
     "QCAT log/LTE/ML1.md",
     "QCAT log/LTE/LTE MAC.md",
