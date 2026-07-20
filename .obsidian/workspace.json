@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "QCAT log/LTE/LRRC_QSH_EVENT_CONN_REL.md",
+                "file": "QCAT log/LTE/Event.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "LRRC_QSH_EVENT_CONN_REL"
+              "title": "Event"
             }
           }
         ],
@@ -169,13 +169,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "QCAT log/LTE/LRRC_QSH_EVENT_CONN_REL.md",
+                "file": "QCAT log/LTE/Event.md",
                 "followCursor": false,
                 "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "LRRC_QSH_EVENT_CONN_REL 的大纲"
+              "title": "Event 的大纲"
             }
           },
           {
@@ -230,16 +230,17 @@
   },
   "active": "067b91a2d0690c77",
   "lastOpenFiles": [
+    "QCAT log/LTE/QTrace Event.md",
+    "QCAT log/LTE/LTE NAS.md",
+    "QCAT log/LTE/LRRC_QSH_EVENT_CONN_REL.md",
+    "QCAT log/LTE/Event.md",
     "QCAT log/总体结构.canvas",
     "QCAT log/RRC 状态.md",
     "QCAT log/LTE/LTE RRC OTA Packet.md",
-    "QCAT log/LTE/LTE NAS.md",
     "QCAT log/LTE/LTE RLC.md",
-    "QCAT log/LTE/QTrace Event.md",
     "QCAT log/LTE/LL1.md",
     "QCAT log/LTE/ML1.md",
     "QCAT log/LTE/LTE MAC.md",
-    "QCAT log/LTE/Event.md",
     "QCAT log/测量相关的trace.md",
     "QCAT log/NR/MAC.md",
     "QCAT log/NR/NR5G ML1.md",
@@ -247,7 +248,6 @@
     "QCAT log/NR/NR5G RRC OTA Packet.md",
     "QCAT log/NR/NR5G LL1.md",
     "DOCs/FIR滤波器从零开始学习.md",
-    "QCAT log/LTE/LRRC_QSH_EVENT_CONN_REL.md",
     "DOCs/LTE 学习笔记：一次搞懂 RSRP、RSRQ、RSSI.md",
     "QCAT log/目前无法显示的trace.md",
     "QCAT log/NR",
