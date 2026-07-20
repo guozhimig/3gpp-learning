@@ -27,15 +27,15 @@
             "state": {
               "type": "canvas",
               "state": {
-                "file": "Features/Borders.canvas",
+                "file": "Stencils/Borders Stencil.canvas",
                 "viewState": {
-                  "x": 753.5,
-                  "y": -2.5,
-                  "zoom": -0.6547151479605251
+                  "x": 118.5,
+                  "y": 120,
+                  "zoom": -0.11774026892850492
                 }
               },
               "icon": "lucide-layout-dashboard",
-              "title": "Borders"
+              "title": "Borders Stencil"
             }
           }
         ],
@@ -172,13 +172,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Features/Borders.canvas",
+                "file": "Stencils/Borders Stencil.canvas",
                 "followCursor": false,
                 "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Borders 的大纲"
+              "title": "Borders Stencil 的大纲"
             }
           },
           {
@@ -233,6 +233,8 @@
   },
   "active": "067b91a2d0690c77",
   "lastOpenFiles": [
+    "Features/Stickers.canvas",
+    "Features/Borders.canvas",
     "QCAT log/LTE/Event.md",
     "QCAT log/LTE/QTrace Event.md",
     "QCAT log/LTE/LTE NAS.md",
@@ -271,7 +273,6 @@
     "Stencils/Flowcharts - Ovals.canvas",
     "Stencils/Flowcharts - Diamonds.canvas",
     "Stencils/Flowcharts - Circles.canvas",
-    "Stencils/Borders Stencil.canvas",
     "QCAT log",
     "DOCs/重心.md",
     "DOCs/assets/重心/file-20260609165231680.jpg",

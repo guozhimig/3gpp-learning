@@ -1,7 +1,7 @@
 {
 	"nodes":[
 		{"type":"text","text":"","id":"781b598837eebc37","x":-260,"y":-400,"width":949,"height":5,"color":"#151414"},
-		{"type":"text","text":"---\ncssclasses:\n  - cc-border-none\n---\n\nNo border, but a color selected","id":"70c3ad4d3bf4db41","x":380,"y":-360,"width":202,"height":95,"color":"3"},
+		{"type":"text","text":"---\ncssclasses:\n  - cc-border-none\n---\n\nNo border, but a color selected","id":"70c3ad4d3bf4db41","x":380,"y":-360,"width":202,"height":91,"color":"3"},
 		{"type":"text","text":"---\ncssclasses:\n  - cc-border-none\n  - cc-card-transparent\n---\n\n#### Description\n\nRemoves the border from a card\n- If grey color, there is no background color (transparent mode)\n- If it has a color, the background color is visible, but no border\n\n###### cssclasses decorations:\n- cc-border-none\n","id":"62a09081efc1a537","x":-260,"y":-379,"width":355,"height":399},
 		{"type":"text","text":"---\ncssclasses:\n  - cc-border-none\n---\n\nNo border, but a color selected","id":"3a5da5453ef476f6","x":310,"y":-180,"width":219,"height":140,"color":"4"},
 		{"type":"text","text":"","id":"0ecd078ec7ddbae7","x":-302,"y":-503,"width":2102,"height":6,"color":"3"},
