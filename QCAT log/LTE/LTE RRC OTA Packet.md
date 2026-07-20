@@ -723,6 +723,103 @@ value DL-DCCH-Message ::=
 
 # DL_CCCH / RRCConnectionReestablishment
 
+```
+
+2026 Jul  9  15:24:09.979  [67]  0xB0C0  LTE RRC OTA Packet  --  DL_CCCH / RRCConnectionReestablishment
+Subscription ID = 1
+Pkt Version = 27
+RRC Release Number.Major.minor = 16.1.0
+NR RRC Release Number.Major.minor = 17.4.0
+Radio Bearer ID = 0, Physical Cell ID = 205
+Freq = 1750
+SysFrameNum = 102, SubFrameNum = 0
+PDU Number = DL_CCCH Message,    Msg Length = 35
+SIB Mask in SI =  0x00
+
+Interpreted PDU:
+
+value DL-CCCH-Message ::= 
+{
+  message c1 : rrcConnectionReestablishment : 
+      {
+        rrc-TransactionIdentifier 1,
+        criticalExtensions c1 : rrcConnectionReestablishment-r8 : 
+            {
+              radioResourceConfigDedicated 
+              {
+                mac-MainConfig explicitValue : 
+                  {
+                    ul-SCH-Config 
+                    {
+                      maxHARQ-Tx n8,
+                      periodicBSR-Timer sf10,
+                      retxBSR-Timer sf320,
+                      ttiBundling FALSE
+                    },
+                    timeAlignmentTimerDedicated sf10240,
+                    phr-Config setup : 
+                      {
+                        periodicPHR-Timer sf100,
+                        prohibitPHR-Timer sf100,
+                        dl-PathlossChange dB1
+                      }
+                  },
+                physicalConfigDedicated 
+                {
+                  pusch-ConfigDedicated 
+                  {
+                    betaOffset-ACK-Index 12,
+                    betaOffset-RI-Index 5,
+                    betaOffset-CQI-Index 12
+                  },
+                  uplinkPowerControlDedicated 
+                  {
+                    p0-UE-PUSCH 0,
+                    deltaMCS-Enabled en0,
+                    accumulationEnabled TRUE,
+                    p0-UE-PUCCH 0,
+                    pSRS-Offset 5,
+                    filterCoefficient fc6
+                  },
+                  schedulingRequestConfig setup : 
+                    {
+                      sr-PUCCH-ResourceIndex 4,
+                      sr-ConfigIndex 11,
+                      dsr-TransMax n64
+                    },
+                  antennaInfo-r10 explicitValue-r10 : 
+                    {
+                      transmissionMode-r10 tm4,
+                      codebookSubsetRestriction-r10 '00000000 00000000 00000000 00000000 11111111 11111111 11111111 11111111'B,
+                      ue-TransmitAntennaSelection release : NULL
+                    },
+                  cqi-ReportConfig-r10 
+                  {
+                    cqi-ReportAperiodic-r10 setup : 
+                      {
+                        cqi-ReportModeAperiodic-r10 rm31
+                      },
+                    nomPDSCH-RS-EPRE-Offset 6,
+                    cqi-ReportPeriodic-r10 setup : 
+                      {
+                        cqi-PUCCH-ResourceIndex-r10 16,
+                        cqi-pmi-ConfigIndex 2,
+                        cqi-FormatIndicatorPeriodic-r10 widebandCQI-r10 : 
+                          {
+                          },
+                        ri-ConfigIndex 644,
+                        simultaneousAckNackAndCQI FALSE,
+                        csi-ConfigIndex-r10 release : NULL
+                      }
+                  }
+                }
+              },
+              nextHopChainingCount 7
+            }
+      }
+}
+
+```
 
 # UL_DCCH / UECapabilityInformation
 
@@ -1507,3 +1604,35 @@ value UL-DCCH-Message ::=
 }
 ```
 
+# UL_DCCH / RRCConnectionReestablishmentComplete
+
+```
+
+2026 Jul  9  15:24:09.979  [67]  0xB0C0  LTE RRC OTA Packet  --  UL_DCCH / RRCConnectionReestablishmentComplete
+Subscription ID = 1
+Pkt Version = 27
+RRC Release Number.Major.minor = 16.1.0
+NR RRC Release Number.Major.minor = 17.4.0
+Radio Bearer ID = 1, Physical Cell ID = 205
+Freq = 1750
+SysFrameNum = N/A, SubFrameNum = 0
+PDU Number = UL_DCCH Message,    Msg Length = 2
+SIB Mask in SI =  0x00
+
+Interpreted PDU:
+
+value UL-DCCH-Message ::= 
+{
+  message c1 : rrcConnectionReestablishmentComplete : 
+      {
+        rrc-TransactionIdentifier 1,
+        criticalExtensions rrcConnectionReestablishmentComplete-r8 : 
+          {
+            nonCriticalExtension 
+            {
+              rlf-InfoAvailable-r9 true
+            }
+          }
+      }
+}
+```
