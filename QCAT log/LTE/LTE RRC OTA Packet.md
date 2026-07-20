@@ -138,7 +138,191 @@ value BCCH-DL-SCH-Message ::=
 
 ```
 
-# 
+# BCCH_DL_SCH / SystemInformation
+
+```
+
+2026 Jul  9  15:24:09.920  [00]  0xB0C0  LTE RRC OTA Packet  --  BCCH_DL_SCH / SystemInformation
+Subscription ID = 1
+Pkt Version = 27
+RRC Release Number.Major.minor = 16.1.0
+NR RRC Release Number.Major.minor = 17.4.0
+Radio Bearer ID = 0, Physical Cell ID = 205
+Freq = 1750
+SysFrameNum = 96, SubFrameNum = 0
+PDU Number = BCCH_DL_SCH Message,    Msg Length = 49
+SIB Mask in SI =  0x0C
+
+Interpreted PDU:
+
+value BCCH-DL-SCH-Message ::= 
+{
+  message c1 : systemInformation : 
+      {
+        criticalExtensions systemInformation-r8 : 
+          {
+            sib-TypeAndInfo 
+            {
+              sib2 : 
+                {
+                  radioResourceConfigCommon 
+                  {
+                    rach-ConfigCommon 
+                    {
+                      preambleInfo 
+                      {
+                        numberOfRA-Preambles n52,
+                        preamblesGroupAConfig 
+                        {
+                          sizeOfRA-PreamblesGroupA n28,
+                          messageSizeGroupA b56,
+                          messagePowerOffsetGroupB dB10
+                        }
+                      },
+                      powerRampingParameters 
+                      {
+                        powerRampingStep dB2,
+                        preambleInitialReceivedTargetPower dBm-104
+                      },
+                      ra-SupervisionInfo 
+                      {
+                        preambleTransMax n10,
+                        ra-ResponseWindowSize sf10,
+                        mac-ContentionResolutionTimer sf64
+                      },
+                      maxHARQ-Msg3Tx 5
+                    },
+                    bcch-Config 
+                    {
+                      modificationPeriodCoeff n2
+                    },
+                    pcch-Config 
+                    {
+                      defaultPagingCycle rf32,
+                      nB oneT
+                    },
+                    prach-Config 
+                    {
+                      rootSequenceIndex 132,
+                      prach-ConfigInfo 
+                      {
+                        prach-ConfigIndex 6,
+                        highSpeedFlag FALSE,
+                        zeroCorrelationZoneConfig 8,
+                        prach-FreqOffset 7
+                      }
+                    },
+                    pdsch-ConfigCommon 
+                    {
+                      referenceSignalPower 12,
+                      p-b 0
+                    },
+                    pusch-ConfigCommon 
+                    {
+                      pusch-ConfigBasic 
+                      {
+                        n-SB 4,
+                        hoppingMode interSubFrame,
+                        pusch-HoppingOffset 22,
+                        enable64QAM TRUE
+                      },
+                      ul-ReferenceSignalsPUSCH 
+                      {
+                        groupHoppingEnabled FALSE,
+                        groupAssignmentPUSCH 0,
+                        sequenceHoppingEnabled FALSE,
+                        cyclicShift 0
+                      }
+                    },
+                    pucch-ConfigCommon 
+                    {
+                      deltaPUCCH-Shift ds1,
+                      nRB-CQI 3,
+                      nCS-AN 0,
+                      n1PUCCH-AN 18
+                    },
+                    soundingRS-UL-ConfigCommon release : NULL,
+                    uplinkPowerControlCommon 
+                    {
+                      p0-NominalPUSCH -67,
+                      alpha al07,
+                      p0-NominalPUCCH -115,
+                      deltaFList-PUCCH 
+                      {
+                        deltaF-PUCCH-Format1 deltaF0,
+                        deltaF-PUCCH-Format1b deltaF3,
+                        deltaF-PUCCH-Format2 deltaF1,
+                        deltaF-PUCCH-Format2a deltaF2,
+                        deltaF-PUCCH-Format2b deltaF2
+                      },
+                      deltaPreambleMsg3 4
+                    },
+                    ul-CyclicPrefixLength len1,
+                    pusch-ConfigCommon-v1270 
+                    {
+                      enable64QAM-v1270 true
+                    }
+                  },
+                  ue-TimersAndConstants 
+                  {
+                    t300 ms1000,
+                    t301 ms200,
+                    t310 ms1000,
+                    n310 n10,
+                    t311 ms10000,
+                    n311 n1
+                  },
+                  freqInfo 
+                  {
+                    ul-Bandwidth n100,
+                    additionalSpectrumEmission 1
+                  },
+                  timeAlignmentTimerCommon sf10240,
+                  voiceServiceCauseIndication-r12 true
+                },
+              sib3 : 
+                {
+                  cellReselectionInfoCommon 
+                  {
+                    q-Hyst dB2
+                  },
+                  cellReselectionServingFreqInfo 
+                  {
+                    s-NonIntraSearch 1,
+                    threshServingLow 0,
+                    cellReselectionPriority 5
+                  },
+                  intraFreqCellReselectionInfo 
+                  {
+                    q-RxLevMin -60,
+                    s-IntraSearch 29,
+                    presenceAntennaPort1 TRUE,
+                    neighCellConfig '01'B,
+                    t-ReselectionEUTRA 1,
+                    t-ReselectionEUTRA-SF 
+                    {
+                      sf-Medium lDot0,
+                      sf-High oDot75
+                    }
+                  },
+                  s-IntraSearch-v920 
+                  {
+                    s-IntraSearchP-r9 29,
+                    s-IntraSearchQ-r9 5
+                  },
+                  s-NonIntraSearch-v920 
+                  {
+                    s-NonIntraSearchP-r9 1,
+                    s-NonIntraSearchQ-r9 4
+                  },
+                  q-QualMin-r9 -18
+                }
+            }
+          }
+      }
+}
+
+```
 # PCCH / Paging
 
 ```
@@ -536,6 +720,9 @@ value DL-DCCH-Message ::=
 }
 
 ```
+
+# DL_CCCH / RRCConnectionReestablishment
+
 
 # UL_DCCH / UECapabilityInformation
 
