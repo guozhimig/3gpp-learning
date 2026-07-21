@@ -25,17 +25,14 @@
             "id": "067b91a2d0690c77",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "Stencils/Borders Stencil.canvas",
-                "viewState": {
-                  "x": 118.5,
-                  "y": 120,
-                  "zoom": -0.11774026892850492
-                }
+                "file": "DOCs/LTE 学习笔记：一次搞懂 RSRP、RSRQ、RSSI.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "Borders Stencil"
+              "icon": "lucide-file",
+              "title": "LTE 学习笔记：一次搞懂 RSRP、RSRQ、RSSI"
             }
           }
         ],
@@ -172,13 +169,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Stencils/Borders Stencil.canvas",
+                "file": "DOCs/LTE 学习笔记：一次搞懂 RSRP、RSRQ、RSSI.md",
                 "followCursor": false,
                 "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Borders Stencil 的大纲"
+              "title": "LTE 学习笔记：一次搞懂 RSRP、RSRQ、RSSI 的大纲"
             }
           },
           {
@@ -233,6 +230,7 @@
   },
   "active": "067b91a2d0690c77",
   "lastOpenFiles": [
+    "Stencils/Borders Stencil.canvas",
     "Features/Stickers.canvas",
     "Features/Borders.canvas",
     "QCAT log/LTE/Event.md",
@@ -272,7 +270,6 @@
     "Stencils/Flowcharts - Parallelogram.canvas",
     "Stencils/Flowcharts - Ovals.canvas",
     "Stencils/Flowcharts - Diamonds.canvas",
-    "Stencils/Flowcharts - Circles.canvas",
     "QCAT log",
     "DOCs/重心.md",
     "DOCs/assets/重心/file-20260609165231680.jpg",
