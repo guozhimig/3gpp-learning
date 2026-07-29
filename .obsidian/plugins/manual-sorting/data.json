@@ -109,7 +109,6 @@
         "QCAT log/LTE/LTE RLC.md",
         "QCAT log/LTE/ML1.md",
         "QCAT log/LTE/LL1.md",
-        "QCAT log/LTE/LRRC_QSH_EVENT_CONN_REL.md",
         "QCAT log/LTE/QTrace Event.md",
         "QCAT log/LTE/Event.md"
       ],
