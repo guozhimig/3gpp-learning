@@ -214,7 +214,7 @@ PCT 往往会假设信道条件相对简单，而RRM则不会这么假设从而�
 | --------------------- | ------------------- |
 | cell-specific RS EPRE | 直接决定 LTE 小区的 RSRP   |
 | SS/PBCH SSS EPRE      | 直接决定 NR 小区的 SS-RSRP |
-|                       |                     |
+| NoE-UTRA  <br>        |                     |
 
 
 
