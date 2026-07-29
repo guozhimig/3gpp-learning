@@ -200,7 +200,12 @@ RSRP 在本质上就是 dbm/15khz, 所以这里看到的 cell power:-60 dbm/15kz
 ![](assets/LTE%20学习笔记：一次搞懂%20RSRP、RSRQ、RSSI/file-20260517191959068.png)
 可以看到这个到这个区间的时候，仪表的干扰功率已经稳定了
 
-## 7. 参考资料
+# 其他信道相关指标
+
+
+
+
+# 7. 参考资料
 
 - https://www.cablefree.net/wirelesstechnology/4glte/rsrp-rsrq-measurement-lte/
 - https://arimas.com/2016/04/04/78-rsrp-and-rsrq-measurement-in-lte/
