@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DOCs/测量模块相关知识学习.md",
+                "file": "DOCs/LTE 学习笔记：一次搞懂 RSRP、RSRQ、RSSI.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "测量模块相关知识学习"
+              "title": "LTE 学习笔记：一次搞懂 RSRP、RSRQ、RSSI"
             }
           }
         ],
@@ -169,13 +169,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DOCs/测量模块相关知识学习.md",
+                "file": "DOCs/LTE 学习笔记：一次搞懂 RSRP、RSRQ、RSSI.md",
                 "followCursor": false,
                 "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "测量模块相关知识学习 的大纲"
+              "title": "LTE 学习笔记：一次搞懂 RSRP、RSRQ、RSSI 的大纲"
             }
           },
           {
@@ -230,6 +230,11 @@
   },
   "active": "067b91a2d0690c77",
   "lastOpenFiles": [
+    "DOCs/测量模块相关知识学习.md",
+    "README.md",
+    "通信助手.md",
+    "DOCs/重心.md",
+    "DOCs/5G通信算法核心概念详解.md",
     "DOCs/LTE 学习笔记：一次搞懂 RSRP、RSRQ、RSSI.md",
     "Stencils/Borders Stencil.canvas",
     "Features/Stickers.canvas",
@@ -270,17 +275,13 @@
     "Stencils/Flowcharts - Parallelogram.canvas",
     "Stencils/Flowcharts - Ovals.canvas",
     "QCAT log",
-    "DOCs/重心.md",
     "DOCs/assets/重心/file-20260609165231680.jpg",
     "DOCs/assets/重心",
     "DOCs/assets/LTE 学习笔记：一次搞懂 RSRP、RSRQ、RSSI/file-20260517191959068.png",
     "DOCs/assets/LTE 学习笔记：一次搞懂 RSRP、RSRQ、RSSI/file-20260517100733864.png",
     "DOCs/assets/LTE 学习笔记：一次搞懂 RSRP、RSRQ、RSSI/file-20260516230141225.png",
     "conflict-files-obsidian-git.md",
-    "通信助手.md",
     "DOCs/assets/LTE 学习笔记：一次搞懂 RSRP、RSRQ、RSSI/file-20260516224549407.png",
-    "DOCs/FIR滤波器从零开始学习_优化版.md",
-    "DOCs/5G通信算法核心概念详解.md",
     "DOCs/assets/LTE 学习笔记：一次搞懂 RSRP、RSRQ、RSSI/file-20260418174541607.png",
     "DOCs/assets/LTE 学习笔记：一次搞懂 RSRP、RSRQ、RSSI",
     "DOCs/assets",
