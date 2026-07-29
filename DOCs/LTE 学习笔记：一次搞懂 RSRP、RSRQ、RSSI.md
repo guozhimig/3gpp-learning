@@ -210,12 +210,12 @@ PCT 往往会假设信道条件相对简单，而RRM则不会这么假设从而�
 这个截图来自 PCT 用例，38.523-1， case 6.2.3.4
 
 
-| 参数                    | 含义详解                                                              |
-| --------------------- | ----------------------------------------------------------------- |
-| cell-specific RS EPRE | 直接决定 LTE 小区的 RSRP                                                 |
-| SS/PBCH SSS EPRE      | 直接决定 NR 小区的 SS-RSRP                                               |
-| NocE-UTRA  <br>       | noise power spectral density for E-UTRA Cell<br>即 E-UTRA(LTE)<br> |
-|                       |                                                                   |
+| 参数                    | 含义详解                                                                                                             |
+| --------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| cell-specific RS EPRE | 直接决定 LTE 小区的 RSRP                                                                                                |
+| SS/PBCH SSS EPRE      | 直接决定 NR 小区的 SS-RSRP                                                                                              |
+| NocE-UTRA  <br>       | noise power spectral density for E-UTRA Cell<br>即 E-UTRA(LTE)小区的噪声功率谱<br>这种情况下我们就推算出 sinr = -80 - (-95) = 15<br> |
+|                       |                                                                                                                  |
 
 
 
