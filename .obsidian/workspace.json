@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DOCs/LTE 学习笔记：一次搞懂 RSRP、RSRQ、RSSI.md",
+                "file": "DOCs/测量模块相关知识学习.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "LTE 学习笔记：一次搞懂 RSRP、RSRQ、RSSI"
+              "title": "测量模块相关知识学习"
             }
           }
         ],
@@ -169,13 +169,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DOCs/LTE 学习笔记：一次搞懂 RSRP、RSRQ、RSSI.md",
+                "file": "DOCs/测量模块相关知识学习.md",
                 "followCursor": false,
                 "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "LTE 学习笔记：一次搞懂 RSRP、RSRQ、RSSI 的大纲"
+              "title": "测量模块相关知识学习 的大纲"
             }
           },
           {
@@ -213,7 +213,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 509.5
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -230,6 +230,7 @@
   },
   "active": "067b91a2d0690c77",
   "lastOpenFiles": [
+    "DOCs/LTE 学习笔记：一次搞懂 RSRP、RSRQ、RSSI.md",
     "Stencils/Borders Stencil.canvas",
     "Features/Stickers.canvas",
     "Features/Borders.canvas",
@@ -251,7 +252,6 @@
     "QCAT log/NR/NR5G RRC OTA Packet.md",
     "QCAT log/NR/NR5G LL1.md",
     "DOCs/FIR滤波器从零开始学习.md",
-    "DOCs/LTE 学习笔记：一次搞懂 RSRP、RSRQ、RSSI.md",
     "QCAT log/目前无法显示的trace.md",
     "QCAT log/NR",
     "obsidian 使用技巧.md",
@@ -269,7 +269,6 @@
     "Stencils/Flowcharts - Squares.canvas",
     "Stencils/Flowcharts - Parallelogram.canvas",
     "Stencils/Flowcharts - Ovals.canvas",
-    "Stencils/Flowcharts - Diamonds.canvas",
     "QCAT log",
     "DOCs/重心.md",
     "DOCs/assets/重心/file-20260609165231680.jpg",
