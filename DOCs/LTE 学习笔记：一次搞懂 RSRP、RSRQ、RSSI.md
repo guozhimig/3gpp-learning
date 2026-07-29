@@ -215,7 +215,7 @@ PCT 往往会假设信道条件相对简单，而RRM则不会这么假设从而�
 | cell-specific RS EPRE | 直接决定 LTE 小区的 RSRP                                                                                                                                                                  |
 | SS/PBCH SSS EPRE      | 直接决定 NR 小区的 SS-RSRP                                                                                                                                                                |
 | NocE-UTRA  <br>       | noise power spectral density for E-UTRA Cell<br>即 E-UTRA(LTE)小区的噪声功率谱<br>这种情况下我们就推算出 sinr = -80 - (-95) = 15<br>之所以我们能够直接这么运算是因为这里对噪声谱密度进行过归一化处理。<br>对应的单位为 dbm/scs 或dbm/15khz<br> |
-|                       |                                                                                                                                                                                    |
+| NocNR                 | 类似上面                                                                                                                                                                               |
 
 
 
