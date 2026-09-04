@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DOCs/FIR滤波器从零开始学习.md",
+                "file": "DOCs/LTE 学习笔记：一次搞懂 RSRP、RSRQ、RSSI.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "FIR滤波器从零开始学习"
+              "title": "LTE 学习笔记：一次搞懂 RSRP、RSRQ、RSSI"
             }
           }
         ],
@@ -185,7 +185,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DOCs/FIR滤波器从零开始学习.md",
+                "file": "DOCs/LTE 学习笔记：一次搞懂 RSRP、RSRQ、RSSI.md",
                 "followCursor": false,
                 "showSearch": true,
                 "searchQuery": ""
@@ -247,6 +247,7 @@
   },
   "active": "e993771ee998b138",
   "lastOpenFiles": [
+    "DOCs/FIR滤波器从零开始学习.md",
     "DOCs/5G通信算法核心概念详解.md",
     "DOCs/LTE 学习笔记：一次搞懂 RSRP、RSRQ、RSSI.md",
     "DOCs/AI协作规则（学习文档整理）.md",
@@ -277,7 +278,6 @@
     "QCAT log/LTE/LTE MAC.md",
     "QCAT log/NR/MAC.md",
     "NR5G.md",
-    "DOCs/FIR滤波器从零开始学习.md",
     "QCAT log/NR",
     "QCAT log/LTE/assets/ML1/file-20260309110745193.png",
     "QCAT log/LTE/assets/ML1/file-20260309110829587.png",
