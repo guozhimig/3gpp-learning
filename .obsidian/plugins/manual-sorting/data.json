@@ -10,7 +10,8 @@
         "38331-h50.asn",
         "README.md",
         "通信助手.md",
-        "QCAT log"
+        "QCAT log",
+        "信道估计与CIR处理.md"
       ],
       "sortOrder": "custom"
     },
