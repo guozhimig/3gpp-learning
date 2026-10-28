@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DOCs/测量模块相关知识学习.md",
+                "file": "DOCs/LTE 学习笔记：一次搞懂 RSRP、RSRQ、RSSI.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "测量模块相关知识学习"
+              "title": "LTE 学习笔记：一次搞懂 RSRP、RSRQ、RSSI"
             }
           }
         ],
@@ -119,8 +119,7 @@
               "title": "书签"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -200,7 +199,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DOCs/测量模块相关知识学习.md",
+                "file": "DOCs/LTE 学习笔记：一次搞懂 RSRP、RSRQ、RSSI.md",
                 "followCursor": false,
                 "showSearch": true,
                 "searchQuery": ""
@@ -260,8 +259,10 @@
       "sheet-plus:创建 Excel 文件": false
     }
   },
-  "active": "a2362836ea45246d",
+  "active": "069313eba475e1f1",
   "lastOpenFiles": [
+    "DOCs/AI协作规则（学习文档整理）.md",
+    "DOCs/测量模块相关知识学习.md",
     "信道估计与CIR处理.md",
     "DOCs/LTE 学习笔记：一次搞懂 RSRP、RSRQ、RSSI.md",
     "QCAT log/测量相关的trace.md",
@@ -269,12 +270,10 @@
     "QCAT log/LTE/LTE NAS.md",
     "DOCs/FIR滤波器从零开始学习.md",
     "DOCs/5G通信算法核心概念详解.md",
-    "DOCs/AI协作规则（学习文档整理）.md",
     "DOCs/信道估计：从SISO到MIMO（原理与工程对照）.md",
     "DOCs/README.md",
     "QCAT log/NR/NR5G RRC OTA Packet.md",
     "通信助手.md",
-    "DOCs/测量模块相关知识学习.md",
     "QCAT log/NR/NR5G ML1.md",
     "QCAT log/NR/NR5G LL1.md",
     "QCAT log/LTE/LTE RRC OTA Packet.md",
