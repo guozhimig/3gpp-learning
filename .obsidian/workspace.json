@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DOCs/LTE 学习笔记：一次搞懂 RSRP、RSRQ、RSSI.md",
+                "file": "QCAT log/NR/NR5G RRC OTA Packet.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "LTE 学习笔记：一次搞懂 RSRP、RSRQ、RSSI"
+              "title": "NR5G RRC OTA Packet"
             }
           }
         ],
@@ -199,7 +199,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DOCs/LTE 学习笔记：一次搞懂 RSRP、RSRQ、RSSI.md",
+                "file": "QCAT log/NR/NR5G RRC OTA Packet.md",
                 "followCursor": false,
                 "showSearch": true,
                 "searchQuery": ""
@@ -259,14 +259,14 @@
       "sheet-plus:创建 Excel 文件": false
     }
   },
-  "active": "069313eba475e1f1",
+  "active": "a1ed4c4b5a48a79e",
   "lastOpenFiles": [
+    "QCAT log/总体结构.canvas",
+    "DOCs/LTE 学习笔记：一次搞懂 RSRP、RSRQ、RSSI.md",
     "DOCs/AI协作规则（学习文档整理）.md",
     "DOCs/测量模块相关知识学习.md",
     "信道估计与CIR处理.md",
-    "DOCs/LTE 学习笔记：一次搞懂 RSRP、RSRQ、RSSI.md",
     "QCAT log/测量相关的trace.md",
-    "QCAT log/总体结构.canvas",
     "QCAT log/LTE/LTE NAS.md",
     "DOCs/FIR滤波器从零开始学习.md",
     "DOCs/5G通信算法核心概念详解.md",
@@ -291,7 +291,6 @@
     "QCAT log/LTE/LTE RLC.md",
     "QCAT log/LTE/LL1.md",
     "QCAT log/LTE/LTE MAC.md",
-    "QCAT log/NR/MAC.md",
     "QCAT log/NR",
     "QCAT log/LTE/assets/ML1/file-20260309110745193.png",
     "QCAT log/LTE/assets/ML1/file-20260309110829587.png",
