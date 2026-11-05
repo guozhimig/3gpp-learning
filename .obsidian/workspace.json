@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "信道估计与CIR处理.md",
+                "file": "file:C:/cygwin64/home/guozh/workspace/工作文档/竞争专利分析-4G5G驻留切换方案.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "信道估计与CIR处理"
+              "title": "竞争专利分析-4G5G驻留切换方案"
             }
           }
         ],
@@ -199,7 +199,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "信道估计与CIR处理.md",
+                "file": "file:C:/cygwin64/home/guozh/workspace/工作文档/竞争专利分析-4G5G驻留切换方案.md",
                 "followCursor": false,
                 "showSearch": true,
                 "searchQuery": ""
@@ -261,6 +261,7 @@
   },
   "active": "a1ed4c4b5a48a79e",
   "lastOpenFiles": [
+    "信道估计与CIR处理.md",
     "QCAT log/NR/MAC.md",
     "QCAT log/NR/NR5G ML1.md",
     "QCAT log/NR/NR5G LL1.md",
@@ -269,7 +270,6 @@
     "DOCs/LTE 学习笔记：一次搞懂 RSRP、RSRQ、RSSI.md",
     "DOCs/AI协作规则（学习文档整理）.md",
     "DOCs/测量模块相关知识学习.md",
-    "信道估计与CIR处理.md",
     "QCAT log/测量相关的trace.md",
     "QCAT log/LTE/LTE NAS.md",
     "DOCs/FIR滤波器从零开始学习.md",
