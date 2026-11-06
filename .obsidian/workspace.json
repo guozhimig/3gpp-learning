@@ -98,7 +98,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "rsrq",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -119,7 +119,8 @@
               "title": "书签"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -259,7 +260,7 @@
       "sheet-plus:创建 Excel 文件": false
     }
   },
-  "active": "a1ed4c4b5a48a79e",
+  "active": "a2362836ea45246d",
   "lastOpenFiles": [
     "信道估计与CIR处理.md",
     "QCAT log/NR/MAC.md",
