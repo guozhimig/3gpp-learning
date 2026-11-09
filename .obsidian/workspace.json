@@ -119,8 +119,7 @@
               "title": "书签"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -260,7 +259,7 @@
       "sheet-plus:创建 Excel 文件": false
     }
   },
-  "active": "a2362836ea45246d",
+  "active": "069313eba475e1f1",
   "lastOpenFiles": [
     "信道估计与CIR处理.md",
     "QCAT log/NR/MAC.md",
