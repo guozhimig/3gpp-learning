@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "QCAT log/测量相关的trace.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "测量相关的trace"
+              "title": "README"
             }
           },
           {
@@ -50,7 +50,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -185,7 +185,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "QCAT log/LTE/LTE RRC OTA Packet.md",
+                "file": "README.md",
                 "followCursor": false,
                 "showSearch": true,
                 "searchQuery": ""
@@ -245,8 +245,10 @@
       "sheet-plus:创建 Excel 文件": false
     }
   },
-  "active": "e993771ee998b138",
+  "active": "067b91a2d0690c77",
   "lastOpenFiles": [
+    "QCAT log/测量相关的trace.md",
+    "QCAT log/LTE/LTE RRC OTA Packet.md",
     "DOCs/LTE 学习笔记：一次搞懂 RSRP、RSRQ、RSSI.md",
     "file:C:/cygwin64/home/guozh/workspace/工作文档/竞争专利分析-4G5G驻留切换方案.md",
     "信道估计与CIR处理.md",
@@ -257,14 +259,12 @@
     "QCAT log/总体结构.canvas",
     "DOCs/AI协作规则（学习文档整理）.md",
     "DOCs/测量模块相关知识学习.md",
-    "QCAT log/测量相关的trace.md",
     "QCAT log/LTE/LTE NAS.md",
     "DOCs/FIR滤波器从零开始学习.md",
     "DOCs/5G通信算法核心概念详解.md",
     "DOCs/信道估计：从SISO到MIMO（原理与工程对照）.md",
     "DOCs/README.md",
     "通信助手.md",
-    "QCAT log/LTE/LTE RRC OTA Packet.md",
     "QCAT log/LTE/ML1.md",
     "QCAT log/RRC 状态.md",
     "DOCs/assets/LTE 学习笔记：一次搞懂 RSRP、RSRQ、RSSI/file-20260729190859374.png",
