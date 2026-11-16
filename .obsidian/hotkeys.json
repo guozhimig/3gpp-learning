@@ -30,21 +30,5 @@
       ],
       "key": "4"
     }
-  ],
-  "editor:toggle-highlight-green": [
-    {
-      "modifiers": [
-        "Mod"
-      ],
-      "key": "5"
-    }
-  ],
-  "editor:toggle-highlight-purple": [
-    {
-      "modifiers": [
-        "Mod"
-      ],
-      "key": "6"
-    }
   ]
 }
