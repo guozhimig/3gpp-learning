@@ -7,7 +7,7 @@
 ## 当前实现版本
 
 - **LTE实现**: Release 12 (R12) 系列
-- **5G NR实现**: Release 17 (R17) 系列，支持RedC<mark style="background: #FF5582A6;">ap技术</mark>
+- **5G NR实现**: Release 17 (R17) 系列，支持RedCap技术
 
 ## 项目结构
 
