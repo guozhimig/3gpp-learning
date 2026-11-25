@@ -160,7 +160,69 @@ TB Log Buff
 
 ```
 # LTE LL1 PDSCH Decoding Results
-``
+炳哥个plog解析下行调度就是用的这个trace
+```
+2026 Nov 19  10:56:11.354  [67]  0xB132  LTE LL1 PDSCH Decoding Results
+Subscription ID = 1
+Version = 167
+Length = 160
+Drop Cnt = 0
+Num Records = 1
+Common Static Config
+   Context = LTE
+   Variant Id = 0
+   CxN Index = 0
+   Cell Id = 436
+   EARFCN = 1650
+   Carrier Index = 0
+   Variant Carrier Index = 0
+   System BW = 20
+   NIR = 228384
+   Num HARQ = 9
+   UE Category = 13
+   TX Mode = TM2_TD_RANK1
+   Num eNb Tx Ant = 2
+   Four_Layer_Capability = false
+TB Info Record[0]
+   TB Top
+      -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+      |     |     |     |    |       |      |    |    |     |    |      |         |        |         |           |         |    |    |     |    |Harq|     |   |   |     |      |      |      |
+      |     |     |MVC  |    |       |      |    |    |     |    |      |         |        |         |           |         |    |IO  |     |Harq|IO  |Num  |   |   |     |      |      |      |
+      |     |     |Clock|    |       |Bypass|    |Num |Start|QREN|RX01  |CB Bundle|TB DMA  |         |           |         |IO  |ST  |Num  |IO  |ST  |Harq |RP |SF |RB   |SC    |TB Ext|CB    |
+      |Frame|SubFN|(MHz)|Rank|LLR BW |Decode|ITER|RX  |CB ID|BMSK|poolID|Size     |Budget  |Onld Size|Offld Size |L2 Mode  |Fail|Fail|IOVec|Fail|Fail|Iovec|Idx|Gap|Start|Index |Enable|Enable|
+      -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+      |  752|    5|  288|  R2|     6B|     0|   1| 2RX|    0|   1|     0|        1|    3593|        0|         20| NO ALLOC|   0|   0|    1|   0|   0|    1|  0|  0|    0|     0|  TRUE|  TRUE|
+
+   TB Config
+      ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+      |          |    |      |     |      |   |      |        |     |    |        |               |         |      |Num     |  |      |        |        |Force  |      |Alt|Hi  |    |Excess  |      |Max|        |     |    |
+      |          |HARQ|TB    |CW   |      |Num|      |        |     |Num |NCB     |               |         |      |Channel |  |CB    |        |DMA TO  |HARQ   |Bypass|MCS|MGMT|Max |HI Init |Hi    |HI |TX      |NDI  |Code|
+      |RNTI      |ID  |Index |Index|Num CB|Lay|MCS   |MOD     |ReTx |ReTx|Prime   |Discard Mode   |QED Mode |Num RB|Bits    |RV|Size  |TB Size |Dur     |Offload|HARQ  |En |En  |Iter|State   |Base  |Low|Scheme  |Value|Rate|
+      ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+      |        SI|   0|     0|    0|     1| 2L|     8|    QPSK|  1st|   0|     852|     NO_DISCARD|   NO_QED|    10|    2880| 0|    35|      32|2.1e+002|   TRUE| FALSE|  0|   0|17HI|       0|     0|  0|     TXD|    0|0.0972|
+
+   TB
+      -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+      |TB Onload                                         |TB Offload                                         |                                                              |
+      |Excess    |          |            |CB Timeout     |Excess    |          |            |CB Timeout      |TB Decode                                                     |
+      |Time      |TB Pass HD|TB Pass HARQ|Status         |Time      |TB Pass HD|TB Pass HARQ|Status          |CB CRC Pass Bmsk         |Excess HI State |TB CRC     |TB Pass|
+      -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+      |        25|      0xFF|        0xFF|0x0000000000000000|        25|      0xFF|        0xFF|0x0000000000000000|       0x0000000000000001|               0|   0x000000|      1|
+
+   TB Log Extend
+      -------------------------------------------------------------------------------------------------------------------------------------------------------------
+      |TB Ext 0   |TB Ext 1   |TB Ext 2   |TB Ext 3   |TB Ext 4   |TB Ext 5   |TB Ext 6   |TB Ext 7   |TB Ext 8   |TB Ext 9   |TB Ext 10  |TB Ext 11  |TB Ext 12  |
+      -------------------------------------------------------------------------------------------------------------------------------------------------------------
+      | 0x00220D83| 0x02089009| 0x000005A0| 0x008005A0| 0xC435B480| 0x40100000| 0x00000000| 0x00000000| 0x00000000| 0x00000000| 0x0004393C| 0x00000000| 0x00000000|
+
+   CB
+      --------------------------------------------------------------------------------------------------------------------------------------------------------------
+      |   |                                      |                                          |CB Decode                                                             |
+      |   |CB Onload                             |CB Offload                                |             |  |       |   |      |  |    |       |       |Skip  |DHB|
+      |#  |On Dur|On Extract|On Time Remain|ON TO|Off Dur|Off Extract|Off Time Remain|Off TO|Energy Metric|ET|Min LLR|CRC|Num HI|HD|HARQ|CB Disc|CB Pass|Decode|IDX|
+      --------------------------------------------------------------------------------------------------------------------------------------------------------------
+      |  0|     0|         0|            25|    0|      0|          0|             25|     0|         8680| 1|    181|  1|   1HI| 1|   1|      0|      1|     0|  4|
+```
 # LTE MAC UL Transport Block
 
 ```
