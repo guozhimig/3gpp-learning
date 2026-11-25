@@ -1,5 +1,5 @@
 # NR5G MAC PDSCH Status
-查看下行调度情况，观察诸如调度的rb
+查看下行调度情况，观察诸如调度的 harq id, mcs， rb 数之类的
 ```
 2026 Nov 19  10:55:54.608  [CD]  0xB887  NR5G MAC PDSCH Status
 Subscription ID = 1
