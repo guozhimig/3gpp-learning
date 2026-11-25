@@ -50,7 +50,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -185,7 +185,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "QCAT log/LTE/LTE MAC.md",
+                "file": "QCAT log/LTE/LTE RRC OTA Packet.md",
                 "followCursor": false,
                 "showSearch": true,
                 "searchQuery": ""
@@ -246,8 +246,10 @@
       "sheet-plus:创建 Excel 文件": false
     }
   },
-  "active": "067b91a2d0690c77",
+  "active": "e993771ee998b138",
   "lastOpenFiles": [
+    "file:C:/Users/guozh/Desktop/内网AI助手_VSCode_Cline使用说明.md",
+    "QCAT log/LTE/LTE MAC.md",
     "QCAT log/NR/MAC.md",
     "QCAT log/NR/NR5G RRC OTA Packet.md",
     "QCAT log/LTE/LTE RRC OTA Packet.md",
@@ -277,8 +279,6 @@
     "QCAT log/LTE/Event.md",
     "QCAT log/LTE/QTrace Event.md",
     "QCAT log/LTE/LRRC_QSH_EVENT_CONN_REL.md",
-    "QCAT log/LTE/LTE RLC.md",
-    "QCAT log/LTE/LL1.md",
     "QCAT log/NR",
     "QCAT log/LTE/assets/ML1/file-20260309110745193.png",
     "QCAT log/LTE/assets/ML1/file-20260309110829587.png",
